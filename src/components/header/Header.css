@@ -1,0 +1,59 @@
+.Header {
+  a {
+    padding: .5em;
+    background: white;
+    -webkit-transition-property: background;
+       -moz-transition-property: background;
+         -o-transition-property: background;
+            transition-property: background;
+    -webkit-transition-duration: 1s;
+       -moz-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+  }
+
+  a:hover {
+    background: #ff7b29;
+    transform: perspective(200px) rotateX(45deg);
+    transform: rotateX(45deg);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0 1em 0;
+    margin-top: 0;
+  }
+
+  /* MOBILE STYLES */
+  @media screen and (min-width: 320px) {
+    a {
+      color: palevioletred;
+    }
+  }
+
+  @media screen and (min-width: 550px) {
+    a {
+      color: green;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    a {
+      color: purple;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    a {
+      color: black;
+    }
+  }
+
+}
