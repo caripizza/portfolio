@@ -8,17 +8,24 @@ const Projects = () => {
     <>
       <main className={styles.Projects}>
 
-        <section>
+        <section className={styles.left}>
           <h1>Projects</h1>
           <p>I build responsive web experiences, achieving maximum accessibility with a detailed, energetic approach.</p>
-          <img src={scribble} style={{ width: '75%', marginLeft: '3em' }}/>
+          <img src={scribble}/>
         </section>
 
 
-        <section>
+        <section className={styles.right}>
           <article>
             <h3>Homebrewdog</h3>
-            <br/><span><a href="https://homebrewdog.herokuapp.com" target="_blank" rel="noopener noreferrer">https://homebrewdog.herokuapp.com</a></span>
+            <br/>
+            <span>
+              <a href="https://homebrewdog.herokuapp.com"
+                target="_blank" rel="noopener noreferrer"
+              >
+                https://homebrewdog.herokuapp.com
+              </a>
+            </span>
             <br/>
             <span>
               RESTful app utilizing the Brewdog Brewery API with Vue for the front-end, PostgreSQL + Express on the back-end, and deployed to Heroku.

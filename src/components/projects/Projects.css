@@ -1,14 +1,57 @@
 .Projects {
+  display: flex;
+
   p {
     padding: .5em 1.7em .2em 1.7em;
+    animation-duration: 1.5s;
+    animation-name: slideinRight;
+    width: 100%;
   }
+
+  img {
+    width: 50%;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    margin-left: 10%;
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 50%;
+        width: 50%; 
+      }
+      to {
+        margin-left: 10%;
+        width: 50%;
+      }
+    }
+
+    @keyframes slideinRight {
+      from {
+        margin-left: -50%;
+        width: 100%;
+      }
+      to {
+        margin-right: 0%;
+        width: 100%;
+      }
+    }
 
   section {
     background-color: white;
+    margin: 0 .5em 0 .5em;
     line-height: 1.5em;
     width: 49%;
-    float: left;
     min-height: 75vh;
+    display: grid;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .left {
+    float: left;
   }
 
   h1, h2 {
@@ -29,12 +72,20 @@
   }
 
   @media only screen and (max-width: 600px) and (min-width: 200px) {
-    section {
+    display: block;
+
+    .left, .right {
       width: 100vw;
     }
 
+    section {
+      margin: 0;
+    }
+
     article {
-      padding: .5em 1.7em .2em 1.7em;
+      padding: .5em 1.7em 1em 1.7em;
+      width: 100vw;
     }
   }
+
 }
