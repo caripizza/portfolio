@@ -23,9 +23,36 @@
     margin: 1em;
   }
 
-  ul {
+  .skills ul {
+    list-style: square;
+    color: cyan;
+  }
+
+  li span {
+    color: black;
+    transition: background-color 1s ease;
+  }
+
+  span:hover {
+    background-color: cyan;
+  }
+
+  .languages ul {
     list-style: none;
     line-height: 1.5em;
+  }
+
+  li {
+    animation: slide-in-left 1.5s linear forwards;
+  }
+
+  @keyframes slide-in-left {
+    from {
+      margin-left: -50px;
+    }
+    to {
+      margin-left: 0;
+    }
   }
 
   .half {
@@ -49,7 +76,7 @@
     animation-duration: 2s;
     animation-name: slidein;
     }
-  
+
     @keyframes slidein {
       from {
         margin-left: 3%;

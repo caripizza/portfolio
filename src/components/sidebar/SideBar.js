@@ -47,23 +47,6 @@ const styles = {
   }
 };
 
-// const SideBar = (props) => {
-//   return (
-//     <Menu styles={styles} width={ '50%' } {...props}>
-//       <Link className="menu-item" to="/">
-//         Home
-//       </Link>
-//       <br/>
-//       <br/>
-//       <Link className="menu-item" to="/projects" >
-//         Projects
-//       </Link>
-//     </Menu>
-//   );
-// };
-
-// export default SideBar;
-
 export default class SideBar extends React.Component {
   state = {
     menuOpen: false

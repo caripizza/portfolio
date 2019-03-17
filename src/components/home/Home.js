@@ -17,35 +17,38 @@ const Home = () => {
           </p>
         </section>
 
+
         <section className={styles.half}>
           <article className={styles.skills}>
             <h2><strong>Skills</strong></h2>
             <ul>
-              <li>Design: UI/UX, Mobile-first principles</li>
-              <li>BDD: Selenium, Jenkins, Jasmine</li>
-              <li>TDD: Jest, Enzyme, Mocha/Chai, React</li>
-              <li>Frameworks: Node, Express, Vue, React, Redux, jQuery, PostCSS, Styled-Components</li>
-              <li>Databases: MongoDB, Mongoose, PostgreSQL</li>
-              <li>DevTools: DNS, Heroku, Netlify, Git, Slack, Trello, JIRA, Atlassian, GitHub, npm, pip</li>
-              <li>Audio/Video: ProTools, Cubase, Logic Pro, Final Cut Pro</li>
-              <li>Adobe CC: Photoshop, Illustrator, InDesign, AfterEffects</li>
-              <li>CMS: Squarespace, Wordpress</li>
-              <li>CDN: Cloudflare/AWS</li>
-              <li>Admin: G Suite (Sheets, Docs, Slides, Analytics, Ads)</li>
-              <li>SEO: Google Search Console, Ads, Analytics</li>
+              <li><span><strong>Design:</strong> UI/UX, Mobile-first principles</span></li>
+              <li><span><strong>BDD:</strong> Selenium, Jenkins, Jasmine</span></li>
+              <li><span><strong>TDD:</strong> Jest, Enzyme, Mocha/Chai, React</span></li>
+              <li><span><strong>Frameworks:</strong> Node, Express, Vue, React, Redux, jQuery, PostCSS, Styled-Components</span></li>
+              <li><span><strong>Databases:</strong> MongoDB, Mongoose, PostgreSQL</span></li>
+              <li><span><strong>DevTools:</strong> DNS, Heroku, Netlify, Git, Slack, Trello, JIRA, Atlassian, GitHub, npm, pip</span></li>
+              <li><span><strong>Audio/Video:</strong> ProTools, Cubase, Logic Pro, Final Cut Pro</span></li>
+              <li><span><strong>Adobe CC:</strong> Photoshop, Illustrator, InDesign, AfterEffects</span></li>
+              <li><span><strong>CMS:</strong> Squarespace, Wordpress</span></li>
+              <li><span><strong>CDN:</strong> Cloudflare/AWS</span></li>
+              <li><span><strong>Admin:</strong> G Suite (Sheets, Docs, Slides, Analytics, Ads)</span></li>
+              <li><span><strong>SEO:</strong> Google Search Console, Ads, Analytics</span></li>
             </ul>
           </article>
+
           <article className={styles.languages}>
             <h2><strong>Languages:</strong></h2>
             <ul>
-              <li>JavaScript</li>
-              <li>HTML/HTML5</li>
-              <li>CSS/CSS3</li>
-              <li>SQL</li>
-              <li>Python</li>
+              <li><span>JavaScript</span></li>
+              <li><span>HTML/HTML5</span></li>
+              <li><span>CSS/CSS3</span></li>
+              <li><span>SQL</span></li>
+              <li><span>Python</span></li>
             </ul>
           </article>
         </section>
+
       </main>
 
     </>
