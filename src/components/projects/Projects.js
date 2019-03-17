@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Projects.css';
+import scribble from '../../../assets/20_color+doodle-cari-palazzolo.jpg';
 
 const Projects = () => {
   return (
@@ -8,25 +10,31 @@ const Projects = () => {
 
         <section>
           <h1>Projects</h1>
-          <p>Curabitur ligula augue, ullamcorper at facilisis in, viverra a nibh. Nulla finibus orci eu odio viverra.</p>
+          <p>I build responsive web experiences, achieving maximum accessibility with a detailed, energetic approach.</p>
+          <img src={scribble} style={{ width: '75%', marginLeft: '3em' }}/>
         </section>
 
 
         <section>
           <article>
-            <h3>Aasdfa</h3>
+            <h3>Homebrewdog</h3>
+            <br/><span><a href="https://homebrewdog.herokuapp.com" target="_blank" rel="noopener noreferrer">https://homebrewdog.herokuapp.com</a></span>
             <br/>
             <span>
-              Lorem ipsum dolor sit amet, uioua adipiscing elit, sed do eiusmod. #asdfasdf #tehklj
+              RESTful app utilizing the Brewdog Brewery API with Vue for the front-end, PostgreSQL + Express on the back-end, and deployed to Heroku.
             </span>
+            <br/>
+            <span><Link to="/projects/homebrewdog">View project</Link></span>
           </article>
+
           <article>
-            <h3>Tio</h3>
+            <h3>Meme Generator</h3>
             <br/>
             <span>
               Ut enim ad minim veniam, @jlakdsf quis nostrud #lkjasfd
             </span>
           </article>
+
           <article>
             <h3>SssSss</h3>
             <br/>
@@ -34,6 +42,7 @@ const Projects = () => {
               Duis aute irure dolor in @reprehenderit in voluptate velit esse #cillum #lkjlkjlkj
             </span>
           </article>
+
           <article>
             <h3>Zzzelkj</h3>
             <br/>
@@ -41,6 +50,7 @@ const Projects = () => {
               Excepteur sint occaecat cupidatat, 90 - 69 qui officia deserunt @asdf #asdfasdf
             </span>
           </article>
+
           <article>
             <h3>Ulkj78</h3>
             <br/>

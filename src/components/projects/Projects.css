@@ -8,6 +8,7 @@
     line-height: 1.5em;
     width: 49%;
     float: left;
+    min-height: 75vh;
   }
 
   h1, h2 {
@@ -19,6 +20,8 @@
 
   h3 { 
     display: inline;
+    font-style: italic;
+    font-weight: bold;
   }
 
   article {

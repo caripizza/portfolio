@@ -15,6 +15,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path={ROUTES.HOME.path} component={ROUTES.HOME.Component} />
             <Route exact path={ROUTES.PROJECTS.path} component={ROUTES.PROJECTS.Component} />
+            <Route exact path={ROUTES.PROJECTS_HOMEBREWDOG.path} component={ROUTES.PROJECTS_HOMEBREWDOG.Component} />
             <Redirect to={ROUTES.HOME.path} />
           </Switch>
           <Footer/>
