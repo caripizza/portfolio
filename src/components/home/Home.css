@@ -23,7 +23,7 @@
     margin: 1em;
   }
 
-  .skills ul {
+  ul {
     list-style: square;
     color: cyan;
   }
@@ -37,9 +37,13 @@
     background-color: cyan;
   }
 
-  .languages ul {
+  .education ul {
     list-style: none;
     line-height: 1.5em;
+  }
+
+  .detail {
+    list-style: square;
   }
 
   li {
@@ -65,10 +69,27 @@
     padding: 1em;
   }
 
-  .languages {
+  .education {
     background: gold;
     width: 100vw;
     padding: 1em;
+  }
+
+  .languages {
+    background: purple;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: cyan;
+    min-height: 6vh;
+  }
+
+  .languages p {
+    padding: 0;
+    margin: 0 0 1em 0;
+    font-size: 1em;
+    font-weight: 300;
   }
 
   .slide {

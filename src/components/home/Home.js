@@ -12,10 +12,12 @@ const Home = () => {
 
         <section>
           <img src={logo} alt="logo" className={styles.slide}/>
+          <h2><strong>About Me</strong></h2>
           <p>
             {welcomeMsg}
           </p>
         </section>
+
 
 
         <section className={styles.half}>
@@ -37,16 +39,29 @@ const Home = () => {
             </ul>
           </article>
 
-          <article className={styles.languages}>
-            <h2><strong>Languages:</strong></h2>
+          <article className={styles.education}>
+            <h2><strong>Academic Background</strong></h2>
             <ul>
-              <li><span>JavaScript</span></li>
-              <li><span>HTML/HTML5</span></li>
-              <li><span>CSS/CSS3</span></li>
-              <li><span>SQL</span></li>
-              <li><span>Python</span></li>
+              <li><span><strong>Full Stack Software Development + Devsign:</strong><br/>Alchemy Code Lab (Portland OR) | 2018-2019</span></li>
+              <li className={styles.detail}><span>MERN-stack professional training with emphasis on clean code, team-building, individual problem solving, mob programming + pair programming, and TDD testing</span></li>
+              <li className={styles.detail}><span>3 part program with focus on vanilla JavaScript, SPA app development with RESTful APIs,  full-stack apps using Vue.js with PostgreSQL and React with MongoDB + Mongoose</span><br/></li>
+              <li><span><strong>Bachelor of Fine Arts:</strong><br/>The University of Texas at Austin | 2002-2006</span></li>
+              <li className={styles.detail}><span>Major: Studio Art | Concentrations: Video, Drafting, Painting, Printmaking</span></li>
+              <li className={styles.detail}><span>Graduated with University Honors, Cum Laude</span></li>
             </ul>
           </article>
+        </section>
+
+        <section className={styles.languages}>
+          {/* <h2><strong>Languages:</strong></h2> */}
+          <p>JavaScript</p><p>HTML/HTML5</p><p>CSS/CSS3</p><p>SQL</p><p>Python</p>
+          {/* <ul>
+            <li><span>JavaScript</span></li>
+            <li><span>HTML/HTML5</span></li>
+            <li><span>CSS/CSS3</span></li>
+            <li><span>SQL</span></li>
+            <li><span>Python</span></li>
+          </ul> */}
         </section>
 
       </main>
