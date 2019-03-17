@@ -5,6 +5,9 @@ exports[`Header matches a snapshot 1`] = `
   className="Header"
 >
   <nav>
+    <h1>
+      CARI PALAZZOLO
+    </h1>
     <ul>
       <li>
         <a

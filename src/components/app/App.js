@@ -13,7 +13,8 @@ export default class App extends Component {
         < >
           <Header/>
           <Switch>
-            <Route exact component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
+            <Route exact path={ROUTES.HOME.path} component={ROUTES.HOME.Component} />
+            <Route exact path={ROUTES.PROJECTS.path} component={ROUTES.PROJECTS.Component} />
             <Redirect to={ROUTES.HOME.path} />
           </Switch>
           <Footer/>

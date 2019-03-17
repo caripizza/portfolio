@@ -7,6 +7,7 @@ const Header = () => {
   return (
     <header className={styles.Header}>
       <nav>
+        <h1>CARI PALAZZOLO</h1>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/projects">Projects</Link></li>

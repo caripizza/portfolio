@@ -1,0 +1,79 @@
+.Home {
+  p {
+    padding: .5em 1.7em .2em 1.7em;
+  }
+
+  section {
+    padding-top: 1em;
+    background-color: white;
+    display: inline-block;
+    line-height: 1.5em;
+  }
+
+  h1, h2 {
+    padding: .5em 2em 0 .7em;
+    font-style: italic;
+    font-weight: 300;
+    margin: .4em 0 .1em 0;
+  }
+
+  img {
+    width: 15vw;
+    float: left;
+    margin: 1em;
+  }
+
+  ul {
+    list-style: none;
+    line-height: 1.5em;
+  }
+
+  .half {
+    display: flex;
+  }
+
+  .skills {
+    background: red;
+    width: 100vw;
+    padding: 1em;
+  }
+
+  .languages {
+    background: gold;
+    width: 100vw;
+    padding: 1em;
+  }
+
+  .slide {
+    width: 15vw;
+    animation-duration: 2s;
+    animation-name: slidein;
+    }
+  
+    @keyframes slidein {
+      from {
+        margin-left: 3%;
+        width: 10%; 
+      }
+      to {
+        margin-left: 1em;
+        width: 15vw;
+      }
+    }
+
+  @media only screen and (max-width: 600px) and (min-width: 200px) {
+    img {
+      width: 5em;
+    }
+
+    .half {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    img {
+      width: 15vw;
+    }
+  }
+}
