@@ -18,14 +18,6 @@ const Projects = () => {
         <section className={styles.right}>
           <article>
             <h3>Homebrewdog</h3>
-            {/* <br/>
-            <span>
-              <a href="https://homebrewdog.herokuapp.com"
-                target="_blank" rel="noopener noreferrer"
-              >
-                https://homebrewdog.herokuapp.com
-              </a>
-            </span> */}
             <br/>
             <span>
               RESTful app utilizing the Brewdog Brewery API with Vue for the front-end, PostgreSQL + Express on the back-end, and deployed to Heroku.
@@ -42,10 +34,19 @@ const Projects = () => {
           </article>
 
           <article>
-            <h3>Meme Generator</h3>
+            <h3>Font & Meme Generator</h3>
             <br/>
             <span>
-              Ut enim ad minim veniam, @jlakdsf quis nostrud #lkjasfd
+              WYSIWYG editor made with React which utilizes Figlet fonts, allowing users to download their fonts and meme creations as image files.
+            </span>
+            <br/>
+            <span>
+              <Link to="/projects/meme-generator">
+                View project
+              </Link> / 
+              <a href="https://github.com/caripizza/meme-generator" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </span>
           </article>
 

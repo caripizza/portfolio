@@ -27,6 +27,9 @@ export default class App extends Component {
               <Route exact path={ROUTES.PROJECTS_HOMEBREWDOG.path}
                 component={ROUTES.PROJECTS_HOMEBREWDOG.Component}
               />
+              <Route exact path={ROUTES.PROJECTS_MEME_GENERATOR.path}
+                component={ROUTES.PROJECTS_MEME_GENERATOR.Component}
+              />
               <Redirect to={ROUTES.HOME.path} />
             </Switch>
           </ScrollToTop>

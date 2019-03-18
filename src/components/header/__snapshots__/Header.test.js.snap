@@ -25,6 +25,14 @@ exports[`Header matches a snapshot 1`] = `
           Projects
         </a>
       </li>
+      <li>
+        <a
+          href="/work"
+          onClick={[Function]}
+        >
+          Work
+        </a>
+      </li>
     </ul>
   </nav>
 </header>

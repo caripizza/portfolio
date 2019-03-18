@@ -19,7 +19,6 @@ const Home = () => {
         </section>
 
 
-
         <section className={styles.half}>
           <article className={styles.skills}>
             <h2><strong>Skills</strong></h2>
@@ -53,15 +52,7 @@ const Home = () => {
         </section>
 
         <section className={styles.languages}>
-          {/* <h2><strong>Languages:</strong></h2> */}
           <p>JavaScript</p><p>HTML/HTML5</p><p>CSS/CSS3</p><p>SQL</p><p>Python</p>
-          {/* <ul>
-            <li><span>JavaScript</span></li>
-            <li><span>HTML/HTML5</span></li>
-            <li><span>CSS/CSS3</span></li>
-            <li><span>SQL</span></li>
-            <li><span>Python</span></li>
-          </ul> */}
         </section>
 
       </main>

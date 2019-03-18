@@ -1,7 +1,8 @@
 import Home from '../components/home/Home';
-import Homebrewdog from '../components/homebrewdog/Homebrewdog';
+import Homebrewdog from '../components/projects/homebrewdog/Homebrewdog';
 import Work from '../components/work/Work';
 import Projects from '../components/projects/Projects';
+import MemeGenerator from '../components/projects/meme-generator/MemeGenerator';
 
 export const ROUTES = {
   HOME: {
@@ -23,5 +24,10 @@ export const ROUTES = {
     path: '/projects/homebrewdog',
     Component: Homebrewdog,
     linkTo: () => '/projects/homebrewdow'
+  },
+  PROJECTS_MEME_GENERATOR: {
+    path: '/projects/meme-generator',
+    Component: MemeGenerator,
+    linkTo: () => '/projects/meme-generator'
   }
 };

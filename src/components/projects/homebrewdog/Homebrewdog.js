@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Homebrewdog.css';
-import homebrewPic1 from '../../../assets/Homebrewdog/search-beers_homebrewdog.png';
-import homebrewPic2 from '../../../assets/Homebrewdog/beer-search-results_homebrewdog.png';
-import homebrewPic3 from '../../../assets/Homebrewdog/beer-detail_homebrewdog.png';
-import homebrewPic4 from '../../../assets/Homebrewdog/profile_homebrewdog.png';
+import homebrewPic1 from '../../../../assets/Homebrewdog/search-beers_homebrewdog.png';
+import homebrewPic2 from '../../../../assets/Homebrewdog/beer-search-results_homebrewdog.png';
+import homebrewPic3 from '../../../../assets/Homebrewdog/beer-detail_homebrewdog.png';
+import homebrewPic4 from '../../../../assets/Homebrewdog/profile_homebrewdog.png';
 
 const Homebrewdog = () => {
   return (

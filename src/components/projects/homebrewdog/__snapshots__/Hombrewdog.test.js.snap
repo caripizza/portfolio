@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homebrewdog matches a snapshot 1`] = `
+<main
+  className="Homebrewdog"
+>
+  <section>
+    <h1>
+      Homebrewdog
+    </h1>
+    <span>
+      <a
+        href="https://homebrewdog.herokuapp.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        https://homebrewdog.herokuapp.com
+      </a>
+    </span>
+    <br />
+    <p>
+      Featuring a pop-up search modal, allowing you to search for beers by key word:
+    </p>
+    <img
+      alt="Homebrewdog-pic1"
+      src=""
+    />
+    <p>
+      Yielding a list of search results, based on your beer query:
+    </p>
+    <img
+      alt="Homebrewdog-pic2"
+      src=""
+    />
+    <p>
+      Clicking on a beer from the list directs to the beer detail, where you can rate and save the beer to your Profile:
+    </p>
+    <img
+      alt="Homebrewdog-pic3"
+      src=""
+    />
+    <p>
+      Your profile displays a list of saved beers, allowing you to post and update comments for each, and even view aggregations based on IBU and ABV:
+    </p>
+    <img
+      alt="Homebrewdog-pic4"
+      src=""
+    />
+  </section>
+</main>
+`;
