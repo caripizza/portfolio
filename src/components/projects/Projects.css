@@ -9,10 +9,10 @@
   }
 
   img {
-    width: 50%;
+    width: 100%;
     animation-duration: 1.5s;
     animation-name: slidein;
-    margin-left: 10%;
+    justify-self: center;
     }
 
     @keyframes slidein {
@@ -21,8 +21,8 @@
         width: 50%; 
       }
       to {
-        margin-left: 10%;
-        width: 50%;
+        margin-left: 0%;
+        width: 100%;
       }
     }
 
