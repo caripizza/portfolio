@@ -30,6 +30,9 @@ export default class App extends Component {
               <Route exact path={ROUTES.PROJECTS_MEME_GENERATOR.path}
                 component={ROUTES.PROJECTS_MEME_GENERATOR.Component}
               />
+              <Route exact path={ROUTES.PROJECTS_SIM_ALCHEMY.path}
+                component={ROUTES.PROJECTS_SIM_ALCHEMY.Component}
+              />
               <Redirect to={ROUTES.HOME.path} />
             </Switch>
           </ScrollToTop>

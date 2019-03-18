@@ -51,10 +51,19 @@ const Projects = () => {
           </article>
 
           <article>
-            <h3>SssSss</h3>
+            <h3>SimAlchemy</h3>
             <br/>
             <span>
-              Duis aute irure dolor in @reprehenderit in voluptate velit esse #cillum #lkjlkjlkj
+              Back-end app featuring a code school game for the command line, utilizing MongoDB/Mongoose, Express.js, Node.js, and Inquirer; deployed to Heroku.
+            </span>
+            <br/>
+            <span>
+              <Link to="/projects/SimAlchemy">
+                View project
+              </Link> / 
+              <a href="https://github.com/team-sailboat/SimAlchemy" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </span>
           </article>
 
