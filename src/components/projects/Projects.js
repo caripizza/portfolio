@@ -11,7 +11,7 @@ const Projects = () => {
         <section className={styles.left}>
           <h1>Projects</h1>
           <p>I build responsive web experiences, achieving maximum accessibility with a detailed, energetic approach.</p>
-          <img src={scribble}/>
+          <img src={scribble} alt="scribble"/>
         </section>
 
 
