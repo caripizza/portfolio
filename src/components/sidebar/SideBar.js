@@ -79,6 +79,13 @@ export default class SideBar extends React.Component {
           >
             Projects
           </Link>
+          <br/>
+          <br/>
+          <Link className="menu-item" to="/work" 
+            onClick={() => this.closeMenu()}
+          >
+            Work
+          </Link>
         </Menu>
       </>
     );

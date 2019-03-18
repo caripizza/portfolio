@@ -1,5 +1,6 @@
 import Home from '../components/home/Home';
 import Homebrewdog from '../components/homebrewdog/Homebrewdog';
+import Work from '../components/work/Work';
 import Projects from '../components/projects/Projects';
 
 export const ROUTES = {
@@ -7,6 +8,11 @@ export const ROUTES = {
     path: '/',
     Component: Home,
     linkTo: () => '/'
+  },
+  WORK: {
+    path: '/work',
+    Component: Work,
+    linkTo: () => '/work'
   },
   PROJECTS: {
     path: '/projects',

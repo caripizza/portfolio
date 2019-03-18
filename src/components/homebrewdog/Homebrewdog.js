@@ -12,6 +12,14 @@ const Homebrewdog = () => {
       <main className={styles.Homebrewdog}>
         <section>
           <h1>Homebrewdog</h1>
+          <span>
+            <a href="https://homebrewdog.herokuapp.com"
+              target="_blank" rel="noopener noreferrer"
+            >
+              https://homebrewdog.herokuapp.com
+            </a>
+          </span>
+          <br/>
           <p>Featuring a pop-up search modal, allowing you to search for beers by key word:</p>
           <img src={homebrewPic1} alt="Homebrewdog-pic1"/>
           <p>Yielding a list of search results, based on your beer query:</p>

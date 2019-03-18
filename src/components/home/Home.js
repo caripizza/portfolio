@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../../assets/caripizza.png';
 import styles from './Home.css';
 
-const welcomeMsg = 'I\'m a full-stack JavaScript developer with passions for debugging, building web apps, tinkering, and learning new technologies. My career is rooted in visual art and graphic design, with fortes in audio engineering, website development, digital marketing, Quality Assurance testing, and Quality Control. I look forward to learning new skills and working with diverse groups on purpose-driven projects.';
+const welcomeMsg = 'I\'m a full-stack JavaScript developer with passions for building web apps and learning new technologies. My career is rooted in visual art and graphic design, with fortes in audio engineering, website development, digital marketing, Quality Assurance testing, and Quality Control. I look forward to learning new skills and working with diverse groups on purpose-driven projects.';
 
 const Home = () => {
   return (
@@ -45,7 +45,7 @@ const Home = () => {
               <li><span><strong>Full Stack Software Development + Devsign:</strong><br/>Alchemy Code Lab (Portland OR) | 2018-2019</span></li>
               <li className={styles.detail}><span>MERN-stack professional training with emphasis on clean code, team-building, individual problem solving, mob programming + pair programming, and TDD testing</span></li>
               <li className={styles.detail}><span>3 part program with focus on vanilla JavaScript, SPA app development with RESTful APIs,  full-stack apps using Vue.js with PostgreSQL and React with MongoDB + Mongoose</span><br/></li>
-              <li><span><strong>Bachelor of Fine Arts:</strong><br/>The University of Texas at Austin | 2002-2006</span></li>
+              <li><br/><span><strong>Bachelor of Fine Arts:</strong><br/>The University of Texas at Austin | 2002-2006</span></li>
               <li className={styles.detail}><span>Major: Studio Art | Concentrations: Video, Drafting, Painting, Printmaking</span></li>
               <li className={styles.detail}><span>Graduated with University Honors, Cum Laude</span></li>
             </ul>

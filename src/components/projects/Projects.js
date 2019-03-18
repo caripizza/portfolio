@@ -18,20 +18,27 @@ const Projects = () => {
         <section className={styles.right}>
           <article>
             <h3>Homebrewdog</h3>
-            <br/>
+            {/* <br/>
             <span>
               <a href="https://homebrewdog.herokuapp.com"
                 target="_blank" rel="noopener noreferrer"
               >
                 https://homebrewdog.herokuapp.com
               </a>
-            </span>
+            </span> */}
             <br/>
             <span>
               RESTful app utilizing the Brewdog Brewery API with Vue for the front-end, PostgreSQL + Express on the back-end, and deployed to Heroku.
             </span>
             <br/>
-            <span><Link to="/projects/homebrewdog">View project</Link></span>
+            <span>
+              <Link to="/projects/homebrewdog">
+                View project
+              </Link> / 
+              <a href="https://github.com/team-thermometer" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </span>
           </article>
 
           <article>
