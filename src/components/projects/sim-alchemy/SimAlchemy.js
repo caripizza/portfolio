@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './SimAlchemy.css';
 
 const SimAlchemy = () => {
   return (
     <>
 
-      <main>
+      <main className={styles.SimAlchemy}>
         <section>
           <h1>SimAlchemy</h1>
           <span>

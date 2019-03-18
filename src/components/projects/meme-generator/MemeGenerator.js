@@ -1,10 +1,12 @@
 import React from 'react';
+import memePic1 from '../../../../assets/meme-generator/figlet-font1.png';
+import styles from './MemeGenerator.css';
 
 const MemeGenerator = () => {
   return (
     <>
 
-      <main>
+      <main className={styles.MemeGenerator}>
         <section>
           <h1>Font & Meme Generator</h1>
           <span>
@@ -16,6 +18,7 @@ const MemeGenerator = () => {
           </span>
           <br/>
           <p>Featuring...</p>
+          <img src={memePic1} alt="Meme-pic1"/>
         </section>
       </main>
 
