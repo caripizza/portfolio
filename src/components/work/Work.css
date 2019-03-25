@@ -1,10 +1,25 @@
 .Work {
-  p {
-    padding: .5em 1.7em .2em 1.7em;
+  /*background: white;*/
+
+  div {
+    display: grid;
+  }
+
+  span {
+    margin: 0 0 0 .8em;
+  }
+
+  article div div:hover {
+    /*background: cyan;*/
+  }
+
+  article div div div {
+    padding: .3em;
   }
 
   section {
-    padding: 1em 0 0 10%;
+    padding: 1em 0  2em 7%;
+    margin: 0 .5em 0 .5em;
     background-color: white;
     line-height: 1.5em;
     display: grid;
@@ -22,11 +37,30 @@
     font-weight: 300;
   }
 
-  h2 {
+  h3 {
     padding: .5em 2em 0 0;
     font-style: italic;
     font-weight: 300;
     margin: .4em 0 -.02em 0;
     background: white;
   }
+
+  img {
+    width: 50%;
+    margin-top: 2em;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    justify-self: center;
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 50%;
+        width: 50%; 
+      }
+      to {
+        margin-left: 0%;
+        width: 50%;
+      }
+    }
 }
