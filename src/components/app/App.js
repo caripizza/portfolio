@@ -33,6 +33,18 @@ export default class App extends Component {
               <Route exact path={ROUTES.PROJECTS_SIM_ALCHEMY.path}
                 component={ROUTES.PROJECTS_SIM_ALCHEMY.Component}
               />
+              <Route exact path={ROUTES.PROJECTS_REDUX_BLOG.path}
+                component={ROUTES.PROJECTS_REDUX_BLOG.Component}
+              />
+              <Route exact path={ROUTES.PROJECTS_POKEDEX.path}
+                component={ROUTES.PROJECTS_POKEDEX.Component}
+              />
+              <Route exact path={ROUTES.PROJECTS_ASYNC_RM.path}
+                component={ROUTES.PROJECTS_ASYNC_RM.Component}
+              />
+              <Route exact path={ROUTES.PROJECTS_Q_BOT.path}
+                component={ROUTES.PROJECTS_Q_BOT.Component}
+              />
               <Redirect to={ROUTES.HOME.path} />
             </Switch>
           </ScrollToTop>
