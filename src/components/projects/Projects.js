@@ -37,7 +37,6 @@ const Projects = () => {
             <br/>
             <span>
               Written in React/Redux, this app utilizes the JSON placeholder API to generate users, posts, and comments.
-              https://react-redux-blog.netlify.com
             </span>
             <br/>
             <span>
