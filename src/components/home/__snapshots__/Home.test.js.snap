@@ -10,13 +10,23 @@ exports[`Home matches a snapshot 1`] = `
       className="slide"
       src=""
     />
-    <h2>
-      <strong>
-        About Me
-      </strong>
-    </h2>
     <p>
-      I'm a full-stack JavaScript developer with passions for building web apps and learning new technologies. My career is rooted in visual art and graphic design, with fortes in audio engineering, website development, digital marketing, Quality Assurance testing, and Quality Control. I look forward to learning new skills and working with diverse groups on purpose-driven projects.
+      
+  Welcome! I'm Cari, a Full Stack JavaScript developer, musician, and graphic designer.
+
+    </p>
+    <p>
+      
+  After a decade performing and teaching music, I started dabbling in freelance website design and digital marketing for small businesses.
+  I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company.
+  While testing all weekly releases and pairing with UI/UX to propose new system features, I fell in love with the software development cycle and decided to take the plunge into coding.
+
+    </p>
+    <p>
+      
+  In early 2019, I completed a 6 month intensive training program in full stack JavaScript, focusing in front-end website design as well as DevOps, managing the release flow.
+  I made this site with React and styled it with PostCSS. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
+
     </p>
   </section>
   <section
@@ -60,7 +70,7 @@ exports[`Home matches a snapshot 1`] = `
             <strong>
               Frameworks:
             </strong>
-             Node, Express, Vue, React, Redux, jQuery, PostCSS, Styled-Components
+             Node, Express, Vue, React, Redux, jQuery, Sass, PostCSS, Styled-Components
           </span>
         </li>
         <li>
@@ -68,7 +78,7 @@ exports[`Home matches a snapshot 1`] = `
             <strong>
               Databases:
             </strong>
-             MongoDB, Mongoose, PostgreSQL
+             Firebase/Firestore, MongoDB, Mongoose, PostgreSQL
           </span>
         </li>
         <li>
@@ -76,7 +86,7 @@ exports[`Home matches a snapshot 1`] = `
             <strong>
               DevTools:
             </strong>
-             DNS, Heroku, Netlify, Git, Slack, Trello, JIRA, Atlassian, GitHub, npm, pip
+             Cloud Functions, Travis CI, DNS, Heroku, Netlify, Git, Slack, Trello, JIRA, Atlassian, GitHub, npm, pip
           </span>
         </li>
         <li>
@@ -141,7 +151,7 @@ exports[`Home matches a snapshot 1`] = `
         <li>
           <span>
             <strong>
-              Full Stack Software Development + Devsign:
+              Advanced Software Development in Full Stack JavaScript:
             </strong>
             <br />
             Alchemy Code Lab (Portland OR) | 2018-2019
@@ -158,7 +168,7 @@ exports[`Home matches a snapshot 1`] = `
           className="detail"
         >
           <span>
-            3 part program with focus on vanilla JavaScript, SPA app development with RESTful APIs,  full-stack apps using Vue.js with PostgreSQL and React with MongoDB + Mongoose
+            3 part program with focus on vanilla JavaScript, SPA app development with RESTful APIs, full-stack Node.js apps made with Express, Vue.js, PostgreSQL, React, Redux, MongoDB + Mongoose
           </span>
           <br />
         </li>
