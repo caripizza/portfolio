@@ -40,6 +40,11 @@
     width: 49%;
     float: left;
     padding: .34em 0 0 1em;
+    
+    a {
+      background: transparent;
+      text-decoration: none;
+    }
   }
 
   h1:hover {

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Work.css';
 import Accordion from '../Accordion';
-import hackathonPic from '../../../assets/hackathon.jpg';
+// import hackathonPic from '../../../assets/hackathon.jpg';
 
 const Work = () => {
   return (
@@ -16,7 +16,7 @@ const Work = () => {
                 <span><strong>Arts People</strong> | 2017-2018 | Portland, OR
                   <br/><a href="https://www.arts-people.com/" target="_blank" rel="noopener noreferrer">www.arts-people.com</a></span>
                 <ul>
-                  <li>Worked with QA Lead and Deployment Manager to test all weekly releases through multiple stages of development (sprint, alpha, stage, production)</li>
+                  <li>Worked with QA Lead and Deployment Manager to test all weekly releases through multiple stages of development</li>
                   <li>Spearheaded Google Analytics integration testing and composed copy for internal help guides</li>
                   <li>Discovered a security vulnerability with an admin tool and paired with DevOps Lead to resolve</li>
                   <li>Proposed revised print-to-pdf concept for platform reporting feature</li>
@@ -35,9 +35,9 @@ const Work = () => {
                   <a href="https://www.squarespace.com/" target="_blank" rel="noopener noreferrer">www.squarespace.com</a></span>
                 <ul>
                   <li>Administered adept live chat & email support using advanced troubleshooting techniques to determine real-time diagnoses</li>
-                  <li>Attended {'Introduction to Website Development'} Portland Community College course courtesy training program</li>
+                  <li>Completed {'Introduction to Website Development'} Portland Community College course</li>
                   <li>Consistently delivered stellar performance metrics with exceptional KPIs (including 100% Customer Satisfaction and QC ratings)</li>
-                  <li>Led an image troubleshooting workshop for internal teams titled {'All About Images'}</li>
+                  <li>Taught image troubleshooting workshop for internal teams titled {'All About Images'}</li>
                   <li>Proficient with CMS platforms (Squarespace/Wordpress), Ecommerce (Stripe), RSS/podcasting, custom domain management/mapping, G Suite email setup</li>
                   <li>Skilled in help-desk and team collaboration tools (Zendesk/Zopim/Desk, Slack/HipChat, Trello, JIRA)</li>
                 </ul>
@@ -49,6 +49,7 @@ const Work = () => {
                 <ul>
                   <li>Designed, proposed and developed rental website</li>
                   <li>Generated logo and marketing designs for web + print</li>
+                  <li>Completed City of Austin Small Business Development SEO course</li>
                   <li>Provided phone and email support while assisting Office Manager with bookkeeping tasks</li>
                   <li>Setup and installed networking hardware and wireless routers at local film studios and music festivals (ACL/SXSW)</li>
                   <li>Assisted Warehouse Manager with maintaining and repairing rental inventory</li>
@@ -114,7 +115,7 @@ const Work = () => {
 
           </article>
 
-          <img src={hackathonPic} alt="hackathon"/>
+          {/* <img src={hackathonPic} alt="hackathon"/> */}
 
         </section>
       </main>

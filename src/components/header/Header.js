@@ -29,7 +29,7 @@ export default class Header extends React.Component {
         <header className={styles.Header}>
           <nav>
             {isMobile ? <SideBar pageWrapId={'page-wrap'} /> : null}
-            <h1>CARI PALAZZOLO</h1>
+            <h1><a href="https://cari.pizza" target="_blank" rel="noopener noreferrer">CARI PALAZZOLO</a></h1>
 
             {isMobile ? null
               : <ul>

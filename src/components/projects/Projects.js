@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Projects.css';
-import scribble from '../../../assets/20_color+doodle-cari-palazzolo.jpg';
+import hackathonPic from '../../../assets/hackathon.jpg';
+// import qBotPresentation from '../../../assets/Qbot-present.jpg';
+// import scribble from '../../../assets/20_color+doodle-cari-palazzolo.jpg';
+// import Qbot from '../../../assets/Qbot-logo_inverted.jpg';
 
 const Projects = () => {
   return (
@@ -10,8 +13,15 @@ const Projects = () => {
 
         <section className={styles.left}>
           <h1>Projects</h1>
-          <p>I build responsive web experiences, achieving maximum accessibility with a detailed, energetic approach.</p>
-          <img src={scribble} alt="scribble"/>
+          <p className={styles.description}>I love the full stack but thrive in front-end web development. I’m driven to create responsive, accessible websites, and improve user experiences through my thoughtful, detailed approach.</p>
+          <a href="http://caripalazzolo.com/s/portfolio.pdf" target="_blank" rel="noopener noreferrer">Digital Design & Visual Art Samples</a>
+          <div className={styles.imgs}>
+            <img src={hackathonPic} alt="hackathon"/>
+            <p className={styles.caption}>Speaking at Puppet for the Nike We Code For Good Hackathon, Jan 2019</p>
+            {/* <img src={qBotPresentation} alt="qbot-presentation"/> */}
+            {/* <img src={scribble} alt="scribble"/>
+            <img src={Qbot} alt="Qbot"/> */}
+          </div>
         </section>
 
 
@@ -25,7 +35,7 @@ const Projects = () => {
             <span>
               <Link to="/projects/q-bot">
                 View project
-              </Link> / 
+              </Link> - 
               <a href="https://github.com/team-q/q-bot-sandbox" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
@@ -42,7 +52,7 @@ const Projects = () => {
             <span>
               <Link to="/projects/redux-blog">
                 View project
-              </Link> / 
+              </Link> - 
               <a href="https://github.com/caripizza/redux-blog" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
@@ -59,7 +69,7 @@ const Projects = () => {
             <span>
               <Link to="/projects/async-rm">
                 View project
-              </Link> / 
+              </Link> - 
               <a href="https://github.com/caripizza/async-react" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
@@ -76,7 +86,7 @@ const Projects = () => {
             <span>
               <Link to="/projects/SimAlchemy">
                 View project
-              </Link> / 
+              </Link> - 
               <a href="https://github.com/team-sailboat/SimAlchemy" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
@@ -93,7 +103,7 @@ const Projects = () => {
             <span>
               <Link to="/projects/homebrewdog">
                 View project
-              </Link> / 
+              </Link> - 
               <a href="https://github.com/team-thermometer" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
@@ -110,7 +120,7 @@ const Projects = () => {
             <span>
               <Link to="/projects/meme-generator">
                 View project
-              </Link> / 
+              </Link> - 
               <a href="https://github.com/caripizza/meme-generator" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
@@ -125,7 +135,7 @@ const Projects = () => {
             <span>
               <Link to="/projects/pokedex">
                 View project
-              </Link> / 
+              </Link> - 
               <a href="https://github.com/caripizza/return-of-pokedex" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
