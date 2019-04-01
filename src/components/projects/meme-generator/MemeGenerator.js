@@ -17,7 +17,7 @@ const MemeGenerator = () => {
             </a>
           </span>
           <br/>
-          <p>Featuring...</p>
+          <p>More details coming soon...</p>
           <img src={memePic1} alt="Meme-pic1"/>
         </section>
       </main>

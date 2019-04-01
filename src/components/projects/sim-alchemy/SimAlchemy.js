@@ -16,7 +16,7 @@ const SimAlchemy = () => {
             </a>
           </span>
           <br/>
-          <p>Featuring...</p>
+          <p>More details coming soon...</p>
         </section>
       </main>
 
