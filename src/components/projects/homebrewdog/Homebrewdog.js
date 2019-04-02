@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Homebrewdog.css';
 import homebrewPic1 from '../../../../assets/Homebrewdog/search-beers_homebrewdog.png';
 import homebrewPic2 from '../../../../assets/Homebrewdog/beer-search-results_homebrewdog.png';
@@ -28,6 +29,10 @@ const Homebrewdog = () => {
           <img src={homebrewPic3} alt="Homebrewdog-pic3"/>
           <p>Your profile displays a list of saved beers, allowing you to post and update comments for each, and even view aggregations based on IBU and ABV:</p>
           <img src={homebrewPic4} alt="Homebrewdog-pic4"/>
+
+          <Link to="/projects">Back</Link>
+          <br/>
+
         </section>
       </main>
 

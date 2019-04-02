@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './ReduxBlog.css';
 
 const ReduxBlog = () => {
@@ -17,6 +18,10 @@ const ReduxBlog = () => {
           </span>
           <br/>
           <p>More details coming soon...</p>
+
+          <Link to="/projects">Back</Link>
+          <br/>
+
         </section>
       </main>
 

@@ -45,6 +45,9 @@ export default class App extends Component {
               <Route exact path={ROUTES.PROJECTS_Q_BOT.path}
                 component={ROUTES.PROJECTS_Q_BOT.Component}
               />
+              <Route exact path={ROUTES.PROJECTS_TCP_CHAT_ROOM.path}
+                component={ROUTES.PROJECTS_TCP_CHAT_ROOM.Component}
+              />
               <Redirect to={ROUTES.HOME.path} />
             </Switch>
           </ScrollToTop>

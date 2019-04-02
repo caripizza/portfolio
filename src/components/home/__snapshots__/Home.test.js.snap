@@ -19,13 +19,13 @@ exports[`Home matches a snapshot 1`] = `
       
   After a decade performing and teaching music, I started dabbling in freelance website design and digital marketing for small businesses.
   I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company.
-  While testing all weekly releases and pairing with UI/UX to propose new system features, I fell in love with the software development cycle and decided to take the plunge into coding.
+  While testing weekly releases and pairing with UI/UX to propose new system features, I fell in love with the software development cycle and decided to take the plunge into coding.
 
     </p>
     <p>
       
   In early 2019, I completed a 6 month intensive training program in full stack JavaScript, focusing in front-end website design as well as DevOps, managing the release flow.
-  I made this site with React and styled it with PostCSS. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
+  I made this site with React, styled it with PostCSS, setup continuous integration with Travic CI, and deployed it to Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
 
     </p>
   </section>
@@ -46,31 +46,23 @@ exports[`Home matches a snapshot 1`] = `
             <strong>
               Design:
             </strong>
-             UI/UX, Mobile-first principles
+             UI/UX, Mobile-first/responsive design principles
           </span>
         </li>
         <li>
           <span>
             <strong>
-              BDD:
+              BDD/TDD:
             </strong>
-             Selenium, Jenkins, Jasmine
+             Selenium, Protractor, Jenkins,  Jasmine, Jest, Enzyme, Mocha/Chai
           </span>
         </li>
         <li>
           <span>
             <strong>
-              TDD:
+              Frameworks/Tools:
             </strong>
-             Jest, Enzyme, Mocha/Chai, React
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>
-              Frameworks:
-            </strong>
-             Node, Express, Vue, React, Redux, jQuery, Sass, PostCSS, Styled-Components
+             Node.js, Express.js, Vue.js, React, Redux, Google Cloud Functions, jQuery, AJAX, SASS, PostCSS, Styled-Components, Material UI
           </span>
         </li>
         <li>
@@ -86,7 +78,15 @@ exports[`Home matches a snapshot 1`] = `
             <strong>
               DevTools:
             </strong>
-             Cloud Functions, Travis CI, DNS, Heroku, Netlify, Git, Slack, Trello, JIRA, Atlassian, GitHub, npm, pip
+             Travis CI, Heroku, Netlify, Git, GitHub, npm, pip, Agile methodologies, Slack, HipChat, Trello, JIRA, Confluence
+          </span>
+        </li>
+        <li>
+          <span>
+            <strong>
+              Authentication:
+            </strong>
+             Auth0, Firebase OAuth, Bcrypt, JSON Web Tokens
           </span>
         </li>
         <li>
@@ -108,33 +108,17 @@ exports[`Home matches a snapshot 1`] = `
         <li>
           <span>
             <strong>
-              CMS:
+              CMS/CDN:
             </strong>
-             Squarespace, Wordpress
+             Squarespace, Wordpress, Cloudflare/AWS
           </span>
         </li>
         <li>
           <span>
             <strong>
-              CDN:
+              Admin/SEO:
             </strong>
-             Cloudflare/AWS
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>
-              Admin:
-            </strong>
-             G Suite (Sheets, Docs, Slides, Analytics, Ads)
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>
-              SEO:
-            </strong>
-             Google Search Console, Ads, Analytics
+             G Suite (Email, Sheets, Docs, Slides, Analytics, Ads, Search Console)
           </span>
         </li>
       </ul>
@@ -154,21 +138,14 @@ exports[`Home matches a snapshot 1`] = `
               Advanced Software Development in Full Stack JavaScript:
             </strong>
             <br />
-            Alchemy Code Lab (Portland OR) | 2018-2019
+            Alchemy Code Lab (Portland, 2018-2019)
           </span>
         </li>
         <li
           className="detail"
         >
           <span>
-            MERN-stack professional training with emphasis on clean code, team-building, individual problem solving, mob programming + pair programming, and TDD testing
-          </span>
-        </li>
-        <li
-          className="detail"
-        >
-          <span>
-            3 part program with focus on vanilla JavaScript, SPA app development with RESTful APIs, full-stack Node.js apps made with Express, Vue.js, PostgreSQL, React, Redux, MongoDB + Mongoose
+            MERN-stack professional training in vanilla JavaScript (ES6+), DOM manipulation, RESTful APIs, Node.js apps with Express, Vue.js, PostgreSQL, React, Redux, MongoDB, Mongoose
           </span>
           <br />
         </li>
@@ -179,7 +156,7 @@ exports[`Home matches a snapshot 1`] = `
               Bachelor of Fine Arts:
             </strong>
             <br />
-            The University of Texas at Austin | 2002-2006
+            The University of Texas at Austin (2002-2006)
           </span>
         </li>
         <li
@@ -193,7 +170,7 @@ exports[`Home matches a snapshot 1`] = `
           className="detail"
         >
           <span>
-            Graduated with University Honors, Cum Laude
+            Graduated with University Honors
           </span>
         </li>
       </ul>

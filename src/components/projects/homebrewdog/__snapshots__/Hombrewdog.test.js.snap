@@ -46,6 +46,13 @@ exports[`Homebrewdog matches a snapshot 1`] = `
       alt="Homebrewdog-pic4"
       src=""
     />
+    <a
+      href="/projects"
+      onClick={[Function]}
+    >
+      Back
+    </a>
+    <br />
   </section>
 </main>
 `;

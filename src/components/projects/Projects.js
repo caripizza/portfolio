@@ -94,6 +94,23 @@ const Projects = () => {
           </article>
 
           <article>
+            <h3>TCP Chat Room</h3>
+            <br/>
+            <span>
+              Back-end chat server that allows multiple clients to connect via the command line and chat with each other using short commands (@all, @dm, @nick); includes unit tests.
+            </span>
+            <br/>
+            <span>
+              <Link to="/projects/tcp-chat-room">
+                View project
+              </Link> - 
+              <a href="https://github.com/caripizza/tcp-server" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </span>
+          </article>
+
+          <article>
             <h3>Homebrewdog</h3>
             <br/>
             <span>

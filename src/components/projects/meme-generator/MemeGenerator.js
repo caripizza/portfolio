@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import memePic1 from '../../../../assets/meme-generator/figlet-font1.png';
 import styles from './MemeGenerator.css';
 
@@ -19,6 +20,10 @@ const MemeGenerator = () => {
           <br/>
           <p>More details coming soon...</p>
           <img src={memePic1} alt="Meme-pic1"/>
+
+          <Link to="/projects">Back</Link>
+          <br/>
+
         </section>
       </main>
 

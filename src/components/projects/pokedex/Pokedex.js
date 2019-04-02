@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Pokedex.css';
 
 const Pokedex = () => {
@@ -17,6 +18,10 @@ const Pokedex = () => {
           </span>
           <br/>
           <p>More details coming soon...</p>
+
+          <Link to="/projects">Back</Link>
+          <br/>
+
         </section>
       </main>
 

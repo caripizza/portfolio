@@ -8,6 +8,7 @@ import ReduxBlog from '../components/projects/redux-blog/ReduxBlog';
 import Pokedex from '../components/projects/pokedex/Pokedex';
 import AsyncRM from '../components/projects/async-rm/AsyncRM';
 import Qbot from '../components/projects/q-bot/Qbot';
+import TCPchatRoom from '../components/projects/chatroom/TCPchatRoom';
 
 export const ROUTES = {
   HOME: {
@@ -59,5 +60,10 @@ export const ROUTES = {
     path: '/projects/q-bot',
     Component: Qbot,
     linkTo: () => '/projects/q-bot'
+  },
+  PROJECTS_TCP_CHAT_ROOM: {
+    path: '/projects/tcp-chat-room',
+    Component: TCPchatRoom,
+    linkTo: () => '/projects/tcp-chat-room'
   }
 };
