@@ -57,9 +57,7 @@ class Accordion extends Component {
 
     return (
       <div style={{
-        // borderTop: '2px solid cyan',
-        borderLeft: '2px solid cyan',
-        // marginLeft: '1.5em'
+        borderLeft: '2px solid cyan'
       }}>
         {children.map((child, i) => (
           <AccordionSection

@@ -40,7 +40,7 @@ const Projects = () => {
             <h3>React + Redux Blog</h3>
             <br/>
             <span>
-              Written in React/Redux, this app utilizes the JSON placeholder API to generate users, posts, and comments.
+              Written in React/Redux and styled with Styled-Components, this app utilizes the JSON placeholder API to generate and filter users, posts, and comments.
             </span>
             <br/>
             <span>

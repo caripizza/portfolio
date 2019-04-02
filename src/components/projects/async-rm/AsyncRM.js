@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './AsyncRM.css';
+import rickAndMorty from '../../../../assets/asyncreact/rickAndMorty.png';
 
 const AsyncRM = () => {
   return (
@@ -17,7 +18,8 @@ const AsyncRM = () => {
             </a>
           </span>
           <br/>
-          <p>More details coming soon...</p>
+          <p>Featuring pagination with Next and Back buttons:</p>
+          <img src={rickAndMorty} alt="rick-and-morty-async-react"/>
 
           <Link to="/projects">Back</Link>
           <br/>
