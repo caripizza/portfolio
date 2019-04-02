@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './ReduxBlog.css';
+import userDetail from '../../../../assets/redux-blog/users.png';
+import searchPosts from '../../../../assets/redux-blog/search-posts.png';
+import longestPosts from '../../../../assets/redux-blog/longest-posts.png';
 
 const ReduxBlog = () => {
   return (
@@ -17,7 +20,12 @@ const ReduxBlog = () => {
             </a>
           </span>
           <br/>
-          <p>More details coming soon...</p>
+          <p>Featuring a search component allowing the user to filter through lorem ipsum blog posts:</p>
+          <img src={searchPosts} alt="search-posts"/>
+          <p>The Homepage includes the top 5 longest posts based on length:</p>
+          <img src={longestPosts} alt="longest-posts"/>
+          <p>Clicking on a Post or User takes you to the detail page:</p>
+          <img src={userDetail} alt="user-detail"/>
 
           <Link to="/projects">Back</Link>
           <br/>
