@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Projects.css';
 import hackathonPic from '../../../assets/hackathon.jpg';
-// import qBotPresentation from '../../../assets/Qbot-present.jpg';
-// import scribble from '../../../assets/20_color+doodle-cari-palazzolo.jpg';
-// import Qbot from '../../../assets/Qbot-logo_inverted.jpg';
 
 const Projects = () => {
   return (
@@ -18,9 +15,6 @@ const Projects = () => {
           <div className={styles.imgs}>
             <img src={hackathonPic} alt="hackathon"/>
             <p className={styles.caption}>Speaking at Puppet for the Nike We Code For Good Hackathon, Jan 2019</p>
-            {/* <img src={qBotPresentation} alt="qbot-presentation"/> */}
-            {/* <img src={scribble} alt="scribble"/>
-            <img src={Qbot} alt="Qbot"/> */}
           </div>
         </section>
 
@@ -30,7 +24,7 @@ const Projects = () => {
           <article>
             <h3>Q bot</h3>
             <br/>
-            <span>Slack app for Alchemy Code Lab, made with Slack Events & Conversations APIs, Cloud Firestore, Firebase OAuth (GitHub + Google), ReactJS, React Hooks, Google Cloud Functions, Moment.js, Sass and more.</span>
+            <span>A Slack bot and web app for Alchemy Code Lab, made with {'Slack\'s'} Events & Conversations {'API\'s'}, Google Cloud Firestore, Firebase OAuth (GitHub + Google), ReactJS, React Hooks, Google Cloud Functions, Moment.js, SASS and more.</span>
             <br/>
             <span>
               <Link to="/projects/q-bot">
