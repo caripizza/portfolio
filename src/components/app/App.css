@@ -4,17 +4,13 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: cyan;
-}
-
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
 }
 
 header {
-  background-color: cyan;
+  background-color: white;
   width: 100%;
   margin: 0 0 0 0;
   position: fixed;
@@ -28,22 +24,6 @@ main {
 footer {
   width: 100%;
   padding: .5em;
-  background-color: cyan;
   line-height: 1.5em;
 }
 
-  @media screen and (min-width: 320px) {
-    
-  }
-
-  @media screen and (min-width: 550px) {
-    
-  }
-
-  @media screen and (min-width: 768px) {
-    
-  }
-
-  @media screen and (min-width: 960px) {
-    
-  }

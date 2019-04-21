@@ -1,4 +1,6 @@
 .Header {
+  z-index: 1;
+
   a {
     padding: .5em;
     color: black;
