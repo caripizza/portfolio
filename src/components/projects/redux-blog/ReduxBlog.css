@@ -13,7 +13,7 @@
   }
 
   p:hover {
-    background-color: red;
+    background-color: pink;
   }
 
   @keyframes slide-in-left {

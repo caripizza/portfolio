@@ -5,6 +5,7 @@ import slackApp from '../../../../assets/qbot/QbotSlackapp.png';
 import slackThread from '../../../../assets/qbot/slackthread.png';
 import TAqueue from '../../../../assets/qbot/queue.png';
 import TAleaderboard from '../../../../assets/qbot/leaderboard.png';
+import github from '../../../../assets/github.png';
 
 const Qbot = () => {
   return (
@@ -21,13 +22,18 @@ const Qbot = () => {
             </a>
           </span>
           <br/>
+          <a href="https://github.com/team-q/q-bot-sandbox"
+            target="_blank" rel="noopener noreferrer"
+          >
+            <img src={github} alt="github" className={styles.github}/>
+          </a>
           <p>Featuring a Slack bot that replies in a thread, with confirmation that the question was added to the Firestore collection:</p>
-          <img src={slackApp} alt="slack-app-logo"/>
-          <img src={slackThread} alt="slack-bot-reply"/>
+          <img src={slackApp} alt="slack-app-logo" className={styles.screenshots}/>
+          <img src={slackThread} alt="slack-bot-reply" className={styles.screenshots}/>
           <p>Allowing {'TA\'s'} to login securely so they can filter, sort, claim, and solve questions from the queue:</p>
-          <img src={TAqueue} alt="TA-queue"/>
+          <img src={TAqueue} alt="TA-queue" className={styles.screenshots}/>
           <p>Includes a leaderboard to keep track of which {'TA\'s'} have solved the most questions per cohort, and a form to add new {'TA\'s'}:</p>
-          <img src={TAleaderboard} alt="TA-leaderboard"/>
+          <img src={TAleaderboard} alt="TA-leaderboard" className={styles.screenshots}/>
 
           <Link to="/projects">Back</Link>
           <br/>
