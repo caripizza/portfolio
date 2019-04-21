@@ -24,7 +24,7 @@ const Projects = () => {
           <article>
             <h3>Q bot</h3>
             <br/>
-            <span>A Slack bot and web app for Alchemy Code Lab, made with {'Slack\'s'} Events & Conversations {'API\'s'}, Google Cloud Firestore, Firebase OAuth (GitHub + Google), ReactJS, React Hooks, Google Cloud Functions, Moment.js, SASS and more.</span>
+            <span>Slack bot and web app for Alchemy Code Lab, made with {'Slack\'s'} Events & Conversations {'API\'s'}, Google Cloud Firestore, Firebase OAuth (GitHub + Google), ReactJS, React Hooks, Google Cloud Functions, Moment.js, SASS and more.</span>
             <br/>
             <span>
               <Link to="/projects/q-bot">
@@ -54,23 +54,6 @@ const Projects = () => {
           </article>
 
           <article>
-            <h3>Async Rick & Morty</h3>
-            <br/>
-            <span>
-              SPA made with React + PostCSS, utilizes the Rick & Morty Api to fetch and display paginated lists of characters and locations.
-            </span>
-            <br/>
-            <span>
-              <Link to="/projects/async-rm">
-                View project
-              </Link> - 
-              <a href="https://github.com/caripizza/async-react" target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </span>
-          </article>
-
-          <article>
             <h3>SimAlchemy</h3>
             <br/>
             <span>
@@ -88,27 +71,10 @@ const Projects = () => {
           </article>
 
           <article>
-            <h3>TCP Chat Room</h3>
-            <br/>
-            <span>
-              Back-end chat server that allows multiple clients to connect via the command line and chat with each other using short commands (@all, @dm, @nick); includes unit tests.
-            </span>
-            <br/>
-            <span>
-              <Link to="/projects/tcp-chat-room">
-                View project
-              </Link> - 
-              <a href="https://github.com/caripizza/tcp-server" target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </span>
-          </article>
-
-          <article>
             <h3>Homebrewdog</h3>
             <br/>
             <span>
-              RESTful app utilizing the Brewdog Brewery API with Vue for the front-end, PostgreSQL + Express on the back-end, and deployed to Heroku.
+              RESTful web app utilizing the Brewdog Brewery API with VueJS for the front-end, PostgreSQL + Express on the back-end, and deployed to Heroku.
             </span>
             <br/>
             <span>
@@ -122,10 +88,44 @@ const Projects = () => {
           </article>
 
           <article>
+            <h3>TCP Chat Room</h3>
+            <br/>
+            <span>
+              Back-end chat server allowing multiple clients to connect via the command line and chat with each other using short commands (@all, @dm, @nick); includes unit tests.
+            </span>
+            <br/>
+            <span>
+              <Link to="/projects/tcp-chat-room">
+                View project
+              </Link> - 
+              <a href="https://github.com/caripizza/tcp-server" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </span>
+          </article>
+
+          <article>
+            <h3>Async Rick & Morty</h3>
+            <br/>
+            <span>
+              SPA made with React + PostCSS, utilizes the Rick & Morty Api to fetch and display paginated lists of characters and locations.
+            </span>
+            <br/>
+            <span>
+              <Link to="/projects/async-rm">
+                View project
+              </Link> - 
+              <a href="https://github.com/caripizza/async-react" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </span>
+          </article>
+
+          <article>
             <h3>Font & Meme Generator</h3>
             <br/>
             <span>
-              Single Page WYSIWYG editor allowing users to download their fonts and meme creations as image files. (React, Node.js, Figlet, Webpack, PostCSS, HTML)
+              SPA WYSIWYG editor allowing users to download their fonts and meme creations as image files. (React, Node.js, Figlet, Webpack, PostCSS, HTML)
             </span>
             <br/>
             <span>
@@ -141,7 +141,7 @@ const Projects = () => {
           <article>
             <h3>Pokedex</h3>
             <br/>
-            <span>A single page Pokémon search & filter app made with VueJS, HTML, and CSS.</span>
+            <span>Single Page Pokémon search & filter app made with VueJS, HTML, and CSS.</span>
             <br/>
             <span>
               <Link to="/projects/pokedex">

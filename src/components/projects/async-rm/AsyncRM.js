@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './AsyncRM.css';
 import rickAndMorty from '../../../../assets/asyncreact/rickAndMorty.png';
+import github from '../../../../assets/github.png';
 
 const AsyncRM = () => {
   return (
@@ -18,8 +19,13 @@ const AsyncRM = () => {
             </a>
           </span>
           <br/>
-          <p>Featuring pagination with Next and Back buttons:</p>
-          <img src={rickAndMorty} alt="rick-and-morty-async-react"/>
+          <a href="https://github.com/caripizza/async-react"
+            target="_blank" rel="noopener noreferrer"
+          >
+            <img src={github} alt="github" className={styles.github}/>
+          </a>
+          <p>Single Page App utilizing CSS grid, featuring pagination with Next and Back buttons:</p>
+          <img src={rickAndMorty} alt="rick-and-morty-async-react" className={styles.screenshots}/>
 
           <Link to="/projects">Back</Link>
           <br/>

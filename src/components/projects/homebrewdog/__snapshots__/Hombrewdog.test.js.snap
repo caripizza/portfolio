@@ -18,11 +18,23 @@ exports[`Homebrewdog matches a snapshot 1`] = `
       </a>
     </span>
     <br />
+    <a
+      href="https://github.com/team-thermometer"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="github"
+        className="github"
+        src=""
+      />
+    </a>
     <p>
       Featuring a pop-up search modal, allowing you to search for beers by key word:
     </p>
     <img
       alt="Homebrewdog-pic1"
+      className="screenshots"
       src=""
     />
     <p>
@@ -30,6 +42,7 @@ exports[`Homebrewdog matches a snapshot 1`] = `
     </p>
     <img
       alt="Homebrewdog-pic2"
+      className="screenshots"
       src=""
     />
     <p>
@@ -37,6 +50,7 @@ exports[`Homebrewdog matches a snapshot 1`] = `
     </p>
     <img
       alt="Homebrewdog-pic3"
+      className="screenshots"
       src=""
     />
     <p>
@@ -44,6 +58,7 @@ exports[`Homebrewdog matches a snapshot 1`] = `
     </p>
     <img
       alt="Homebrewdog-pic4"
+      className="screenshots"
       src=""
     />
     <a

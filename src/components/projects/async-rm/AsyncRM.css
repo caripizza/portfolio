@@ -1,8 +1,7 @@
 .AsyncRM {
-  img {
-    width: 75%;
+  img.screenshots {
     margin-bottom: 3em;
-    border: 2px solid cyan;
+    filter: drop-shadow(.2em .2em .45em rgb(71, 71, 71));
   }
 
   p {
@@ -14,7 +13,7 @@
   }
 
   p:hover {
-    background-color: red;
+    background-color: pink;
   }
 
   @keyframes slide-in-left {
@@ -37,7 +36,34 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: repeating-linear-gradient(orange, pink);
+  }
+
+  .github {
+    width: 2em;
+    &:hover {
+      animation: shake 0.65s ease-in-out;
+    }
+  }
+
+    @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-.25em);
+    }
+    40% {
+      transform: translateX(.22em);
+    }
+    60% {
+      transform: translateX(-.25em);
+    }
+    80% {
+      transform: translateX(.22em);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 
   @media screen and (min-width: 200px) {
