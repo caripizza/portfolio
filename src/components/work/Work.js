@@ -57,6 +57,9 @@ const Work = () => {
                 </ul>
               </div>
             </Accordion>
+            <br/>
+            <br/>
+            <a href="http://caripalazzolo.com/s/portfolio.pdf" target="_blank" rel="noopener noreferrer">Digital Design & Visual Art Samples</a>
 
           </article>
 

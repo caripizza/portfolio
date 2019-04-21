@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Projects.css';
 import hackathonPic from '../../../assets/hackathon.jpg';
+import wtfixathonPic from '../../../assets/wtfixathon.jpg';
 
 const Projects = () => {
   return (
@@ -11,11 +12,22 @@ const Projects = () => {
         <section className={styles.left}>
           <h1>Projects</h1>
           <p className={styles.description}>I love the full stack but thrive in front-end web development. I’m driven to create responsive, accessible websites, and improve user experiences through my thoughtful, detailed approach.</p>
-          <a href="http://caripalazzolo.com/s/portfolio.pdf" target="_blank" rel="noopener noreferrer">Digital Design & Visual Art Samples</a>
+
           <div className={styles.imgs}>
             <img src={hackathonPic} alt="hackathon"/>
             <p className={styles.caption}>Speaking at Puppet for the Nike We Code For Good Hackathon, Jan 2019</p>
+            <img src={wtfixathonPic} alt="wtfixathon"/>
+            <p className={styles.caption}>
+              Coding at PSU for the TechFestNW + HealthSparq #WTFix-a-thon, {' '}
+              <a className={styles.twitter}
+                href="https://twitter.com/HealthSparq/status/1113864386865651712?ref_src=twsrc%5Etfw"
+                target="_blank" rel="noopener noreferrer"
+              >
+                April 2019
+              </a>
+            </p>
           </div>
+
         </section>
 
 

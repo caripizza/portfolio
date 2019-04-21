@@ -15,8 +15,7 @@
 
   img {
     width: 23em;
-    /*animation-duration: 1.5s;
-    animation-name: slidein;*/
+    filter: drop-shadow(.16em .11em .14em rgb(104, 103, 103));
     justify-self: center;
     padding-top: 2em;
     }
@@ -56,9 +55,16 @@
       margin: 1em 2em;
     }
 
+    .twitter {
+      margin: 0 !important;
+    }
+  
+
     p.caption {
       font-size: .85rem;
       text-align: center;
+      margin-right: 1em;
+      margin-left: 1em;
     }
   }
 
@@ -98,6 +104,10 @@
     section {
       margin: 0;
     }
+    section.left {
+        border-bottom: 2px solid lightgray;
+
+      }
 
     article {
       padding: .5em 1.7em 1em 1.7em;
