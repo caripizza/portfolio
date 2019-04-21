@@ -25,6 +25,7 @@ const Projects = () => {
               >
                 April 2019
               </a>
+              <p className={styles.test}>Hover me</p>
             </p>
           </div>
 
