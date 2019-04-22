@@ -4,13 +4,17 @@ exports[`Home matches a snapshot 1`] = `
 <main
   className="Home"
 >
-  <section>
+  <section
+    className="welcomeSect"
+  >
     <img
       alt="logo"
       className="slide"
       src=""
     />
-    <p>
+    <p
+      className="welcome"
+    >
       
   Welcome! I'm Cari, a Full Stack JavaScript developer, musician, and graphic designer.
 
@@ -18,8 +22,7 @@ exports[`Home matches a snapshot 1`] = `
     <p>
       
   After a decade performing and teaching music, I started dabbling in freelance website design and digital marketing for small businesses.
-  I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company.
-  While testing weekly releases and pairing with UI/UX to propose new system features, I fell in love with the software development cycle and decided to take the plunge into coding.
+  I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company where I fell in love with the software development cycle and decided to take the plunge into coding.
 
     </p>
     <p>
