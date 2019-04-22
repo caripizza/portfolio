@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Work.css';
 import Accordion from '../Accordion';
-// import hackathonPic from '../../../assets/hackathon.jpg';
 
 const Work = () => {
   return (
@@ -60,11 +59,10 @@ const Work = () => {
             <br/>
             <br/>
             <a href="http://caripalazzolo.com/s/portfolio.pdf" target="_blank" rel="noopener noreferrer">Digital Design & Visual Art Samples</a>
-
+            <br/>
+            <br/>
+            <a href="https://soundcloud.com/cari-pizza" target="_blank" rel="noopener noreferrer">Music Samples</a>
           </article>
-
-          {/* <img src={hackathonPic} alt="hackathon"/> */}
-
         </section>
       </main>
     </>

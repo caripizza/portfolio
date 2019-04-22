@@ -1,5 +1,4 @@
 .Work {
-  /*background: white;*/
 
   div {
     display: grid;
@@ -7,10 +6,6 @@
 
   span {
     margin: 0 0 0 .8em;
-  }
-
-  article div div:hover {
-    /*background: cyan;*/
   }
 
   article div div div {

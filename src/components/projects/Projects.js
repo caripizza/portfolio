@@ -16,6 +16,7 @@ const Projects = () => {
           <div className={styles.imgs}>
             <img src={hackathonPic} alt="hackathon"/>
             <p className={styles.caption}>Speaking at Puppet for the Nike We Code For Good Hackathon, Jan 2019</p>
+            <br/>
             <img src={wtfixathonPic} alt="wtfixathon"/>
             <p className={styles.caption}>
               Coding at PSU for the TechFestNW + HealthSparq #WTFix-a-thon, {' '}
@@ -25,8 +26,8 @@ const Projects = () => {
               >
                 April 2019
               </a>
-              <p className={styles.test}>Hover me</p>
             </p>
+            <br/>
           </div>
 
         </section>

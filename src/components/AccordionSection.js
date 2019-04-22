@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styles from './AccordionSection.css';
 
 class AccordionSection extends Component {
   static propTypes = {
@@ -24,7 +25,9 @@ class AccordionSection extends Component {
         padding: '.3em',
       }}
       >
-        <div onClick={onClick} style={{ cursor: 'pointer' }}>
+        <div onClick={onClick} style={{ cursor: 'pointer' }}
+          className={styles.lineGrow}
+        >
           {label}
           <span style={{ float: 'right' }}>
             {!isOpen && <span>&#9650;</span>}
@@ -32,15 +35,7 @@ class AccordionSection extends Component {
           </span>
         </div>
         {isOpen && (
-          <div
-            style={{
-              background: 'white',
-              // border: '2px solid #008f68',
-              // marginTop: 10,
-              // width: '100%',
-              // padding: '1em 0 3em 0',
-            }}
-          >
+          <div>
             {this.props.children}
           </div>
         )}

@@ -1,11 +1,30 @@
 .Home {
+  .welcomeSect {
+    margin-bottom: 1em;
+  }
+
   p {
     padding: .5em 1.7em .2em 1.7em;
+    margin: .3em 0;
+  }
+  
+  p.welcome, h2 strong {
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: cyan;
+      transition: width 1.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   section {
     padding-top: 1em;
-    background-color: white;
+    /*background-color: white;*/
     display: inline-block;
     line-height: 1.5em;
   }
@@ -18,9 +37,20 @@
   }
 
   img {
-    width: 15vw;
+    width: 11vw;
     float: left;
-    margin: 1em;
+    margin: 1em 1em 0 1em;
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: cyan;
+      transition: width 1.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   ul {
@@ -30,11 +60,11 @@
 
   li span {
     color: black;
-    transition: background-color 1s ease;
+    /*transition: background-color .7s ease;
   }
 
   span:hover {
-    background-color: cyan;
+    background-color: cyan;*/
   }
 
   .education ul {
@@ -61,35 +91,39 @@
 
   .half {
     display: flex;
+    padding-top: 0;
   }
 
   .skills {
-    background: red;
+    /*background: red;*/
     width: 100vw;
     padding: 1em;
+    border-top: 2px solid red;
   }
 
   .education {
-    background: gold;
+    /*background: gold;*/
     width: 100vw;
     padding: 1em;
+    border-top: 2px solid gold;
   }
 
   .languages {
-    background: purple;
+    /*background: purple;*/
     width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    color: cyan;
+    /*color: cyan;*/
     min-height: 6vh;
+    border: 2px solid cyan;
   }
 
   .languages p {
     padding: 0;
     margin: 0 0 1em 0;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .slide {
@@ -111,7 +145,7 @@
 
   @media only screen and (max-width: 600px) and (min-width: 200px) {
     img {
-      width: 5em;
+      width: 9em;
     }
 
     .half {
@@ -121,7 +155,7 @@
 
   @media screen and (min-width: 960px) {
     img {
-      width: 15vw;
+      max-width: 11em;
     }
   }
 }

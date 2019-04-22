@@ -7,8 +7,7 @@ const welcomeMsg1 = `
 `;
 const welcomeMsg2 = `
   After a decade performing and teaching music, I started dabbling in freelance website design and digital marketing for small businesses.
-  I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company.
-  While testing weekly releases and pairing with UI/UX to propose new system features, I fell in love with the software development cycle and decided to take the plunge into coding.
+  I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company where I fell in love with the software development cycle and decided to take the plunge into coding.
 `;
 
 const welcomeMsg3 = `
@@ -22,13 +21,12 @@ const Home = () => {
 
       <main className={styles.Home}>
 
-        <section>
+        <section className={styles.welcomeSect}>
           <img src={logo} alt="logo" className={styles.slide}/>
-          <p>{welcomeMsg1}</p>
+          <p className={styles.welcome}>{welcomeMsg1}</p>
           <p>{welcomeMsg2}</p>
           <p>{welcomeMsg3}</p>
         </section>
-
 
         <section className={styles.half}>
           <article className={styles.skills}>
