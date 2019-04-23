@@ -17,7 +17,7 @@
     filter: drop-shadow(.16em .11em .1em rgb(104, 103, 103));
     justify-self: center;
     padding-top: 2em;
-    }
+  }
 
     @keyframes slidein {
       from {
@@ -128,9 +128,6 @@
     article {
       padding: .5em 1.7em 1em 1.7em;
       width: 100vw;
-      &::after {
-        background-image: none;
-      }
     }
   }
 
