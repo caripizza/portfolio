@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+import React, {
+  // Component,
+  PureComponent
+} from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
@@ -6,11 +9,39 @@ import { ROUTES } from '../../routes/routes';
 import './App.css';
 import 'normalize.css';
 import ScrollToTop from '../../containers/ScrollToTop';
+// import preloader from '../../../assets/preloader.gif';
 
-export default class App extends Component {
+const loadDelay = () => {
+  return new Promise((resolve) => setTimeout(() => resolve(), 200));
+};
+
+export default class App extends PureComponent {
+// export default class App extends Component {
+  state = {
+    loading: true
+  };
+
+  componentDidMount() {
+    loadDelay()
+      .then(() => {
+        this.setState({ loading: false });
+      });
+  }
+
   render() {
-    return (
-      <Router>
+    const { loading } = this.state;
+
+    if(loading) {
+      return null;
+      // return (
+      //   <div>
+      //     <img src={preloader}/>
+      //   </div>
+      // );
+    }
+    else {
+      return (
+        <Router>
         < >
           <Header/>
           <ScrollToTop>
@@ -53,7 +84,8 @@ export default class App extends Component {
           </ScrollToTop>
           <Footer/>
         </>
-      </Router>
-    );
+        </Router>
+      );
+    }
   }
 }
