@@ -3,12 +3,12 @@
     margin-bottom: 1em;
   }
 
-  p {
+  .welcomeParagraphs {
     padding: .5em 1.7em .2em 1.7em;
     margin: .3em 0;
   }
-  
-  p.welcome, h2 strong {
+
+  .highlight {
     &::after {
       content: '';
       display: block;
@@ -24,7 +24,6 @@
 
   section {
     padding-top: 1em;
-    /*background-color: white;*/
     display: inline-block;
     line-height: 1.5em;
   }
@@ -37,20 +36,9 @@
   }
 
   img {
-    width: 11vw;
+    width: 15vw;
     float: left;
-    margin: 1em 1em 0 1em;
-    &::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: cyan;
-      transition: width 1.3s;
-    }
-    &:hover::after {
-      width: 100%;
-    }
+    margin: 0.5em 1em 0 1em;
   }
 
   ul {
@@ -60,11 +48,6 @@
 
   li span {
     color: black;
-    /*transition: background-color .7s ease;
-  }
-
-  span:hover {
-    background-color: cyan;*/
   }
 
   .education ul {
@@ -95,26 +78,22 @@
   }
 
   .skills {
-    /*background: red;*/
     width: 100vw;
     padding: 1em;
     border-top: 2px solid red;
   }
 
   .education {
-    /*background: gold;*/
     width: 100vw;
     padding: 1em;
     border-top: 2px solid gold;
   }
 
   .languages {
-    /*background: purple;*/
     width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*color: cyan;*/
     min-height: 6vh;
     border: 2px solid cyan;
   }
@@ -130,24 +109,85 @@
     width: 15vw;
     animation-duration: 2s;
     animation-name: slidein;
-    }
+  }
 
-    @keyframes slidein {
+  @keyframes slidein {
+    from {
+      margin-left: 3%;
+      width: 10%; 
+    }
+    to {
+      margin-left: 1em;
+      width: 15vw;
+    }
+  }
+
+  .imgDiv {
+    margin-left: 1em;
+    min-width: 15vw;
+  }
+
+  .pWelcome1 {
+    padding: 0 1.7em;
+    margin-top: 0;
+  }
+
+  .fadeIn {
+    /*width: 15vw;*/
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+  }
+  @keyframes fadein {
       from {
-        margin-left: 3%;
-        width: 10%; 
+          opacity:0;
+          /*margin-left: 3%;
+          width: 10%;*/
       }
       to {
-        margin-left: 1em;
-        width: 15vw;
+          opacity:1;
+          /*width: 15vw;*/
       }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+    from {
+      opacity:0;
+      /*margin-left: 3%;
+      width: 10%;*/
     }
+    to {
+        opacity:1;
+        /*margin-left: 1em;
+        width: 15vw;*/
+    }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+      opacity:0;
+      /*margin-left: 3%;
+      width: 10%;*/
+    }
+    to {
+        opacity:1;
+        /*margin-left: 1em;
+        width: 15vw;*/
+    }
+  }
+  @-o-keyframes fadein { /* Opera */
+    from {
+      opacity:0;
+      /*margin-left: 3%;
+      width: 10%;*/
+    }
+    to {
+        opacity:1;
+        /*margin-left: 1em;
+        width: 15vw;*/
+    }
+  }
 
   @media only screen and (max-width: 600px) and (min-width: 200px) {
-    img {
-      width: 9em;
-    }
-
     .half {
       display: block;
     }
@@ -155,7 +195,7 @@
 
   @media screen and (min-width: 960px) {
     img {
-      max-width: 11em;
+      max-width: 9em;
     }
   }
 }

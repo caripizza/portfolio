@@ -7,29 +7,29 @@ exports[`Home matches a snapshot 1`] = `
   <section
     className="welcomeSect"
   >
-    <img
-      alt="logo"
-      className="slide"
-      src=""
-    />
-    <p
-      className="welcome"
+    <div
+      className="imgDiv slide"
     >
-      
-  Welcome! I'm Cari, a Full Stack JavaScript developer, musician, and graphic designer.
-
+      <img
+        alt="logo"
+        className="fadeIn"
+        src=""
+      />
+    </div>
+    <p
+      className="highlight pWelcome1"
+    >
+      Welcome! I'm Cari, a Full Stack JavaScript developer, musician, and graphic designer.
     </p>
-    <p>
-      
-  After a decade performing and teaching music, I started dabbling in freelance website design and digital marketing for small businesses.
-  I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company where I fell in love with the software development cycle and decided to take the plunge into coding.
-
+    <p
+      className="welcomeParagraphs"
+    >
+      After a decade performing and teaching music, I started dabbling in freelance website design and digital marketing for small businesses. I made my way up to the Pacific Northwest and joined the tech scene as a support agent, later working as a QA tester for a small software company where I fell in love with the software development cycle and decided to take the plunge into coding.
     </p>
-    <p>
-      
-  In early 2019, I completed a 6 month intensive training program in full stack JavaScript, focusing in front-end website design as well as DevOps, managing the release flow.
-  I made this site with React, styled it with PostCSS, setup continuous integration with Travic CI, and deployed it to Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
-
+    <p
+      className="welcomeParagraphs"
+    >
+      In early 2019, I completed a 6 month intensive training program in full stack JavaScript, focusing in front-end website design as well as DevOps, managing the release flow. I made this site with React, styled it with PostCSS, setup continuous integration with Travic CI, and deployed it to Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
     </p>
   </section>
   <section
@@ -38,7 +38,9 @@ exports[`Home matches a snapshot 1`] = `
     <article
       className="skills"
     >
-      <h2>
+      <h2
+        className="highlight"
+      >
         <strong>
           Skills
         </strong>
@@ -129,7 +131,9 @@ exports[`Home matches a snapshot 1`] = `
     <article
       className="education"
     >
-      <h2>
+      <h2
+        className="highlight"
+      >
         <strong>
           Academic Background
         </strong>
@@ -193,9 +197,6 @@ exports[`Home matches a snapshot 1`] = `
     </p>
     <p>
       SQL
-    </p>
-    <p>
-      Python
     </p>
   </section>
 </main>
