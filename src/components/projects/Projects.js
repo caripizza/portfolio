@@ -14,10 +14,10 @@ const Projects = () => {
           <p className={styles.description}>I love the full stack but thrive in front-end web development. I’m driven to create responsive, accessible websites, and improve user experiences through my thoughtful, detailed approach.</p>
 
           <div className={styles.imgs}>
-            <img src={hackathonPic} alt="hackathon"/>
+            <img src={hackathonPic} alt="hackathon" className={styles.fadeIn}/>
             <p className={styles.caption}>Speaking at Puppet for the Nike We Code For Good Hackathon, Jan 2019</p>
             <br/>
-            <img src={wtfixathonPic} alt="wtfixathon"/>
+            <img src={wtfixathonPic} alt="wtfixathon" className={styles.fadeIn}/>
             <p className={styles.caption}>
               Coding at PSU for the TechFestNW + HealthSparq #WTFix-a-thon, {' '}
               <a className={styles.twitter}
