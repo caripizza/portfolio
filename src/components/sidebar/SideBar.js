@@ -5,10 +5,10 @@ import { slide as Menu } from 'react-burger-menu';
 const styles = {
   bmBurgerButton: {
     position: 'fixed',
-    width: '36px',
-    height: '30px',
+    width: '26px',
+    height: '20px',
     right: '36px',
-    top: '1.25em'
+    top: '1.55em'
   },
   bmBurgerBars: {
     background: '#373a47'
@@ -81,11 +81,11 @@ export default class SideBar extends React.Component {
           </Link>
           <br/>
           <br/>
-          <Link className="menu-item" to="/work" 
-            onClick={() => this.closeMenu()}
+          <a href="https://cari.pizza"
+            target="_blank" rel="noopener noreferrer"
           >
-            Work
-          </Link>
+            Art/Music
+          </a>
         </Menu>
       </>
     );

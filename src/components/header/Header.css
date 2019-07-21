@@ -2,25 +2,26 @@
   z-index: 1;
 
   a {
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    &:hover {
+      background: red;
+    }
     padding: .5em;
     color: black;
     background: white;
     -webkit-transition-property: background;
-       -moz-transition-property: background;
-         -o-transition-property: background;
-            transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
     -webkit-transition-duration: 1s;
-       -moz-transition-duration: 1s;
-         -o-transition-duration: 1s;
-            transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
     -webkit-transition-timing-function: linear;
-       -moz-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
-  }
-
-  a:hover {
-    background: #ff7b29;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
   }
 
   ul {

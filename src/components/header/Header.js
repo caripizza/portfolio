@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Header.css';
 import SideBar from '../sidebar/SideBar';
 
@@ -29,13 +29,27 @@ export default class Header extends React.Component {
         <header className={styles.Header}>
           <nav>
             {isMobile ? <SideBar pageWrapId={'page-wrap'} /> : null}
-            <h1><a href="https://cari.pizza" target="_blank" rel="noopener noreferrer">CARI PALAZZOLO</a></h1>
+            <h1>
+              <NavLink to="/">
+                CARI PALAZZOLO
+              </NavLink>
+            </h1>
 
             {isMobile ? null
               : <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/work">Work</Link></li>
+                <li>
+                  <NavLink 
+                    to="/projects"
+                  >
+                      Projects
+                  </NavLink></li>
+                <li>
+                  <a href="https://cari.pizza"
+                    target="_blank" rel="noopener noreferrer"
+                  >
+                    Art/Music
+                  </a>
+                </li>
               </ul>
             }
 

@@ -24,9 +24,9 @@ export default class App extends PureComponent {
             <Route exact path={ROUTES.HOME.path}
               component={ROUTES.HOME.Component}
             />
-            <Route exact path={ROUTES.WORK.path}
+            {/* <Route exact path={ROUTES.WORK.path}
               component={ROUTES.WORK.Component}
-            />
+            /> */}
             <Route exact path={ROUTES.PROJECTS.path}
               component={ROUTES.PROJECTS.Component}
             />
