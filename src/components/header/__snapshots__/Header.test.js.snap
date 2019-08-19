@@ -19,6 +19,17 @@ exports[`Header matches a snapshot 1`] = `
     <ul>
       <li>
         <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
           aria-current={null}
           href="/projects"
           onClick={[Function]}

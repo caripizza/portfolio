@@ -6,13 +6,6 @@ exports[`Footer matches a snapshot 1`] = `
 >
   <ul>
     <li>
-      <a
-        href="#top"
-      >
-        top
-      </a>
-    </li>
-    <li>
       <p>
         © 2019 Cari Palazzolo
       </p>
