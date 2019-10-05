@@ -8,7 +8,7 @@ const styles = {
     width: '26px',
     height: '20px',
     right: '36px',
-    top: '1.55em'
+    top: '1.95em'
   },
   bmBurgerBars: {
     background: '#373a47'
@@ -37,7 +37,8 @@ const styles = {
   },
   bmItemList: {
     color: '#b8b7ad',
-    padding: '0.8em'
+    padding: '0.8em',
+    textAlign: 'center'
   },
   bmItem: {
     display: 'inline-flex'
@@ -63,26 +64,30 @@ export default class SideBar extends React.Component {
   render() {
     return (
       <>
-        <Menu styles={styles} width={ '50%' }
+        <Menu
+          styles={styles}
+          width={'50%'}
           isOpen={this.state.menuOpen}
-          onStateChange={(state) => this.handleStateChange(state)}
+          onStateChange={state => this.handleStateChange(state)}
         >
-          <Link className="menu-item" to="/" 
-            onClick={() => this.closeMenu()}
-          >
+          <Link className="menu-item" to="/" onClick={() => this.closeMenu()}>
             Home
           </Link>
-          <br/>
-          <br/>
-          <Link className="menu-item" to="/projects" 
+          <br />
+          <br />
+          <Link
+            className="menu-item"
+            to="/projects"
             onClick={() => this.closeMenu()}
           >
             Projects
           </Link>
-          <br/>
-          <br/>
-          <a href="https://cari.pizza"
-            target="_blank" rel="noopener noreferrer"
+          <br />
+          <br />
+          <a
+            href="https://cari.pizza"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Art/Music
           </a>
