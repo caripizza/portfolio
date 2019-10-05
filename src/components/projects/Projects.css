@@ -1,9 +1,12 @@
 .Projects {
   display: flex;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
 
   p.description {
-    padding: 1.7em 1.7em .2em 1.7em;
-    animation-duration: 1.5s;
+    padding: 1.7em 1.7em 0.2em 1.7em;
+    animation-duration: 1s;
     width: 100%;
   }
 
@@ -14,7 +17,7 @@
 
   img {
     width: 23em;
-    filter: drop-shadow(.16em .11em .1em rgb(104, 103, 103));
+    filter: drop-shadow(0.16em 0.11em 0.1em rgb(104, 103, 103));
     justify-self: center;
     padding-top: 2em;
   }
@@ -44,42 +47,41 @@
     }
   }
 
-  .fadeIn {
-    animation: fadein .5s;
-    -moz-animation: fadein .5s;
-    -webkit-animation: fadein .5s;
+  @keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 100%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
-    @keyframes slidein {
-      from {
-        margin-left: 50%;
-        width: 100%; 
-      }
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
+  @keyframes slideinRight {
+    from {
+      margin-left: -50%;
+      width: 100%;
     }
-
-    @keyframes slideinRight {
-      from {
-        margin-left: -50%;
-        width: 100%;
-      }
-      to {
-        margin-right: 0%;
-        width: 100%;
-      }
+    to {
+      margin-right: 0%;
+      width: 100%;
     }
+  }
 
   section {
     background-color: white;
-    margin: 0 .5em 0 .5em;
+    margin: 0 0.5em 0 0.5em;
     line-height: 1.5em;
     width: 49%;
     min-height: 75vh;
     display: flex;
     flex-direction: column;
+
+    ul {
+      list-style: none;
+      padding: 1rem 0;
+    }
 
     a {
       margin: 1em 2em;
@@ -88,13 +90,12 @@
     .twitter {
       margin: 0 !important;
     }
-  
 
     p.caption {
-      font-size: .85rem;
+      font-size: 0.85rem;
       text-align: center;
-      margin-right: 1em;
-      margin-left: 1em;
+      margin-right: 2em;
+      margin-left: 2em;
     }
   }
 
@@ -107,31 +108,42 @@
     float: left;
   }
 
-  h1, h2 {
-    padding: .5em 2em 0 .7em;
-    font-style: italic;
-    font-weight: 300;
-    margin: .4em 0 .1em 0;
+  h1 {
+    font-size: 2em;
   }
 
-  h3 { 
+  h1,
+  h2 {
+    padding: 0.5em 2em 0 0.75em;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0.4em 0 0.1em 0;
+  }
+
+  h3 {
     display: inline;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 700;
   }
 
   article {
-    padding: .8em .8em 0 .8em;
+    padding: 0.8em 0.8em 0 0.8em;
 
     @media (hover) {
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 0;
         margin-top: 1em;
         height: 2px;
-        background-image: repeating-linear-gradient(to left, transparent, cyan, red, gold);
-        transition: width .4s;
+        background-image: repeating-linear-gradient(
+          to left,
+          transparent,
+          cyan,
+          red,
+          gold
+        );
+        transition: width 0.4s;
       }
       &:hover::after {
         width: 100%;
@@ -146,7 +158,8 @@
   @media only screen and (max-width: 600px) and (min-width: 200px) {
     display: block;
 
-    .left, .right {
+    .left,
+    .right {
       width: 100vw;
     }
 
@@ -154,12 +167,11 @@
       margin: 0;
     }
     section.left {
-        border-bottom: 2px solid lightgray;
-
-      }
+      border-bottom: 2px solid lightgray;
+    }
 
     article {
-      padding: .5em 1.7em 1em 1.7em;
+      padding: 0.5em 1.7em 1em 1.7em;
       width: 100vw;
     }
   }
@@ -170,5 +182,4 @@
       margin: 0 auto;
     }
   }
-
 }
