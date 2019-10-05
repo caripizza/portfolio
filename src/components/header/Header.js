@@ -8,7 +8,7 @@ export default class Header extends React.Component {
     width: window.innerWidth
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
