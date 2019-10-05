@@ -3,14 +3,22 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import App from './components/app/App';
-import { Circle } from 'better-react-spinkit';
+import { 
+  // Circle
+  // ChasingDots
+  // FadingCircle
+  Wave
+} from 'better-react-spinkit';
 import './index.css';
 
 render(
   <Provider store={store}>
     <Suspense
       fallback={
-        <Circle
+        // <Circle
+        // <ChasingDots
+        // <FadingCircle
+        <Wave
           size={100}
           style={{
             width: '100%',

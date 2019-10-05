@@ -137,10 +137,15 @@
   .imgDiv {
     margin-left: 1em;
     min-width: 15vw;
+
+    .logo {
+      /*min-height: 5vh;*/
+      /*min-width: 5vw;*/
+    }
   }
 
   .pWelcome1 {
-    padding: 0 1.7em;
+    /*padding: 0 1.7em;*/
     margin-top: 0;
   }
 
