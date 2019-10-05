@@ -12,7 +12,7 @@ exports[`Home matches a snapshot 1`] = `
     >
       <img
         alt="logo"
-        className="fadeIn slide"
+        className="logo fadeIn slide"
         src=""
       />
     </div>
@@ -29,7 +29,7 @@ exports[`Home matches a snapshot 1`] = `
     <p
       className="highlight welcomeParagraphs fadeIn"
     >
-      In early 2019, I completed a 6 month intensive training program in full stack JavaScript. I made this site with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies. I'm currently exploring AWS, Ruby, Rails, Angular, Python, and GraphQL.
+      In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. I made this site with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies. I'm currently exploring AWS, Ruby, Rails, GraphQL and Angular.
     </p>
   </section>
   <section
@@ -170,13 +170,13 @@ exports[`Home matches a snapshot 1`] = `
       JavaScript
     </p>
     <p>
-      HTML/HTML5
-    </p>
-    <p>
-      CSS/CSS3
+      HTML/CSS
     </p>
     <p>
       SQL
+    </p>
+    <p>
+      Ruby
     </p>
   </section>
 </main>
