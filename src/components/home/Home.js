@@ -156,7 +156,7 @@ export default function Home() {
         <p>JavaScript</p>
         <p>HTML/CSS</p>
         <p>SQL</p>
-        <p>Ruby</p>
+        <p>Ruby/Rails</p>
       </section>
     </main>
   );
