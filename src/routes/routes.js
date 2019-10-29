@@ -8,12 +8,18 @@ import Pokedex from '../components/projects/pokedex/Pokedex';
 import AsyncRM from '../components/projects/async-rm/AsyncRM';
 import Qbot from '../components/projects/q-bot/Qbot';
 import TCPchatRoom from '../components/projects/chatroom/TCPchatRoom';
+import BarChart from '../components/visuals/BarChart';
 
 export const ROUTES = {
   HOME: {
     path: '/',
     Component: Home,
     linkTo: () => '/'
+  },
+  VISUALS: {
+    path: '/visuals',
+    Component: BarChart,
+    linkTo: () => '/visuals'
   },
   PROJECTS: {
     path: '/projects',

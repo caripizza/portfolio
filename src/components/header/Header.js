@@ -42,6 +42,9 @@ export default class Header extends React.Component {
                   <NavLink to="/projects">Projects</NavLink>
                 </li>
                 <li>
+                  <NavLink to="/visuals">Visuals</NavLink>
+                </li>
+                <li>
                   <a
                     href="https://cari.pizza"
                     target="_blank"

@@ -24,6 +24,11 @@ export default function App() {
             />
             <Route
               exact
+              path={ROUTES.VISUALS.path}
+              component={ROUTES.VISUALS.Component}
+            />
+            <Route
+              exact
               path={ROUTES.PROJECTS.path}
               component={ROUTES.PROJECTS.Component}
             />
