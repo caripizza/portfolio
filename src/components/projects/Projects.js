@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Projects.css';
 import hackathonPic from '../../../assets/hackathon.jpg';
 import wtfixathonPic from '../../../assets/wtfixathon.jpg';
+import ImageWrapper from '../ImageWrapper';
 
 const Projects = () => {
   return (
@@ -15,16 +16,20 @@ const Projects = () => {
           </p>
 
           <div className={styles.imgs}>
-            <img src={hackathonPic} alt="hackathon" className={styles.fadeIn} />
+            <ImageWrapper 
+              alt="hackathon-pic"
+              className={styles.fadeIn} width="auto" height="auto"
+              src={hackathonPic}
+            />
             <p className={styles.caption}>
               Speaking at Puppet for the Nike We Code For Good Hackathon, Jan
               2019
             </p>
             <br />
-            <img
+            <ImageWrapper 
+              alt="wtfixathon-pic"
+              className={styles.fadeIn} width="auto" height="auto"
               src={wtfixathonPic}
-              alt="wtfixathon"
-              className={styles.fadeIn}
             />
             <p className={styles.caption}>
               Coding at PSU for the TechFestNW + HealthSparq #WTFix-a-thon,{' '}

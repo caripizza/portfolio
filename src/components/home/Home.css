@@ -137,11 +137,8 @@
   .imgDiv {
     margin-left: 1em;
     min-width: 15vw;
-
-    .logo {
-      /*min-height: 5vh;*/
-      /*min-width: 5vw;*/
-    }
+    animation-name: spin;
+    animation-duration: 800ms;
   }
 
   .pWelcome1 {
@@ -182,9 +179,24 @@
     }
   }
 
+  @keyframes spin {
+    from {
+      transform: rotate(-20deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
   @media only screen and (max-width: 600px) and (min-width: 200px) {
     .half {
       display: block;
+    }
+  }
+
+  @media only screen and (max-width: 668px) and (min-width: 667px) {
+    .welcomeSect {
+      font-size: 0.65rem;
     }
   }
 
