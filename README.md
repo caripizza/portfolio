@@ -1,11 +1,10 @@
 # Portfolio
 
-## Author: 
-Cari Palazzolo [@caripizza](https://github.com/caripizza)
+### Author: [@caripizza](https://github.com/caripizza)
 
-## Description:
-Home of Cari's Full Stack JavaScript developer portfolio.
+Home of my Full Stack Software Developer portfolio, made with React.js and PostCSS.
 
-## Technologies:
-React / JavaScript / HTML / CSS
-
+[cari.pizza](https://cari.pizza)\
+\
+![doodle](./assets/doodle.jpg)
+© 2019 Cari Palazzolo
