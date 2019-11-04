@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Home of Cari's Full Stack JavaScript developer portfolio.",
+  "description": "Home of my Full Stack Software Developer portfolio, made with React.js and PostCSS.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -9,6 +9,7 @@
     "test": "jest --verbose --passWithNoTests",
     "test:watch": "npm run test -- --watch --updateSnapshot",
     "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
+    "start-network": "webpack-dev-server --hot --mode development --devtool eval-source-map --host 0.0.0.0",
     "build": "webpack -p"
   },
   "repository": {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../../assets/caripizza_tr.png';
 import styles from './Home.css';
-import preloader from '../../../assets/spinnerLoad.gif';
+import ImageWrapper from '../ImageWrapper';
 
 const welcomeMsg1 =
   'Welcome! I\'m Cari, a full stack software developer, musician, and graphic designer.';
@@ -12,14 +12,20 @@ const welcomeMsg3 =
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    setTimeout(() => setLoading(false), 300);
+    setTimeout(() => setLoading(false), 400);
   }, []);
+
   return (
     <main className={styles.Home}>
       <section className={styles.welcomeSect}>
         <div className={`${styles.imgDiv} ${styles.slide}`}>
-          <img src={loading ? preloader : logo} alt="logo" className={`${styles.logo} ${styles.fadeIn} ${styles.slide}`}/>
+          <ImageWrapper 
+            alt="logo"
+            className={`${styles.fadeIn} ${styles.slide}`} width="100" height="100"
+            src={!loading ? logo : 'https://thumbs.gfycat.com/OilyBonyInchworm-max-1mb.gif'}
+          />
         </div>
         <p
           className={`${styles.highlight} ${styles.pWelcome1} ${styles.fadeIn}`}
@@ -42,7 +48,6 @@ export default function Home() {
         </p>
       </section>
       <section className={`${styles.half} ${styles.fadeIn}`}>
-        {/* <article className={styles.skills}> */}
         <article className={styles.skills}>
           <h2 className={styles.highlight}>Expertise</h2>
           <ul>
