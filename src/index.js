@@ -4,10 +4,9 @@ import { Provider } from 'react-redux';
 import store from './store';
 import App from './components/app/App';
 import { 
-  // Circle
-  // ChasingDots
+  Circle
   // FadingCircle
-  Wave
+  // Wave
 } from 'better-react-spinkit';
 import './index.css';
 
@@ -15,10 +14,9 @@ render(
   <Provider store={store}>
     <Suspense
       fallback={
-        // <Circle
-        // <ChasingDots
+        <Circle
         // <FadingCircle
-        <Wave
+        // <Wave
           size={100}
           style={{
             width: '100%',
