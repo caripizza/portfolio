@@ -17,11 +17,12 @@ const styles = {
     background: '#a90000'
   },
   bmCrossButton: {
-    height: '24px',
-    width: '24px'
+    right: '15px'
   },
   bmCross: {
-    background: '#bdc3c7'
+    background: '#bdc3c7',
+    zoom: '1.5',
+    width: '1px'
   },
   bmMenuWrap: {
     position: 'fixed',
@@ -41,7 +42,8 @@ const styles = {
     textAlign: 'center'
   },
   bmItem: {
-    display: 'inline-flex'
+    display: 'inline-flex',
+    outline: 'none'
   },
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'
@@ -70,13 +72,15 @@ export default class SideBar extends React.Component {
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
         >
-          <Link className="menu-item" to="/" onClick={() => this.closeMenu()}>
+          <Link
+            to="/"
+            onClick={() => this.closeMenu()}
+          >
             Home
           </Link>
           <br />
           <br />
           <Link
-            className="menu-item"
             to="/projects"
             onClick={() => this.closeMenu()}
           >
