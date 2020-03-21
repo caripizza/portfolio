@@ -20,4 +20,10 @@
       display: inline-block;
     }
   }
+
+  @media screen and (max-width: 340px) {
+    ul {
+      font-size: 90%;
+    }
+  }
 }
