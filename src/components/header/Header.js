@@ -25,36 +25,34 @@ export default class Header extends React.Component {
     const isMobile = width <= 600;
 
     return (
-      <>
-        <header className={styles.Header}>
-          <nav>
-            {isMobile ? <SideBar pageWrapId={'page-wrap'} /> : null}
-            <h1>
-              <NavLink to="/">CARI PALAZZOLO</NavLink>
-            </h1>
+      <header className={styles.Header}>
+        <nav>
+          {isMobile ? <SideBar pageWrapId={'page-wrap'} /> : null}
+          <h1>
+            <NavLink to="/">CARI PALAZZOLO</NavLink>
+          </h1>
 
-            {isMobile ? null : (
-              <ul>
-                <li>
-                  <NavLink to="/">Home</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/projects">Projects</NavLink>
-                </li>
-                <li>
-                  <a
-                    href="https://cari.pizza"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+          {isMobile ? null : (
+            <ul>
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/projects">Projects</NavLink>
+              </li>
+              <li>
+                <a
+                  href="https://cari.pizza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                     Art/Music
-                  </a>
-                </li>
-              </ul>
-            )}
-          </nav>
-        </header>
-      </>
+                </a>
+              </li>
+            </ul>
+          )}
+        </nav>
+      </header>
     );
   }
 }

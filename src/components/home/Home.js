@@ -8,13 +8,14 @@ const welcomeMsg1 =
 const welcomeMsg2 =
   'I started dabbling in freelance website design and digital marketing while performing and teaching music. I later made my way up to the Pacific Northwest, working in technical support and QA testing, where I fell in love with the software development cycle and decided to take the plunge into coding.';
 const welcomeMsg3 =
-  'In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. I made this site with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I\'m a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies. I\'m currently exploring AWS, Ruby, Rails, GraphQL and Angular.';
+  'In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. I made this site with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I\'m a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies. I\'m currently exploring Gemfury, npmjs, AWS, Ruby, Rails, and Angular.';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 400);
+    document.title = 'Cari\'s Portfolio: Home';
   }, []);
 
   return (
@@ -50,51 +51,54 @@ export default function Home() {
       <section className={`${styles.half} ${styles.fadeIn}`}>
         <article className={styles.skills}>
           <h2 className={styles.highlight}>Expertise</h2>
-          <ul>
-            <li>
-              <span>JavaScript (ES6+), DOM manipulation</span>
-            </li>
-            <li>
-              <span>UI/UX Mobile-first/Responsive design principles</span>
-            </li>
+          <ul className={styles.spreadVertically}>
             <li>
               <span>
-                BDD/TDD: Selenium, Jenkins, Jasmine, Jest, Enzyme, Mocha/Chai,
-                Protractor
+                JavaScript, HTML/CSS, DOM manipulation
               </span>
             </li>
             <li>
               <span>
-                Frameworks/Tools: Node.js, Express.js, Vue.js, React, Redux,
-                jQuery, AJAX, Axios, Postman, SASS, PostCSS, Styled-Components,
-                Material UI, Angular
+                UI/UX Mobile-first/Responsive design principles
               </span>
             </li>
             <li>
               <span>
-                Database: Google Cloud Platform, Firebase/Firestore, Cloud
-                Functions, MongoDB, Mongoose, PostgreSQL, MySQL
-              </span>
-            </li>
-            <li>
-              <span>CD/CI: Git, GitHub, Travis CI, Gitlab</span>
-            </li>
-            <li>
-              <span>
-                A/V + Design: ProTools, Cubase, Logic Pro, Final Cut Pro, Adobe
-                Photoshop, Illustrator, InDesign, AfterEffects
+                BDD/TDD: Selenium, Jenkins, Jasmine, Jest, Enzyme, Mocha/Chai, Protractor, Rspec, Karma
               </span>
             </li>
             <li>
               <span>
-                CDN: Squarespace, Wordpress / Ecommerce: Stripe, PayPal,
-                American Express, Vantiv, Authorize.Net
+                Frameworks/Tools: Node.js, React/Redux, Babel,
+                Webpack, Yarn, Express.js, Vue.js, Postman,
+                Serverless, AWS, SASS/SCSS, PostCSS, Styled-Components,
+                Material UI, Angular, Auth0
               </span>
             </li>
             <li>
               <span>
-                Admin/SEO: G Suite, Sheets, Docs, Analytics, Ads, Search
-                Console, Facebook Analytics
+                Database: GCP, Firebase/Firestore, Cloud Functions,
+                MongoDB, Mongoose, PostgreSQL, MySQL
+              </span>
+            </li>
+            <li>
+              <span>
+                CD/CI: Git, GitHub, Travis CI, Gitlab, AWS
+                CodeStar/CloudFormation, Heroku, Netlify
+              </span>
+            </li>
+            <li>
+              <span>
+                A/V: ProTools, Cubase, Logic Pro, Final Cut Pro,
+                Adobe: Photoshop, Illustrator, InDesign,
+                AfterEffects
+              </span>
+            </li>
+            <li>
+              <span>
+                Squarespace, Wordpress, G Suite, Sheets, Docs,
+                Analytics, Ads, GTM, Search Console, Facebook
+                Analytics
               </span>
             </li>
           </ul>

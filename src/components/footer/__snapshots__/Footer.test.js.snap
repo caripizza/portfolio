@@ -7,7 +7,31 @@ exports[`Footer matches a snapshot 1`] = `
   <ul>
     <li>
       <p>
-        © 2019 Cari Palazzolo
+        © 2019-2020 Cari Palazzolo, all rights reserved
+        <br />
+        <a
+          href="https://github.com/caripizza"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Github
+        </a>
+         | 
+        <a
+          href="https://linkedin.com/in/cari-palazzolo"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Linkedin
+        </a>
+         | 
+        <a
+          href="https://caripalazzolo.com/about"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          About
+        </a>
       </p>
     </li>
   </ul>

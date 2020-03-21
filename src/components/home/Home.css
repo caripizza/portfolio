@@ -58,6 +58,13 @@
     color: cyan;
   }
 
+  .spreadVertically {
+    display: flex;
+    flex-direction: column;
+    min-height: 75%;
+    justify-content: space-evenly;
+  }
+
   li span {
     color: black;
   }

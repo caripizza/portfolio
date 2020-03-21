@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding: 2em 0 0 2em;
+    padding: 2em 0 0 1.2em;
     margin: 0;
   }
 
@@ -15,10 +15,15 @@
 
   p {
     margin: 0;
+
+    a {
+      display: inline-block;
+    }
   }
 
-  img {
-    width: 2em;
-    display: block;
+  @media screen and (max-width: 340px) {
+    ul {
+      font-size: 90%;
+    }
   }
 }
