@@ -49,6 +49,7 @@ const Projects = () => {
               <li>PDX Node</li>
               <li>Portland ReactJS</li>
               <li>JavaScript Admirers</li>
+              <li>Serverless Portland</li>
             </ul>
           </div>
         </section>

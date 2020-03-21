@@ -1,8 +1,8 @@
 .Projects {
   display: flex;
   animation: fadein 1s;
-  -moz-animation: fadein 1s; /* Firefox */
-  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  /* -moz-animation: fadein 1s; /* Firefox */
+  /* -webkit-animation: fadein 1s; /* Safari and Chrome */
 
   p.description {
     padding: 1.7em 1.7em 0.2em 1.7em;
