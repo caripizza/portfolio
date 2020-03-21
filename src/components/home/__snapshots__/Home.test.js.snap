@@ -64,10 +64,17 @@ exports[`Home matches a snapshot 1`] = `
       >
         Expertise
       </h2>
-      <ul>
+      <ul
+        className="spreadVertically"
+      >
         <li>
           <span>
-            JavaScript, HTML/CSS, DOM manipulation, UI/UX Mobile-first/Responsive design principles
+            JavaScript, HTML/CSS, DOM manipulation
+          </span>
+        </li>
+        <li>
+          <span>
+            UI/UX Mobile-first/Responsive design principles
           </span>
         </li>
         <li>
@@ -82,7 +89,7 @@ exports[`Home matches a snapshot 1`] = `
         </li>
         <li>
           <span>
-            DB: GCP, Firebase/Firestore, Cloud Functions, MongoDB, Mongoose, PostgreSQL, MySQL
+            Database: GCP, Firebase/Firestore, Cloud Functions, MongoDB, Mongoose, PostgreSQL, MySQL
           </span>
         </li>
         <li>

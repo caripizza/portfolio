@@ -15,6 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 400);
+    document.title = 'Cari\'s Portfolio: Home';
   }, []);
 
   return (
@@ -50,10 +51,15 @@ export default function Home() {
       <section className={`${styles.half} ${styles.fadeIn}`}>
         <article className={styles.skills}>
           <h2 className={styles.highlight}>Expertise</h2>
-          <ul>
+          <ul className={styles.spreadVertically}>
             <li>
               <span>
-                JavaScript, HTML/CSS, DOM manipulation, UI/UX Mobile-first/Responsive design principles
+                JavaScript, HTML/CSS, DOM manipulation
+              </span>
+            </li>
+            <li>
+              <span>
+                UI/UX Mobile-first/Responsive design principles
               </span>
             </li>
             <li>
@@ -71,7 +77,7 @@ export default function Home() {
             </li>
             <li>
               <span>
-                DB: GCP, Firebase/Firestore, Cloud Functions,
+                Database: GCP, Firebase/Firestore, Cloud Functions,
                 MongoDB, Mongoose, PostgreSQL, MySQL
               </span>
             </li>

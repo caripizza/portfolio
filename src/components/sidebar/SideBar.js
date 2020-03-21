@@ -65,38 +65,36 @@ export default class SideBar extends React.Component {
 
   render() {
     return (
-      <>
-        <Menu
-          styles={styles}
-          width={'50%'}
-          isOpen={this.state.menuOpen}
-          onStateChange={state => this.handleStateChange(state)}
+      <Menu
+        styles={styles}
+        width={'50%'}
+        isOpen={this.state.menuOpen}
+        onStateChange={state => this.handleStateChange(state)}
+      >
+        <Link
+          to="/"
+          onClick={() => this.closeMenu()}
         >
-          <Link
-            to="/"
-            onClick={() => this.closeMenu()}
-          >
             Home
-          </Link>
-          <br />
-          <br />
-          <Link
-            to="/projects"
-            onClick={() => this.closeMenu()}
-          >
+        </Link>
+        <br />
+        <br />
+        <Link
+          to="/projects"
+          onClick={() => this.closeMenu()}
+        >
             Projects
-          </Link>
-          <br />
-          <br />
-          <a
-            href="https://cari.pizza"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        </Link>
+        <br />
+        <br />
+        <a
+          href="https://cari.pizza"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
             Art/Music
-          </a>
-        </Menu>
-      </>
+        </a>
+      </Menu>
     );
   }
 }
