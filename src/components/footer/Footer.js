@@ -7,7 +7,7 @@ const Footer = () => {
       <footer className={styles.Footer}>
         <ul>
           <li>
-            <p>© 2019 Cari Palazzolo</p>
+            <p>© {new Date().getFullYear()} Cari Palazzolo</p>
           </li>
         </ul>
       </footer>
