@@ -38,17 +38,17 @@ exports[`Home matches a snapshot 1`] = `
       />
     </div>
     <p
-      className="highlight pWelcome1 fadeIn"
+      className="highlight pWelcome1 fadeIn minFont"
     >
       Welcome! I'm Cari, a full stack software developer, musician, and graphic designer.
     </p>
     <p
-      className="highlight welcomeParagraphs fadeIn"
+      className="highlight welcomeParagraphs fadeIn minFont"
     >
       I started dabbling in freelance website design and digital marketing while performing and teaching music. I later made my way up to the Pacific Northwest, working in technical support and QA testing, where I fell in love with the software development cycle and decided to take the plunge into coding.
     </p>
     <p
-      className="highlight welcomeParagraphs fadeIn"
+      className="highlight welcomeParagraphs fadeIn minFont"
     >
       In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. I made this site with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies. I'm currently exploring Gemfury, npmjs, AWS, Ruby, Rails, and Angular.
     </p>
@@ -117,7 +117,9 @@ exports[`Home matches a snapshot 1`] = `
       >
         Education
       </h2>
-      <ul>
+      <ul
+        className="minFont"
+      >
         <li>
           <span>
             <strong>

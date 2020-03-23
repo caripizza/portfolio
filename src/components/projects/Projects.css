@@ -192,4 +192,12 @@
       display: block;
     }
   }
+
+  /* fix huge font sizes on iphone 5 */
+  @media screen and (max-width: 568px) and (orientation: landscape) {
+    .description, span {
+      font-size: 0.7em;
+      line-height: initial;
+    }
+  }
 }

@@ -24,8 +24,9 @@ const Projects = () => {
             src={hackathonPic}
           />
           <p className={styles.caption}>
-              Speaking at Puppet for the Nike We Code For Good Hackathon, Jan
-              2019
+            <span>
+              Speaking at Puppet for the Nike We Code For Good Hackathon, Jan 2019
+            </span>
           </p>
           <br />
           <ImageWrapper 
@@ -34,24 +35,23 @@ const Projects = () => {
             src={wtfixathonPic}
           />
           <p className={styles.caption}>
-              Coding at PSU for the TechFestNW + HealthSparq #WTFix-a-thon,{' '}
-            <a
+            <span>Coding at PSU for the TechFestNW + HealthSparq #WTFix-a-thon, <a
               className={styles.twitter}
               href="https://twitter.com/HealthSparq/status/1113864386865651712?ref_src=twsrc%5Etfw"
               target="_blank"
               rel="noopener noreferrer"
             >
-                April 2019
-            </a>
+              April 2019
+            </a></span>
           </p>
           <ul>
-            <strong>Organizations</strong>
-            <li>PDXWIT | Portland Women in Tech</li>
-            <li>Portland Women Who Code</li>
-            <li>PDX Node</li>
-            <li>Portland ReactJS</li>
-            <li>JavaScript Admirers</li>
-            <li>Serverless Portland</li>
+            <h3>Organizations</h3>
+            <li><span>PDXWIT | Portland Women in Tech</span></li>
+            <li><span>Portland Women Who Code</span></li>
+            <li><span>PDX Node</span></li>
+            <li><span>Portland ReactJS</span></li>
+            <li><span>JavaScript Admirers</span></li>
+            <li><span>Serverless Portland</span></li>
           </ul>
         </div>
       </section>
