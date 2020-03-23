@@ -29,21 +29,17 @@ export default function Home() {
           />
         </div>
         <p
-          className={`${styles.highlight} ${styles.pWelcome1} ${styles.fadeIn}`}
+          className={`${styles.highlight} ${styles.pWelcome1} ${styles.fadeIn} ${styles.minFont}`}
         >
           {welcomeMsg1}
         </p>
         <p
-          className={`${styles.highlight} ${styles.welcomeParagraphs} ${
-            styles.fadeIn
-          }`}
+          className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
         >
           {welcomeMsg2}
         </p>
         <p
-          className={`${styles.highlight} ${styles.welcomeParagraphs} ${
-            styles.fadeIn
-          }`}
+          className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
         >
           {welcomeMsg3}
         </p>
@@ -105,7 +101,7 @@ export default function Home() {
         </article>
         <article className={styles.education}>
           <h2 className={styles.highlight}>Education</h2>
-          <ul>
+          <ul className={styles.minFont}>
             <li>
               <span>
                 <strong>
