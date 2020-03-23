@@ -25,11 +25,10 @@ const Footer = () => {
     <footer className={styles.Footer}>
       <ul>
         <li>
-          <p>
-            {copyright}
-            <br />
-            {github} | {linkedinLink} | {aboutLink}
-          </p>
+          {copyright}
+        </li>
+        <li>
+          {github} | {linkedinLink} | {aboutLink}
         </li>
       </ul>
     </footer>
