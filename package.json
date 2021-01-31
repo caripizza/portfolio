@@ -8,12 +8,12 @@
     "npm": "6.13.7"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint src",
     "pretest": "npm run lint",
     "test": "jest --verbose --passWithNoTests",
     "test:watch": "npm run test -- --watch --updateSnapshot",
-    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
-    "start-network": "webpack-dev-server --hot --mode development --devtool eval-source-map --host 0.0.0.0",
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map --open",
+    "deploy:preview": "npm run build && serve -s dist",
     "build": "webpack -p"
   },
   "repository": {

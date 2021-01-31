@@ -1,38 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import memePic1 from '../../../../assets/meme-generator/figlet-font1.png';
 import memePic2 from '../../../../assets/meme-generator/meme1.png';
-import github from '../../../../assets/github.png';
 import styles from './MemeGenerator.css';
+import ProjectTemplate from '../ProjectTemplate';
+import ImageWrapper from '../../ImageWrapper';
+import { memeGeneratorDescription } from '../Projects';
 
 const MemeGenerator = () => {
   return (
-    <main className={styles.MemeGenerator}>
-      <section>
-        <h1>Font & Meme Generator</h1>
-        <span>
-          <a href="https://caripizza.github.io/meme-generator/"
-            target="_blank" rel="noopener noreferrer"
-          >
-              https://caripizza.github.io/meme-generator/
-          </a>
-        </span>
-        <br/>
-        <a href="https://github.com/caripizza/meme-generator"
-          target="_blank" rel="noopener noreferrer"
-        >
-          <img src={github} alt="github" className={styles.github}/>
-        </a>
-        <p>Featuring a Figlet font drop-down menu, allowing you to test and download your fonts as image files:</p>
-        <img src={memePic1} alt="Meme-pic1" className={styles.screenshots}/>
-        <p>With a meme generator, allowing you to upload or link to images and overlay text in true meme fashion:</p>
-        <img src={memePic2} alt="Meme-pic2" className={styles.screenshots}/>
+    <ProjectTemplate
+      name="Font & Meme Generator"
+      projectSiteUrl="https://caripizza.github.io/meme-generator"
+      projectGitHub="https://github.com/caripizza/meme-generator"
+      projectStyles={styles.MemeGenerator}
+      projectDescription={memeGeneratorDescription}
+    >
+      <p>Featuring a Figlet font drop-down menu, allowing you to test and download your fonts as image files:</p>
+      <ImageWrapper
+        alt="meme-pic-1"
+        width="auto" height="auto"
+        src={memePic1}
+      />
 
-        <Link to="/projects">Back</Link>
-        <br/>
+      <p>With a meme generator, allowing you to upload or link to images and overlay text in true meme fashion:</p>
+      <ImageWrapper
+        alt="meme-pic-2"
+        width="auto" height="auto"
+        src={memePic2}
+      />
 
-      </section>
-    </main>
+    </ProjectTemplate>
   );
 };
 

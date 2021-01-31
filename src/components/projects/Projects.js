@@ -5,10 +5,36 @@ import hackathonPic from '../../../assets/hackathon.jpg';
 import wtfixathonPic from '../../../assets/wtfixathon.jpg';
 import ImageWrapper from '../ImageWrapper';
 
+export const qBotDescription = `Slack bot and web app for Alchemy Code Lab, made with Slack's 
+Events & Conversations API's, Google Cloud Firestore, Firebase
+OAuth (GitHub + Google), ReactJS, React Hooks, Google Cloud
+Functions, Moment.js, SASS and more.`;
+export const reduxBlogDescription = `Written in React/Redux and styled with Styled-Components, this app
+utilizes the JSON placeholder API to generate and filter users,
+posts, and comments.`;
+export const simAlchemyDescription = `Back-end app featuring a code school game for the command line,
+utilizing MongoDB/Mongoose, Express.js, Node.js, and Inquirer;
+deployed to Heroku.`;
+export const homebrewdogDescription = `RESTful web app utilizing the Brewdog Brewery API with VueJS for
+the front-end, PostgreSQL + Express on the back-end, and deployed
+to Heroku.`;
+export const tcpChatroomDescription = `Back-end chat server allowing multiple clients to connect via the
+command line and chat with each other using short commands (@all,
+@dm, @nick); includes unit tests.`;
+export const asyncRMdescription = `SPA made with React + PostCSS, utilizes the Rick & Morty Api to
+fetch and display paginated lists of characters and locations.`;
+export const memeGeneratorDescription = `SPA WYSIWYG editor allowing users to download their fonts and meme
+creations as image files. (React, Node.js, Figlet, Webpack,
+PostCSS, HTML)`;
+export const pokedexDescription = `Single Page Pokémon search & filter app made with VueJS, HTML, and
+CSS.`;
+
 const Projects = () => {
+
   useEffect(() => {
     document.title = 'Cari\'s Portfolio: Projects';
   }, []);
+
   return (
     <main className={styles.Projects}>
       <section className={styles.left}>
@@ -61,10 +87,7 @@ const Projects = () => {
           <h3>Q bot</h3>
           <br />
           <span>
-              Slack bot and web app for Alchemy Code Lab, made with {'Slack\'s'}{' '}
-              Events & Conversations {'API\'s'}, Google Cloud Firestore, Firebase
-              OAuth (GitHub + Google), ReactJS, React Hooks, Google Cloud
-              Functions, Moment.js, SASS and more.
+            {qBotDescription}
           </span>
           <br />
           <span className={styles.noWrap}>
@@ -83,9 +106,7 @@ const Projects = () => {
           <h3>React + Redux Blog</h3>
           <br />
           <span>
-              Written in React/Redux and styled with Styled-Components, this app
-              utilizes the JSON placeholder API to generate and filter users,
-              posts, and comments.
+            {reduxBlogDescription}
           </span>
           <br />
           <span className={styles.noWrap}>
@@ -104,9 +125,7 @@ const Projects = () => {
           <h3>SimAlchemy</h3>
           <br />
           <span>
-              Back-end app featuring a code school game for the command line,
-              utilizing MongoDB/Mongoose, Express.js, Node.js, and Inquirer;
-              deployed to Heroku.
+            {simAlchemyDescription}
           </span>
           <br />
           <span className={styles.noWrap}>
@@ -125,9 +144,7 @@ const Projects = () => {
           <h3>Homebrewdog</h3>
           <br />
           <span>
-              RESTful web app utilizing the Brewdog Brewery API with VueJS for
-              the front-end, PostgreSQL + Express on the back-end, and deployed
-              to Heroku.
+            {homebrewdogDescription}
           </span>
           <br />
           <span className={styles.noWrap}>
@@ -146,9 +163,7 @@ const Projects = () => {
           <h3>TCP Chat Room</h3>
           <br />
           <span>
-              Back-end chat server allowing multiple clients to connect via the
-              command line and chat with each other using short commands (@all,
-              @dm, @nick); includes unit tests.
+            {tcpChatroomDescription}
           </span>
           <br />
           <span className={styles.noWrap}>
@@ -167,8 +182,7 @@ const Projects = () => {
           <h3>Async Rick & Morty</h3>
           <br />
           <span>
-              SPA made with React + PostCSS, utilizes the Rick & Morty Api to
-              fetch and display paginated lists of characters and locations.
+            {asyncRMdescription}
           </span>
           <br />
           <span className={styles.noWrap}>
@@ -187,9 +201,7 @@ const Projects = () => {
           <h3>Font & Meme Generator</h3>
           <br />
           <span>
-              SPA WYSIWYG editor allowing users to download their fonts and meme
-              creations as image files. (React, Node.js, Figlet, Webpack,
-              PostCSS, HTML)
+            {memeGeneratorDescription}
           </span>
           <br />
           <span className={styles.noWrap}>
@@ -208,8 +220,7 @@ const Projects = () => {
           <h3>Pokedex</h3>
           <br />
           <span>
-              Single Page Pokémon search & filter app made with VueJS, HTML, and
-              CSS.
+            {pokedexDescription}
           </span>
           <br />
           <span className={styles.noWrap}>

@@ -18,6 +18,7 @@ export default class ImageWrapper extends Component {
     width: PropTypes.string.isRequired,
     height: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
   };
 
   UNSAFE_componentWillMount() {
@@ -33,7 +34,7 @@ export default class ImageWrapper extends Component {
 
   render() {
     const { loaded } = this.state;
-    const { width, height, src } = this.props;
+    const { width, height, src, alt } = this.props;
     return (
       <>
         {!loaded ?
@@ -45,6 +46,7 @@ export default class ImageWrapper extends Component {
           /> : null}
         <img
           src={src}
+          alt={alt}
           onLoad={() => (this.setState({ loaded: true }))}
           width={width}
           height={height}
