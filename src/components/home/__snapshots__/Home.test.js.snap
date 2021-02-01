@@ -6,6 +6,7 @@ exports[`Home matches a snapshot 1`] = `
 >
   <section
     className="welcomeSect"
+    id="home-page"
   >
     <div
       className="imgDiv slide"
@@ -21,6 +22,7 @@ exports[`Home matches a snapshot 1`] = `
         width="100"
       />
       <img
+        alt="logo"
         height="100"
         onLoad={[Function]}
         src="https://thumbs.gfycat.com/OilyBonyInchworm-max-1mb.gif"

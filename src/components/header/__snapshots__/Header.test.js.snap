@@ -5,7 +5,9 @@ exports[`Header matches a snapshot 1`] = `
   className="Header"
 >
   <nav>
-    <h1>
+    <h1
+      id="cari-palazzolo"
+    >
       <a
         aria-current="page"
         className="active"
@@ -45,6 +47,23 @@ exports[`Header matches a snapshot 1`] = `
         >
           Art/Music
         </a>
+      </li>
+      <li>
+        <button
+          className="dm-toggle"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "transparent",
+              "border": "none",
+              "cursor": "pointer",
+              "fontSize": "1.5rem",
+            }
+          }
+          type="button"
+        >
+          🌞
+        </button>
       </li>
     </ul>
   </nav>

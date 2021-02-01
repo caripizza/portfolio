@@ -8,12 +8,12 @@
     "npm": "6.13.7"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint src",
     "pretest": "npm run lint",
     "test": "jest --verbose --passWithNoTests",
     "test:watch": "npm run test -- --watch --updateSnapshot",
-    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
-    "start-network": "webpack-dev-server --hot --mode development --devtool eval-source-map --host 0.0.0.0",
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map --open",
+    "deploy:preview": "npm run build && serve -s dist",
     "build": "webpack -p"
   },
   "repository": {
@@ -54,7 +54,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^2.1.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-react": "^7.19.0",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",

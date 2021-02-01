@@ -13,7 +13,6 @@ import { ROUTES } from '../../routes/routes';
 export default function App() {
   return (
     <Router>
-      {/* Copyright (c) 2019-2020 Cari Palazzolo, All rights reserved */}
       <Header />
       <ScrollToTop>
         <Switch>

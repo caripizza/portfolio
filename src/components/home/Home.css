@@ -55,7 +55,7 @@
 
   ul {
     list-style: square;
-    color: cyan;
+    /*color: cyan;*/
   }
 
   .spreadVertically {
@@ -65,9 +65,9 @@
     justify-content: space-evenly;
   }
 
-  li span {
+  /*li span {
     color: black;
-  }
+  }*/
 
   .education ul {
     list-style: none;

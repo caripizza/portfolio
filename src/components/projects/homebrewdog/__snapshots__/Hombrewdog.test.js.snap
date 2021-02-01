@@ -2,12 +2,19 @@
 
 exports[`Homebrewdog matches a snapshot 1`] = `
 <main
-  className="Homebrewdog"
+  className="ProjectTemplate Homebrewdog"
 >
-  <section>
+  <section
+    id="project-detail"
+  >
     <h1>
       Homebrewdog
     </h1>
+    <article>
+      RESTful web app utilizing the Brewdog Brewery API with VueJS for
+the front-end, PostgreSQL + Express on the back-end, and deployed
+to Heroku.
+    </article>
     <span>
       <a
         href="https://homebrewdog.herokuapp.com"
@@ -33,33 +40,121 @@ exports[`Homebrewdog matches a snapshot 1`] = `
       Featuring a pop-up search modal, allowing you to search for beers by key word:
     </p>
     <img
-      alt="Homebrewdog-pic1"
-      className="screenshots"
+      height="auto"
+      src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' width%3D'100' height%3D'100' viewBox%3D'0 0 100 100'%2F%3E"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+      width="auto"
+    />
+    <img
+      alt="homebrewdog-pic-1"
+      height="auto"
+      onLoad={[Function]}
       src=""
+      style={
+        Object {
+          "animationDuration": "0.5s",
+          "animationIterationCount": 1,
+          "animationName": "fadeInSlowly",
+          "animationTimingFunction": "ease-in",
+          "backgroundColor": "transparent",
+          "display": "none",
+        }
+      }
+      width="auto"
     />
     <p>
       Yielding a list of search results, based on your beer query:
     </p>
     <img
-      alt="Homebrewdog-pic2"
-      className="screenshots"
+      height="auto"
+      src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' width%3D'100' height%3D'100' viewBox%3D'0 0 100 100'%2F%3E"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+      width="auto"
+    />
+    <img
+      alt="homebrewdog-pic-2"
+      height="auto"
+      onLoad={[Function]}
       src=""
+      style={
+        Object {
+          "animationDuration": "0.5s",
+          "animationIterationCount": 1,
+          "animationName": "fadeInSlowly",
+          "animationTimingFunction": "ease-in",
+          "backgroundColor": "transparent",
+          "display": "none",
+        }
+      }
+      width="auto"
     />
     <p>
       Clicking on a beer from the list directs to the beer detail, where you can rate and save the beer to your Profile:
     </p>
     <img
-      alt="Homebrewdog-pic3"
-      className="screenshots"
+      height="auto"
+      src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' width%3D'100' height%3D'100' viewBox%3D'0 0 100 100'%2F%3E"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+      width="auto"
+    />
+    <img
+      alt="homebrewdog-pic-3"
+      height="auto"
+      onLoad={[Function]}
       src=""
+      style={
+        Object {
+          "animationDuration": "0.5s",
+          "animationIterationCount": 1,
+          "animationName": "fadeInSlowly",
+          "animationTimingFunction": "ease-in",
+          "backgroundColor": "transparent",
+          "display": "none",
+        }
+      }
+      width="auto"
     />
     <p>
       Your profile displays a list of saved beers, allowing you to post and update comments for each, and even view aggregations based on IBU and ABV:
     </p>
     <img
-      alt="Homebrewdog-pic4"
-      className="screenshots"
+      height="auto"
+      src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' width%3D'100' height%3D'100' viewBox%3D'0 0 100 100'%2F%3E"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+      width="auto"
+    />
+    <img
+      alt="homebrewdog-pic-4"
+      height="auto"
+      onLoad={[Function]}
       src=""
+      style={
+        Object {
+          "animationDuration": "0.5s",
+          "animationIterationCount": 1,
+          "animationName": "fadeInSlowly",
+          "animationTimingFunction": "ease-in",
+          "backgroundColor": "transparent",
+          "display": "none",
+        }
+      }
+      width="auto"
     />
     <a
       href="/projects"

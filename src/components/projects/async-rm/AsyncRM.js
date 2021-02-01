@@ -1,35 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './AsyncRM.css';
 import rickAndMorty from '../../../../assets/asyncreact/rickAndMorty.png';
-import github from '../../../../assets/github.png';
+import ProjectTemplate from '../ProjectTemplate';
+import ImageWrapper from '../../ImageWrapper';
+import { asyncRMdescription } from '../Projects';
 
 const AsyncRM = () => {
   return (
-    <main className={styles.AsyncRM}>
-      <section>
-        <h1>Async React - Rick & Morty</h1>
-        <span>
-          <a href="https://async-rick-and-morty.netlify.com/"
-            target="_blank" rel="noopener noreferrer"
-          >
-              https://async-rick-and-morty.netlify.com
-          </a>
-        </span>
-        <br/>
-        <a href="https://github.com/caripizza/async-react"
-          target="_blank" rel="noopener noreferrer"
-        >
-          <img src={github} alt="github" className={styles.github}/>
-        </a>
-        <p>Single Page App utilizing CSS grid, featuring pagination with Next and Back buttons:</p>
-        <img src={rickAndMorty} alt="rick-and-morty-async-react" className={styles.screenshots}/>
+    <ProjectTemplate
+      name="Async React - Rick & Morty"
+      projectSiteUrl="https://async-rick-and-morty.netlify.com"
+      projectGitHub="https://github.com/caripizza/async-react"
+      projectStyles={styles.AsyncRM}
+      projectDescription={asyncRMdescription}
+    >
+      <p>Single Page App utilizing CSS grid, featuring pagination with Next and Back buttons:</p>
+      <ImageWrapper 
+        alt="rick-and-morty-async-react"
+        width="auto" height="auto"
+        src={rickAndMorty}
+      />
 
-        <Link to="/projects">Back</Link>
-        <br/>
-
-      </section>
-    </main>
+    </ProjectTemplate>
   );
 };
 
