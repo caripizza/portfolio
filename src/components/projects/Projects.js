@@ -37,7 +37,7 @@ const Projects = () => {
 
   return (
     <main className={styles.Projects}>
-      <section className={styles.left}>
+      <section className={styles.left} id="project-page">
         <h1>Projects</h1>
         <p className={styles.description}>
             I love the full stack and I thrive in both front-end and back-end development. I’m driven to create responsive, accessible interfaces and improve user experiences through my thoughtful, detailed approach.

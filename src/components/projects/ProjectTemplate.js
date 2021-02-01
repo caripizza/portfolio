@@ -19,7 +19,7 @@ const ProjectTemplate = ({
 
   return (
     <main className={`${styles.ProjectTemplate} ${projectStyles}`}>
-      <section>
+      <section id="project-detail">
         <h1>{name}</h1>
         <article>
           {projectDescription}

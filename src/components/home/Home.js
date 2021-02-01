@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../../assets/caripizza_tr.png';
+import logoSVG from '../../../assets/caripizza_tr.svg';
 import styles from './Home.css';
 import ImageWrapper from '../ImageWrapper';
 
@@ -20,12 +20,12 @@ export default function Home() {
 
   return (
     <main className={styles.Home}>
-      <section className={styles.welcomeSect}>
+      <section className={styles.welcomeSect} id="home-page">
         <div className={`${styles.imgDiv} ${styles.slide}`}>
           <ImageWrapper 
             alt="logo"
             className={`${styles.fadeIn} ${styles.slide}`} width="100" height="100"
-            src={!loading ? logo : 'https://thumbs.gfycat.com/OilyBonyInchworm-max-1mb.gif'}
+            src={!loading ? logoSVG : 'https://thumbs.gfycat.com/OilyBonyInchworm-max-1mb.gif'}
           />
         </div>
         <p

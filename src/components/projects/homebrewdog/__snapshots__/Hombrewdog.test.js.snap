@@ -4,7 +4,9 @@ exports[`Homebrewdog matches a snapshot 1`] = `
 <main
   className="ProjectTemplate Homebrewdog"
 >
-  <section>
+  <section
+    id="project-detail"
+  >
     <h1>
       Homebrewdog
     </h1>

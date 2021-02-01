@@ -6,6 +6,7 @@ exports[`Home matches a snapshot 1`] = `
 >
   <section
     className="welcomeSect"
+    id="home-page"
   >
     <div
       className="imgDiv slide"
