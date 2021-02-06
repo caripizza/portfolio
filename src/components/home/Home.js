@@ -101,7 +101,7 @@ export default function Home() {
         </article>
         <article className={styles.education}>
           <h2 className={styles.highlight}>Education</h2>
-          <ul className={styles.minFont}>
+          <ul>
             <li>
               <span>
                 <strong>

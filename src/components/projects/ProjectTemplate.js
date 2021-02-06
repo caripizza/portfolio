@@ -25,16 +25,11 @@ const ProjectTemplate = ({
           {projectDescription}
         </article>
         {projectSiteUrl && (
-          <>
-            <span>
-              <a href={projectSiteUrl}
-                target="_blank" rel="noopener noreferrer"
-              >
-                {projectSiteUrl}
-              </a>
-            </span>
-            <br/>
-          </>
+          <a href={projectSiteUrl}
+            target="_blank" rel="noopener noreferrer"
+          >
+            {projectSiteUrl}
+          </a>
         )}
         <a href={projectGitHub}
           target="_blank" rel="noopener noreferrer"

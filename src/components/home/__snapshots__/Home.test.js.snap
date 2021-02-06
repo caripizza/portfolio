@@ -119,9 +119,7 @@ exports[`Home matches a snapshot 1`] = `
       >
         Education
       </h2>
-      <ul
-        className="minFont"
-      >
+      <ul>
         <li>
           <span>
             <strong>
