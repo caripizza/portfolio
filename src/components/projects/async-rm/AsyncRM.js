@@ -3,16 +3,16 @@ import styles from './AsyncRM.css';
 import rickAndMorty from '../../../../assets/asyncreact/rickAndMorty.png';
 import ProjectTemplate from '../ProjectTemplate';
 import ImageWrapper from '../../ImageWrapper';
-import { asyncRMdescription } from '../Projects';
+import { projectsList } from '../projectsData';
 
 const AsyncRM = () => {
   return (
     <ProjectTemplate
-      name="Async React - Rick & Morty"
+      name={projectsList[5].name}
       projectSiteUrl="https://async-rick-and-morty.netlify.com"
-      projectGitHub="https://github.com/caripizza/async-react"
+      projectGitHub={projectsList[5].githubLink}
       projectStyles={styles.AsyncRM}
-      projectDescription={asyncRMdescription}
+      projectDescription={projectsList[5].description}
     >
       <p>Single Page App utilizing CSS grid, featuring pagination with Next and Back buttons:</p>
       <ImageWrapper 

@@ -8,6 +8,7 @@ import Pokedex from '../components/projects/pokedex/Pokedex';
 import AsyncRM from '../components/projects/async-rm/AsyncRM';
 import Qbot from '../components/projects/q-bot/Qbot';
 import TCPchatRoom from '../components/projects/chatroom/TCPchatRoom';
+import { projectsList } from '../components/projects/projectsData';
 
 export const ROUTES = {
   HOME: {
@@ -21,43 +22,43 @@ export const ROUTES = {
     linkTo: () => '/projects'
   },
   PROJECTS_HOMEBREWDOG: {
-    path: '/projects/homebrewdog',
+    path: projectsList[3].projectLink,
     Component: Homebrewdog,
-    linkTo: () => '/projects/homebrewdow'
+    linkTo: () => projectsList[3].projectLink
   },
   PROJECTS_MEME_GENERATOR: {
-    path: '/projects/meme-generator',
+    path: projectsList[6].projectLink,
     Component: MemeGenerator,
-    linkTo: () => '/projects/meme-generator'
+    linkTo: () => projectsList[6].projectLink
   },
   PROJECTS_SIM_ALCHEMY: {
-    path: '/projects/SimAlchemy',
+    path: projectsList[2].projectLink,
     Component: SimAlchemy,
-    linkTo: () => '/projects/SimAlchemy'
+    linkTo: () => projectsList[2].projectLink
   },
   PROJECTS_REDUX_BLOG: {
-    path: '/projects/redux-blog',
+    path: projectsList[1].projectLink,
     Component: ReduxBlog,
-    linkTo: () => '/projects/redux-blog'
+    linkTo: () => projectsList[1].projectLink
   },
   PROJECTS_POKEDEX: {
-    path: '/projects/pokedex',
+    path: projectsList[7].projectLink,
     Component: Pokedex,
-    linkTo: () => '/projects/pokedex'
+    linkTo: () => projectsList[7].projectLink
   },
   PROJECTS_ASYNC_RM: {
-    path: '/projects/async-rm',
+    path: projectsList[5].projectLink,
     Component: AsyncRM,
-    linkTo: () => '/projects/async-rm'
+    linkTo: () => projectsList[5].projectLink
   },
   PROJECTS_Q_BOT: {
-    path: '/projects/q-bot',
+    path: projectsList[0].projectLink,
     Component: Qbot,
-    linkTo: () => '/projects/q-bot'
+    linkTo: () => projectsList[0].projectLink
   },
   PROJECTS_TCP_CHAT_ROOM: {
-    path: '/projects/tcp-chat-room',
+    path: projectsList[4].projectLink,
     Component: TCPchatRoom,
-    linkTo: () => '/projects/tcp-chat-room'
+    linkTo: () => projectsList[4].projectLink
   }
 };

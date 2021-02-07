@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logoSVG from '../../../assets/caripizza_tr.svg';
 import styles from './Home.css';
 import ImageWrapper from '../ImageWrapper';
 
@@ -25,7 +24,7 @@ export default function Home() {
           <ImageWrapper 
             alt="logo"
             className={`${styles.fadeIn} ${styles.slide}`} width="100" height="100"
-            src={!loading ? logoSVG : 'https://thumbs.gfycat.com/OilyBonyInchworm-max-1mb.gif'}
+            src={!loading ? 'https://d1el19mzc628gm.cloudfront.net/caripizza_tr.svg' : 'https://d1el19mzc628gm.cloudfront.net/logo-spin.gif'}
           />
         </div>
         <p

@@ -1,25 +1,22 @@
 import React from 'react';
-import styles from './Pokedex.css';
-import pokedex from '../../../../assets/pokedex/pokedex.png';
 import ProjectTemplate from '../ProjectTemplate';
 import ImageWrapper from '../../ImageWrapper';
-import { pokedexDescription } from '../Projects';
+import { projectsList } from '../projectsData';
 
 const Pokedex = () => {
   return (
     <ProjectTemplate
-      name="Pokedex"
+      name={projectsList[7].name}
       projectSiteUrl="https://caripizza.github.io/return-of-pokedex"
-      projectGitHub="https://github.com/caripizza/return-of-pokedex"
-      projectStyles={styles.Pokedex}
-      projectDescription={pokedexDescription}
+      projectGitHub={projectsList[7].githubLink}
+      projectDescription={projectsList[7].description}
     >
 
       <p>Featuring animated sort and filter, allowing you to search through 800+ Pokémon characters based on name, type, or speed:</p>
       <ImageWrapper
         alt="pokedex"
         width="auto" height="auto"
-        src={pokedex}
+        src="https://d1el19mzc628gm.cloudfront.net/pokedex.png"
       />
 
     </ProjectTemplate>
