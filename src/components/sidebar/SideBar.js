@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
+import DarkModeButton from '../DarkModeButton';
 
 const styles = {
   bmBurgerButton: {
@@ -43,27 +45,48 @@ const styles = {
   },
   bmItem: {
     display: 'inline-flex',
-    outline: 'none'
   },
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'
   }
 };
 
-export default class SideBar extends React.Component {
-  state = {
-    menuOpen: false
-  };
-
-  handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen });
+export default class SideBar extends Component {
+  constructor(props) {
+    super(props);
+    this.isDarkMode = props.isDarkMode;
+    this.toggleDarkMode = props.toggleDarkMode.bind(this);
+    this.toggleTheme = props.toggleTheme.bind(this);
+    this.theme = props.theme;
+    this.state =  {
+      menuOpen: false,
+    };
   }
 
   closeMenu() {
     this.setState({ menuOpen: false });
   }
 
+  componentDidMount() {
+    // ensure items are keyboard navigable
+    document.body.querySelectorAll('.nav-link').forEach(n => n.setAttribute('tabindex', '0'));
+    document.body.querySelectorAll('.bm-cross-button button').forEach(n => n.tabIndex = 0);
+  }
+
+  componentDidUpdate(prevProps) {
+    const { isDarkMode, toggleTheme } = this.props;
+    if(prevProps.isDarkMode !== isDarkMode) {
+      toggleTheme(this.setState.bind(this), isDarkMode);
+    }
+  }
+
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen });
+  }
+
   render() {
+    const { isDarkMode, toggleDarkMode } = this.props;
+
     return (
       <Menu
         styles={styles}
@@ -74,27 +97,43 @@ export default class SideBar extends React.Component {
         <Link
           to="/"
           onClick={() => this.closeMenu()}
+          className="nav-link"
         >
-            Home
+          Home
         </Link>
         <br />
         <br />
         <Link
           to="/projects"
           onClick={() => this.closeMenu()}
+          className="nav-link"
         >
-            Projects
+          Projects
         </Link>
         <br />
         <br />
         <a
+          className="nav-link"
           href="https://cari.pizza"
           target="_blank"
           rel="noopener noreferrer"
         >
-            Art/Music
+          Art/Music
         </a>
+        <br />
+        <br />
+        <DarkModeButton
+          toggleDarkMode={toggleDarkMode}
+          isDarkMode={isDarkMode}
+        />
       </Menu>
     );
   }
 }
+
+SideBar.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
+  toggleDarkMode: PropTypes.func.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
+  theme: PropTypes.string.isRequired
+};

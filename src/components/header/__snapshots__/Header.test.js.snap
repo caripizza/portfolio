@@ -50,7 +50,6 @@ exports[`Header matches a snapshot 1`] = `
       </li>
       <li>
         <button
-          className="dm-toggle"
           onClick={[Function]}
           style={
             Object {
@@ -62,7 +61,7 @@ exports[`Header matches a snapshot 1`] = `
           }
           type="button"
         >
-          🌞
+          🌒
         </button>
       </li>
     </ul>
