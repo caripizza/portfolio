@@ -3,16 +3,16 @@ import styles from './SimAlchemy.css';
 import simAlchemy from '../../../../assets/SimAlchemy/screenshot.png';
 import ProjectTemplate from '../ProjectTemplate';
 import ImageWrapper from '../../ImageWrapper';
-import { simAlchemyDescription } from '../Projects';
+import { projectsList } from '../projectsData';
 
 const SimAlchemy = () => {
   return (
     <ProjectTemplate
-      name="SimAlchemy"
+      name={projectsList[2].name}
       projectSiteUrl="https://sim-alchemy.herokuapp.com"
-      projectGitHub="https://github.com/team-sailboat/SimAlchemy"
+      projectGitHub={projectsList[2].githubLink}
       projectStyles={styles.SimAlchemy}
-      projectDescription={simAlchemyDescription}
+      projectDescription={projectsList[2].description}
     >
       <p>Featuring a command line game, where teachers can log in and post up to 5 assignments to try and better their {'cohort\'s'} grades:</p>
       <ImageWrapper 

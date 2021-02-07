@@ -42,6 +42,7 @@
 
   img[alt="github"] {
     width: 2em;
+    margin-top: 1rem;
     &:hover {
       animation: shake 0.65s ease-in-out;
     }

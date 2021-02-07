@@ -1,27 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.css';
 import SideBar from '../sidebar/SideBar';
+import DarkModeButton from '../DarkModeButton';
+import { toggleDarkMode, toggleTheme } from '../utils';
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   state = {
     width: window.innerWidth,
-    isDarkMode: false,
+    isDarkMode: true,
+    theme: 'dark',
   };
 
-  UNSAFE_componentWillMount() {
+  componentDidMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  getDarkMode() {
-    if(document.body.classList.value === 'dark-mode') {
-      this.setState({ isDarkMode: true });
-    } else {
-      this.setState({ isDarkMode: false });
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState.isDarkMode !== this.state.isDarkMode) {
+      toggleTheme(this.setState.bind(this), this.state.isDarkMode);
     }
   }
 
@@ -30,14 +27,21 @@ export default class Header extends React.Component {
   };
 
   render() {
-    const { width, isDarkMode } = this.state;
+    const { width, isDarkMode, theme } = this.state;
     const isMobile = width <= 600;
-    const dmTogglePic = isDarkMode ? '🌒' : '🌞';
 
     return (
       <header className={styles.Header}>
         <nav>
-          {isMobile ? <SideBar pageWrapId={'page-wrap'} /> : null}
+          {isMobile ? (
+            <SideBar
+              isDarkMode={isDarkMode}
+              toggleDarkMode={() => toggleDarkMode(this.setState.bind(this), isDarkMode)}
+              toggleTheme={() => toggleTheme(this.setState.bind(this), isDarkMode)}
+              pageWrapId={'page-wrap'}
+              theme={theme}
+            />
+          ) : null}
           <h1 id="cari-palazzolo">
             <NavLink to="/">CARI PALAZZOLO</NavLink>
           </h1>
@@ -56,15 +60,14 @@ export default class Header extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                    Art/Music
+                  Art/Music
                 </a>
               </li>
               <li>
-                <button className="dm-toggle" type="button" onClick={() => this.getDarkMode()}
-                  style={{ fontSize: '1.5rem', background: 'transparent', border: 'none', cursor: 'pointer' }}
-                >
-                  {dmTogglePic}
-                </button>
+                <DarkModeButton
+                  toggleDarkMode={() => toggleDarkMode(this.setState.bind(this), isDarkMode)}
+                  isDarkMode={isDarkMode}
+                />
               </li>
             </ul>
           )}

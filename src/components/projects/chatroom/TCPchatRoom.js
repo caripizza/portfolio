@@ -6,16 +6,16 @@ import client2Pic from '../../../../assets/tcpchatroom/tcpchatroom-client2.png';
 import client3Pic from '../../../../assets/tcpchatroom/tcpchatroom-client3.png';
 import ProjectTemplate from '../ProjectTemplate';
 import ImageWrapper from '../../ImageWrapper';
-import { tcpChatroomDescription } from '../Projects';
+import { projectsList } from '../projectsData';
 
 const TCPchatRoom = () => {
   return (
     <ProjectTemplate
-      name="TCP Chat Room"
+      name={projectsList[4].name}
       projectSiteUrl=""
-      projectGitHub="https://github.com/caripizza/tcp-server"
+      projectGitHub={projectsList[4].githubLink}
       projectStyles={styles.TCPchatRoom}
-      projectDescription={tcpChatroomDescription}
+      projectDescription={projectsList[4].description}
     >
 
       <p>Featuring a chat server for the command line, displaying a welcome message with how many users are connected:</p>

@@ -1,21 +1,19 @@
 import React from 'react';
-import styles from './Qbot.css';
 import slackApp from '../../../../assets/qbot/QbotSlackapp.png';
 import slackThread from '../../../../assets/qbot/slackthread.png';
 import TAqueue from '../../../../assets/qbot/queue.png';
 import TAleaderboard from '../../../../assets/qbot/leaderboard.png';
 import ImageWrapper from '../../ImageWrapper';
 import ProjectTemplate from '../ProjectTemplate';
-import { qBotDescription } from '../Projects';
+import { projectsList } from '../projectsData';
 
 const Qbot = () => {
   return (
     <ProjectTemplate
-      name="Q bot"
+      name={projectsList[0].name}
       projectSiteUrl="https://qbot.alchemycodelab.io"
-      projectGitHub="https://github.com/team-q/q-bot-sandbox"
-      projectStyles={styles.Qbot}
-      projectDescription={qBotDescription}
+      projectGitHub={projectsList[0].githubLink}
+      projectDescription={projectsList[0].description}
     >
       <p>Featuring a Slack bot that replies in a thread, with confirmation that the question was added to the Firestore collection:</p>
       <ImageWrapper 

@@ -1,2 +1,7 @@
 language: node_js
-node_js: node
+node_js: v14.15.4
+env:
+  matrix:
+    - BUILD_SCRIPT="npm run test"
+    - BUILD_SCRIPT="npm run build"
+script: eval $BUILD_SCRIPT

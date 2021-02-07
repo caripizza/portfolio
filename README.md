@@ -4,10 +4,11 @@
 
 Home of my Full Stack Software Developer portfolio.\
 Made with React.js + PostCSS, CI/CD pipelines with Travis + Netlify.\
-[https://cari.pizza](https://cari.pizza)\
+[dev.caripalazzolo.com](https://dev.caripalazzolo.com)\
+[cari.pizza](https://cari.pizza)\
 \
 ![doodle](./assets/doodle.jpg)\
 *doodle circa 2005*
 
 \
-Copyright (c) 2019-2020 Cari Palazzolo, All rights reserved
+Copyright (c) 2019-2021 Cari Palazzolo, All rights reserved

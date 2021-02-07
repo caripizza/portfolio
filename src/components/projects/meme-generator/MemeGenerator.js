@@ -1,19 +1,18 @@
 import React from 'react';
 import memePic1 from '../../../../assets/meme-generator/figlet-font1.png';
-import memePic2 from '../../../../assets/meme-generator/meme1.png';
 import styles from './MemeGenerator.css';
 import ProjectTemplate from '../ProjectTemplate';
 import ImageWrapper from '../../ImageWrapper';
-import { memeGeneratorDescription } from '../Projects';
+import { projectsList } from '../projectsData';
 
 const MemeGenerator = () => {
   return (
     <ProjectTemplate
-      name="Font & Meme Generator"
+      name={projectsList[6].name}
       projectSiteUrl="https://caripizza.github.io/meme-generator"
-      projectGitHub="https://github.com/caripizza/meme-generator"
+      projectGitHub={projectsList[6].githubLink}
       projectStyles={styles.MemeGenerator}
-      projectDescription={memeGeneratorDescription}
+      projectDescription={projectsList[6].description}
     >
       <p>Featuring a Figlet font drop-down menu, allowing you to test and download your fonts as image files:</p>
       <ImageWrapper
@@ -26,7 +25,7 @@ const MemeGenerator = () => {
       <ImageWrapper
         alt="meme-pic-2"
         width="auto" height="auto"
-        src={memePic2}
+        src="https://d1el19mzc628gm.cloudfront.net/meme1.png"
       />
 
     </ProjectTemplate>

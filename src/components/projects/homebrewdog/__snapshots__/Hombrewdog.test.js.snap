@@ -12,19 +12,16 @@ exports[`Homebrewdog matches a snapshot 1`] = `
     </h1>
     <article>
       RESTful web app utilizing the Brewdog Brewery API with VueJS for
-the front-end, PostgreSQL + Express on the back-end, and deployed
-to Heroku.
+    the front-end, PostgreSQL + Express on the back-end, and deployed
+    to Heroku.
     </article>
-    <span>
-      <a
-        href="https://homebrewdog.herokuapp.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        https://homebrewdog.herokuapp.com
-      </a>
-    </span>
-    <br />
+    <a
+      href="https://homebrewdog.herokuapp.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      https://homebrewdog.herokuapp.com
+    </a>
     <a
       href="https://github.com/team-thermometer"
       rel="noopener noreferrer"

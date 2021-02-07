@@ -6,16 +6,16 @@ import homebrewPic3 from '../../../../assets/Homebrewdog/beer-detail_homebrewdog
 import homebrewPic4 from '../../../../assets/Homebrewdog/profile_homebrewdog.png';
 import ProjectTemplate from '../ProjectTemplate';
 import ImageWrapper from '../../ImageWrapper';
-import { homebrewdogDescription } from '../Projects';
+import { projectsList } from '../projectsData';
 
 const Homebrewdog = () => {
   return (
     <ProjectTemplate
-      name="Homebrewdog"
+      name={projectsList[3].name}
       projectSiteUrl="https://homebrewdog.herokuapp.com"
-      projectGitHub="https://github.com/team-thermometer"
+      projectGitHub={projectsList[3].githubLink}
       projectStyles={styles.Homebrewdog}
-      projectDescription={homebrewdogDescription}
+      projectDescription={projectsList[3].description}
     >
       <p>Featuring a pop-up search modal, allowing you to search for beers by key word:</p>
       <ImageWrapper

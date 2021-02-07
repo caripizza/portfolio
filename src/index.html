@@ -18,61 +18,16 @@
   <meta name="twitter:title" content="Cari Palazzolo: Portfolio">
   <meta name="twitter:description" content="Home of Cari's Full Stack JavaScript developer portfolio.">
   <meta name="twitter:image" content="https://caripizza.github.io/meme-generator/e9f5fb1b66104bd0ce395564d6853c5b.png">
+  <link rel="preconnect" href="https://storage.googleapis.com">
+  <link rel="preconnect" href="https://d1el19mzc628gm.cloudfront.net">
+  <link rel="preload" href="https://d1el19mzc628gm.cloudfront.net/caripizza_tr.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="https://d1el19mzc628gm.cloudfront.net/logo-spin.gif" as="image" type="image/gif">
 </head>
-<body onload="handleToggleDarkMode();">
+<body class="dark-mode">
   <noscript>Sorry, this app doesn't work properly without JavaScript enabled. Please enable it to continue.</noscript>
   <div id="root"></div>
-  <script>
-    function handleToggleDarkMode() {
-      let currentTheme = localStorage.getItem('theme');
-      if(currentTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-      }
-      const dmToggle = document.querySelector('.dm-toggle');
-      dmToggle.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        let theme = 'light';
-        if(document.body.classList.contains('dark-mode')) {
-          theme = 'dark';
-        }
-        localStorage.setItem('theme', theme);
-      });
-    }
-  </script>
   <style>
-    .dark-mode {
-      background-color: black;
-      transition: background-color 0.3s ease;
-    }
-    .dark-mode #cari-palazzolo a {
-      color: white;
-    }
-    .dark-mode header {
-      background-color: black;
-      transition: background-color 0.3s ease;
-    }
-    .dark-mode [alt="logo"],
-    .dark-mode [alt="github"] {
-      filter: invert(100%);
-    }
-    .dark-mode section {
-      background-color: black;
-      color: white;
-      transition: background-color 0.3s ease;
-    }
-    .dark-mode footer a,
-    .dark-mode section a {
-      color: cyan;
-    }
-    .dark-mode section#project-detail p {
-      color: black;
-    }
-    .dark-mode footer:not(a),
-    .dark-mode section#project-detail,
-    .dark-mode section#home-page,
-    .dark-mode section#project-page {
-      color: white;
-    }
+    .dark-mode,.dark-mode header{background-color:#000;color:#fff;transition:background-color .3s ease-out;-webkit-transition:background-color .3s ease-out;-moz-transition:background-color .3s ease-out;-o-transition:background-color .3s ease-out}.dark-mode h1#cari-palazzolo a{color:#fff}.dark-mode [alt=github],.dark-mode [alt=logo]{filter:invert(100%)}.dark-mode footer a,.dark-mode section a{color:#0ff}.dark-mode section#project-detail p{color:#000}.dark-mode .bm-burger-bars{background:#fff!important}
   </style>
 </body>
 </html>

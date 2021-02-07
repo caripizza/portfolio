@@ -1,39 +1,29 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Projects.css';
 import hackathonPic from '../../../assets/hackathon.jpg';
 import wtfixathonPic from '../../../assets/wtfixathon.jpg';
 import ImageWrapper from '../ImageWrapper';
-
-export const qBotDescription = `Slack bot and web app for Alchemy Code Lab, made with Slack's 
-Events & Conversations API's, Google Cloud Firestore, Firebase
-OAuth (GitHub + Google), ReactJS, React Hooks, Google Cloud
-Functions, Moment.js, SASS and more.`;
-export const reduxBlogDescription = `Written in React/Redux and styled with Styled-Components, this app
-utilizes the JSON placeholder API to generate and filter users,
-posts, and comments.`;
-export const simAlchemyDescription = `Back-end app featuring a code school game for the command line,
-utilizing MongoDB/Mongoose, Express.js, Node.js, and Inquirer;
-deployed to Heroku.`;
-export const homebrewdogDescription = `RESTful web app utilizing the Brewdog Brewery API with VueJS for
-the front-end, PostgreSQL + Express on the back-end, and deployed
-to Heroku.`;
-export const tcpChatroomDescription = `Back-end chat server allowing multiple clients to connect via the
-command line and chat with each other using short commands (@all,
-@dm, @nick); includes unit tests.`;
-export const asyncRMdescription = `SPA made with React + PostCSS, utilizes the Rick & Morty Api to
-fetch and display paginated lists of characters and locations.`;
-export const memeGeneratorDescription = `SPA WYSIWYG editor allowing users to download their fonts and meme
-creations as image files. (React, Node.js, Figlet, Webpack,
-PostCSS, HTML)`;
-export const pokedexDescription = `Single Page Pokémon search & filter app made with VueJS, HTML, and
-CSS.`;
+import { projectsList } from './projectsData';
+import ProjectPreview from './ProjectPreview';
 
 const Projects = () => {
 
   useEffect(() => {
     document.title = 'Cari\'s Portfolio: Projects';
   }, []);
+
+  const listOfProjects = projectsList.map((project, i) => {
+    return (
+      <ProjectPreview
+        key={i}
+        name={project.name}
+        description={project.description}
+        spanClassName={styles.noWrap}
+        projectLink={project.projectLink}
+        githubLink={project.githubLink}
+      />
+    );
+  });
 
   return (
     <main className={styles.Projects}>
@@ -44,7 +34,7 @@ const Projects = () => {
         </p>
 
         <div className={styles.imgs}>
-          <ImageWrapper 
+          <ImageWrapper
             alt="hackathon-pic"
             className={styles.fadeIn} width="auto" height="auto"
             src={hackathonPic}
@@ -55,7 +45,7 @@ const Projects = () => {
             </span>
           </p>
           <br />
-          <ImageWrapper 
+          <ImageWrapper
             alt="wtfixathon-pic"
             className={styles.fadeIn} width="auto" height="auto"
             src={wtfixathonPic}
@@ -78,162 +68,13 @@ const Projects = () => {
             <li><span>Portland ReactJS</span></li>
             <li><span>JavaScript Admirers</span></li>
             <li><span>Serverless Portland</span></li>
+            <li><span>DeTrash Portland</span></li>
           </ul>
         </div>
       </section>
 
       <section className={styles.right}>
-        <article>
-          <h3>Q bot</h3>
-          <br />
-          <span>
-            {qBotDescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/q-bot">View project</Link> -
-            <a
-              href="https://github.com/team-q/q-bot-sandbox"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
-
-        <article>
-          <h3>React + Redux Blog</h3>
-          <br />
-          <span>
-            {reduxBlogDescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/redux-blog">View project</Link> -
-            <a
-              href="https://github.com/caripizza/redux-blog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
-
-        <article>
-          <h3>SimAlchemy</h3>
-          <br />
-          <span>
-            {simAlchemyDescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/SimAlchemy">View project</Link> -
-            <a
-              href="https://github.com/team-sailboat/SimAlchemy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
-
-        <article>
-          <h3>Homebrewdog</h3>
-          <br />
-          <span>
-            {homebrewdogDescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/homebrewdog">View project</Link> -
-            <a
-              href="https://github.com/team-thermometer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
-
-        <article>
-          <h3>TCP Chat Room</h3>
-          <br />
-          <span>
-            {tcpChatroomDescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/tcp-chat-room">View project</Link> -
-            <a
-              href="https://github.com/caripizza/tcp-server"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
-
-        <article>
-          <h3>Async Rick & Morty</h3>
-          <br />
-          <span>
-            {asyncRMdescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/async-rm">View project</Link> -
-            <a
-              href="https://github.com/caripizza/async-react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
-
-        <article>
-          <h3>Font & Meme Generator</h3>
-          <br />
-          <span>
-            {memeGeneratorDescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/meme-generator">View project</Link> -
-            <a
-              href="https://github.com/caripizza/meme-generator"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
-
-        <article>
-          <h3>Pokedex</h3>
-          <br />
-          <span>
-            {pokedexDescription}
-          </span>
-          <br />
-          <span className={styles.noWrap}>
-            <Link to="/projects/pokedex">View project</Link> -
-            <a
-              href="https://github.com/caripizza/return-of-pokedex"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-          </span>
-        </article>
+        {listOfProjects}
       </section>
     </main>
   );

@@ -25,7 +25,7 @@ exports[`Home matches a snapshot 1`] = `
         alt="logo"
         height="100"
         onLoad={[Function]}
-        src="https://thumbs.gfycat.com/OilyBonyInchworm-max-1mb.gif"
+        src="https://d1el19mzc628gm.cloudfront.net/logo-spin.gif"
         style={
           Object {
             "animationDuration": "0.5s",
@@ -119,9 +119,7 @@ exports[`Home matches a snapshot 1`] = `
       >
         Education
       </h2>
-      <ul
-        className="minFont"
-      >
+      <ul>
         <li>
           <span>
             <strong>

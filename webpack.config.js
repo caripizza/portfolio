@@ -1,12 +1,14 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const InlineSourcePlugin = require('html-webpack-inline-source-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // eslint-disable-next-line
 module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
-    filename: 'bundle.[hash].js',
+    filename: '[name].[chunkhash].js',
     publicPath: '/'
   },
   devServer: {
@@ -16,13 +18,25 @@ module.exports = {
   plugins: [
     new HtmlPlugin({
       template: './src/index.html',
+      inlineSource: 'runtime~main.+\\.js',
       favicon: './assets/favicon.ico'
     }),
     new CleanPlugin('./dist'),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
     new CopyWebpackPlugin([{
       from: 'public'
     }]),
+    new InlineSourcePlugin(),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+    runtimeChunk: true,
+  },
   module: {
     rules: [
       {
@@ -41,8 +55,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader',
-            options: { sourceMap: true }
+            loader: MiniCssExtractPlugin.loader,
           },
           {
             loader: 'css-loader',
@@ -68,7 +81,7 @@ module.exports = {
         test: /\.(jpeg|jpg|png|svg|gif)$/,
         use: {
           loader: 'url-loader',
-          options: { limit: 1000 },
+          options: { limit: 8192 },
         },
       }
     ]
