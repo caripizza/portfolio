@@ -4,8 +4,8 @@
   "description": "Home of my Full Stack Software Developer portfolio, made with React.js and PostCSS.",
   "main": "index.js",
   "engines": {
-    "node": "13.9.0",
-    "npm": "6.13.7"
+    "node": "14.15.4",
+    "npm": "6.14.10"
   },
   "scripts": {
     "lint": "eslint src",
