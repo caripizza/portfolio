@@ -61,7 +61,7 @@ exports[`Header matches a snapshot 1`] = `
           }
           type="button"
         >
-          🌒
+          🌞
         </button>
       </li>
     </ul>
