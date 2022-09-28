@@ -8,7 +8,7 @@ Made with React.js + PostCSS, CI/CD pipelines with Travis + Netlify.\
 [cari.pizza](https://cari.pizza)\
 \
 ![doodle](./assets/doodle.jpg)\
-*doodle circa 2005*
+_doodle circa 2005_
 
 \
-Copyright (c) 2019-2021 Cari Palazzolo, All rights reserved
+Copyright (c) 2019-2022 Cari Palazzolo, All rights reserved

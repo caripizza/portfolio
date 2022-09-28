@@ -1,14 +1,14 @@
+/*eslint-env node*/
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const InlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-// eslint-disable-next-line
 module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: '[name].[hash].js',
     publicPath: '/'
   },
   devServer: {

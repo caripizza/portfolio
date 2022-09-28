@@ -6,7 +6,7 @@ export default function DarkModeButton({ toggleDarkMode, isDarkMode }) {
     <button type="button" onClick={toggleDarkMode}
       style={{ fontSize: '1.5rem', background: 'transparent', border: 'none', cursor: 'pointer' }}
     >
-      {isDarkMode ? '🌒' : '🌞'}
+      {!isDarkMode ? '🌒' : '🌞'}
     </button>
   );
 }
