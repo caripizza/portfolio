@@ -1,28 +1,26 @@
 const getDarkModeIsEnabled = () => document.body.classList.value === 'dark-mode';
 
-function setDarkMode(setState) {
-  if(!getDarkModeIsEnabled()) {
-    document.body.classList.add('dark-mode');
-    setState({ theme: 'dark' });
-  }
+function setDarkModeColors() {
+  document.body.style.setProperty('--bg-color', 'var(--black-100)');
+  document.body.style.setProperty('--text-color', 'var(--white-100)');
 }
 
-function setLightMode(setState) {
-  if(getDarkModeIsEnabled()) {
-    document.body.classList.toggle('dark-mode');
-    setState({ theme: 'light' });
-  }
+function setLightModeColors() {
+  document.body.style.setProperty('--bg-color', 'var(--white-100)');
+  document.body.style.setProperty('--text-color', 'var(--black-100)');
 }
 
 function toggleDarkMode(setState, isDarkModeState) {
   setState({ isDarkMode: !isDarkModeState });
 }
 
-function toggleTheme(setState, isDarkModeState) {
-  if(isDarkModeState) {
-    setDarkMode(setState);
-  } else {
-    setLightMode(setState);
+function toggleTheme() {
+  if(getDarkModeIsEnabled()) {
+    document.body.classList.toggle('dark-mode');
+    setLightModeColors();
+  } else  {
+    document.body.classList.add('dark-mode');
+    setDarkModeColors();
   }
 }
 
@@ -30,6 +28,6 @@ export {
   getDarkModeIsEnabled,
   toggleTheme,
   toggleDarkMode,
-  setDarkMode,
-  setLightMode
+  setDarkModeColors,
+  setLightModeColors
 };

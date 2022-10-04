@@ -5,14 +5,20 @@
   font-family: "Quicksand", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  margin-left: -1px !important;
-  margin-right: 0;
+  margin: 0;
   font-weight: 300;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100%;
 }
 
 header {
-  background-color: white;
+  background-color: var(--bg-color);
   width: 100%;
   top: 0;
   position: fixed;
@@ -21,11 +27,13 @@ header {
 main {
   padding-top: 4.5em;
   margin: 0;
+  background-color: var(--bg-color);
 }
 
 footer {
   width: 100%;
   padding: 0.5em;
   line-height: 1.5em;
+  background-color: var(--bg-color);
 }
 

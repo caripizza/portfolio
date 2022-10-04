@@ -22,12 +22,57 @@
   <link rel="preconnect" href="https://d1el19mzc628gm.cloudfront.net">
   <link rel="preload" href="https://d1el19mzc628gm.cloudfront.net/caripizza_tr.svg" as="image" type="image/svg+xml">
   <link rel="preload" href="https://d1el19mzc628gm.cloudfront.net/logo-spin.gif" as="image" type="image/gif">
+  <style>
+    :root {
+      --black-100: #000000;
+      --white-100: #FFFFFF;
+      --cyan-500: #0FC5F3;
+      --red-500: #FF1654;
+      --gold-500: #FFD700;
+      --bg-color: var(--white-100);
+      --text-color: var(--black-100);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+  </style>
 </head>
+<!-- set dark mode as default -->
 <body class="dark-mode">
   <noscript>Sorry, this app doesn't work properly without JavaScript enabled. Please enable it to continue.</noscript>
   <div id="root"></div>
   <style>
-    .dark-mode,.dark-mode header{background-color:#000;color:#fff;transition:background-color .3s ease-out;-webkit-transition:background-color .3s ease-out;-moz-transition:background-color .3s ease-out;-o-transition:background-color .3s ease-out}.dark-mode h1#cari-palazzolo a{color:#fff}.dark-mode [alt=github],.dark-mode [alt=logo]{filter:invert(100%)}.dark-mode footer a,.dark-mode section a{color:#0ff}.dark-mode section#project-detail p{color:#000}.dark-mode .bm-burger-bars{background:#fff!important}
+    .dark-mode,
+    .dark-mode header {
+      --bg-color: var(--black-100);
+      --text-color: var(--white-100);
+      transition: background-color .3s ease-out;
+      -webkit-transition: background-color .3s ease-out;
+      -moz-transition: background-color .3s ease-out;
+      -o-transition: background-color .3s ease-out;
+    }
+    .dark-mode #cari-palazzolo a {
+      color: var(--text-color);
+    }
+    .dark-mode [alt=github],.dark-mode [alt=logo]{
+      filter: invert(100%);
+    }
+    .dark-mode footer a,
+    .dark-mode section a{
+      color: var(--cyan-500);
+    }
+    #project-detail p{
+      color: var(--black-100);
+    }
+    button#react-burger-cross-btn {
+      left: -1px !important;
+      top: 6px !important;
+    }
+    button#react-burger-cross-btn:focus-visible {
+      outline: 2px solid var(--red-500);
+    }
+    .bm-cross-button:hover .bm-cross {
+      --text-color: var(--red-500);
+    }
   </style>
 </body>
 </html>

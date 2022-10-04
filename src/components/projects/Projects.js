@@ -61,14 +61,16 @@ const Projects = () => {
             </a></span>
           </p>
           <ul>
-            <h3>Organizations</h3>
+            <h3>Memberships</h3>
             <li><span>PDXWIT | Portland Women in Tech</span></li>
             <li><span>Portland Women Who Code</span></li>
             <li><span>PDX Node</span></li>
             <li><span>Portland ReactJS</span></li>
             <li><span>JavaScript Admirers</span></li>
             <li><span>Serverless Portland</span></li>
+            <li><span>Front End PDX</span></li>
             <li><span>DeTrash Portland</span></li>
+            <li><span>SOLVE Oregon</span></li>
           </ul>
         </div>
       </section>

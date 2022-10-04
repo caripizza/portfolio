@@ -4,12 +4,11 @@
   a {
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
-    &:hover {
-      background: red;
-    }
     padding: .5em;
-    color: black;
-    background: white;
+  }
+  a, button {
+    color: var(--black-100);
+    background: var(--white-100);
     -webkit-transition-property: background;
     -moz-transition-property: background;
     -o-transition-property: background;
@@ -22,6 +21,10 @@
     -moz-transition-timing-function: linear;
     -o-transition-timing-function: linear;
     transition-timing-function: linear;
+  }
+  & a:hover,
+  & button[data-style="toggle-dark-mode"]:hover {
+    background-color: var(--red-500);
   }
 
   ul {
@@ -51,7 +54,7 @@
   }
 
   h1:hover {
-    color: red;
+    color: var(--red-500);
   }
 
   @media only screen and (max-width: 330px) and (min-width: 200px) {
