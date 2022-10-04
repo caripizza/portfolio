@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Home.css';
 import ImageWrapper from '../ImageWrapper';
-
-const welcomeMsg1 =
-  'Welcome! I\'m Cari, a full stack software developer, musician, and graphic designer.';
-const welcomeMsg2 =
-  'I started dabbling in freelance website design and digital marketing while performing and teaching music. I later made my way up to the Pacific Northwest, working in technical support and QA testing, where I fell in love with the software development cycle and decided to take the plunge into coding.';
-const welcomeMsg3 =
-  'In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. I made this site with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I\'m a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies. I\'m currently exploring Gemfury, npmjs, AWS, Ruby, Rails, and Angular.';
+import Article from './Article';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,73 +21,83 @@ export default function Home() {
             src={!loading ? 'https://d1el19mzc628gm.cloudfront.net/caripizza_tr.svg' : 'https://d1el19mzc628gm.cloudfront.net/logo-spin.gif'}
           />
         </div>
-        <p
+        <Article
           className={`${styles.highlight} ${styles.pWelcome1} ${styles.fadeIn} ${styles.minFont}`}
         >
-          {welcomeMsg1}
-        </p>
-        <p
+          Welcome! I&apos;m Cari, a full stack developer with a career rooted in visual art, graphic design, and music.
+        </Article>
+        <Article
           className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
         >
-          {welcomeMsg2}
-        </p>
-        <p
+          I started dabbling in freelance website design and digital marketing while performing and teaching music.
+          I later made my way up to the Pacific Northwest, working in technical support and QA testing, where I fell in love
+          with the software development cycle and decided to take the plunge into coding.
+        </Article>
+        <Article
           className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
         >
-          {welcomeMsg3}
-        </p>
+          In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript.&nbsp;
+          <a href="https://github.com/caripizza/portfolio" target="__blank" rel="noopener noreferrer">
+            I made this site
+          </a>
+          &nbsp;with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify.
+          I&apos;m a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
+        </Article>
+        <Article
+          className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
+        >
+          I&apos;m currently excited about TypeScript, React, and&nbsp;
+          <a href="https://github.com/caripizza/ui" target="__blank" rel="noopener noreferrer">
+            developing and maintaining
+          </a>
+          &nbsp;design systems and component libraries.
+        </Article>
       </section>
       <section className={`${styles.half} ${styles.fadeIn}`}>
         <article className={styles.skills}>
-          <h2 className={styles.highlight}>Expertise</h2>
+          <h2 className={styles.highlight}>Experience</h2>
           <ul className={styles.spreadVertically}>
             <li>
               <span>
-                JavaScript, HTML/CSS, DOM manipulation
+                JavaScript, TypeScript, HTML, CSS, SASS/SCSS, SQL, Python, Ruby/Rails
               </span>
             </li>
             <li>
               <span>
-                UI/UX Mobile-first/Responsive design principles
+                DOM manipulation, UI/UX Mobile-first/Responsive design principles, A11y best practices,
+                Atomic Design, semver
               </span>
             </li>
             <li>
               <span>
-                BDD/TDD: Selenium, Jenkins, Jasmine, Jest, Enzyme, Mocha/Chai, Protractor, Rspec, Karma
+                React, Redux, Gatsby, NextJS, VueJS, Express, Angular, GraphQL, StencilJS
               </span>
             </li>
             <li>
               <span>
-                Frameworks/Tools: Node.js, React/Redux, Babel,
-                Webpack, Yarn, Express.js, Vue.js, Postman,
-                Serverless, AWS, SASS/SCSS, PostCSS, Styled-Components,
-                Material UI, Angular, Auth0
+                SASS/SCSS, PostCSS, Styled-Components, Material UI, TailwindCSS, emotion
               </span>
             </li>
             <li>
               <span>
-                Database: GCP, Firebase/Firestore, Cloud Functions,
-                MongoDB, Mongoose, PostgreSQL, MySQL
+                Babel, Webpack, Rollup, Gulp, npm, yarn, nvm, rvm, Gemfury, unpkg
               </span>
             </li>
             <li>
               <span>
-                CD/CI: Git, GitHub, Travis CI, Gitlab, AWS
-                CodeStar/CloudFormation, Heroku, Netlify
+                Puppeteer, Selenium, Jasmine, Jest, Enzyme, Mocha, Chai, Protractor, Rspec, Karma, Storybook, Chromatic,
+                Screener.io, WebdriverIO, Cypress, Browserstack, Jenkins, Postman, Auth0
               </span>
             </li>
             <li>
               <span>
-                A/V: ProTools, Cubase, Logic Pro, Final Cut Pro,
-                Adobe: Photoshop, Illustrator, InDesign,
-                AfterEffects
+                Google Cloud Platform, Firebase/Firestore/Cloud Functions/Oauth,
+                MongoDB, Mongoose, PostgreSQL, MySQL, Heroku
               </span>
             </li>
             <li>
               <span>
-                Squarespace, Wordpress, G Suite, Sheets, Docs,
-                Analytics, Ads, GTM, Search Console, Facebook
-                Analytics
+                Git, GitHub/Actions, Travis CI, AWS CodeStar/CloudFormation, Netlify, EKS, Kubernetes, Docker
               </span>
             </li>
           </ul>
@@ -101,7 +105,7 @@ export default function Home() {
         <article className={styles.education}>
           <h2 className={styles.highlight}>Education</h2>
           <ul>
-            <li>
+            <li className={styles.detail}>
               <span>
                 <strong>
                   Advanced Software Development in Full Stack JavaScript
@@ -110,7 +114,7 @@ export default function Home() {
                 Alchemy Code Lab (Portland, 2018-2019)
               </span>
             </li>
-            <li className={styles.detail}>
+            <li>
               <span>
                 MERN-stack professional training in vanilla JavaScript (ES6+),
                 DOM manipulation, RESTful APIs, Node.js apps with Express,
@@ -118,15 +122,15 @@ export default function Home() {
               </span>
               <br />
             </li>
-            <li>
-              <br />
+            <br />
+            <li className={styles.detail}>
               <span>
                 <strong>Bachelor of Fine Arts</strong>
                 <br />
                 The University of Texas at Austin (2002-2006)
               </span>
             </li>
-            <li className={styles.detail}>
+            <li>
               <span>
                 Studio Art major with concentrations in Video, Drafting, Painting, and Printmaking
               </span>
@@ -157,9 +161,9 @@ export default function Home() {
         </article>
       </section>
       <section className={styles.languages}>
-        <p>JavaScript</p>
-        <p>HTML/CSS</p>
-        <p>SQL</p>
+        <p>JavaScript/TypeScript</p>
+        <p>HTML/CSS/SASS</p>
+        <p>SQL/Python</p>
         <p>Ruby/Rails</p>
       </section>
     </main>

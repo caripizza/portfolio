@@ -42,7 +42,7 @@ exports[`Home matches a snapshot 1`] = `
     <p
       className="highlight pWelcome1 fadeIn minFont"
     >
-      Welcome! I'm Cari, a full stack software developer, musician, and graphic designer.
+      Welcome! I'm Cari, a full stack developer with a career rooted in visual art, graphic design, and music.
     </p>
     <p
       className="highlight welcomeParagraphs fadeIn minFont"
@@ -52,7 +52,28 @@ exports[`Home matches a snapshot 1`] = `
     <p
       className="highlight welcomeParagraphs fadeIn minFont"
     >
-      In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. I made this site with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies. I'm currently exploring Gemfury, npmjs, AWS, Ruby, Rails, and Angular.
+      In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. 
+      <a
+        href="https://github.com/caripizza/portfolio"
+        rel="noopener noreferrer"
+        target="__blank"
+      >
+        I made this site
+      </a>
+       with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
+    </p>
+    <p
+      className="highlight welcomeParagraphs fadeIn minFont"
+    >
+      I'm currently excited about TypeScript, React, and 
+      <a
+        href="https://github.com/caripizza/ui"
+        rel="noopener noreferrer"
+        target="__blank"
+      >
+        developing and maintaining
+      </a>
+       design systems and component libraries.
     </p>
   </section>
   <section
@@ -64,49 +85,49 @@ exports[`Home matches a snapshot 1`] = `
       <h2
         className="highlight"
       >
-        Expertise
+        Experience
       </h2>
       <ul
         className="spreadVertically"
       >
         <li>
           <span>
-            JavaScript, HTML/CSS, DOM manipulation
+            JavaScript, TypeScript, HTML, CSS, SASS/SCSS, SQL, Python, Ruby/Rails
           </span>
         </li>
         <li>
           <span>
-            UI/UX Mobile-first/Responsive design principles
+            DOM manipulation, UI/UX Mobile-first/Responsive design principles, A11y best practices, Atomic Design, semver
           </span>
         </li>
         <li>
           <span>
-            BDD/TDD: Selenium, Jenkins, Jasmine, Jest, Enzyme, Mocha/Chai, Protractor, Rspec, Karma
+            React, Redux, Gatsby, NextJS, VueJS, Express, Angular, GraphQL, StencilJS
           </span>
         </li>
         <li>
           <span>
-            Frameworks/Tools: Node.js, React/Redux, Babel, Webpack, Yarn, Express.js, Vue.js, Postman, Serverless, AWS, SASS/SCSS, PostCSS, Styled-Components, Material UI, Angular, Auth0
+            SASS/SCSS, PostCSS, Styled-Components, Material UI, TailwindCSS, emotion
           </span>
         </li>
         <li>
           <span>
-            Database: GCP, Firebase/Firestore, Cloud Functions, MongoDB, Mongoose, PostgreSQL, MySQL
+            Babel, Webpack, Rollup, Gulp, npm, yarn, nvm, rvm, Gemfury, unpkg
           </span>
         </li>
         <li>
           <span>
-            CD/CI: Git, GitHub, Travis CI, Gitlab, AWS CodeStar/CloudFormation, Heroku, Netlify
+            Puppeteer, Selenium, Jasmine, Jest, Enzyme, Mocha, Chai, Protractor, Rspec, Karma, Storybook, Chromatic, Screener.io, WebdriverIO, Cypress, Browserstack, Jenkins, Postman, Auth0
           </span>
         </li>
         <li>
           <span>
-            A/V: ProTools, Cubase, Logic Pro, Final Cut Pro, Adobe: Photoshop, Illustrator, InDesign, AfterEffects
+            Google Cloud Platform, Firebase/Firestore/Cloud Functions/Oauth, MongoDB, Mongoose, PostgreSQL, MySQL, Heroku
           </span>
         </li>
         <li>
           <span>
-            Squarespace, Wordpress, G Suite, Sheets, Docs, Analytics, Ads, GTM, Search Console, Facebook Analytics
+            Git, GitHub/Actions, Travis CI, AWS CodeStar/CloudFormation, Netlify, EKS, Kubernetes, Docker
           </span>
         </li>
       </ul>
@@ -120,7 +141,9 @@ exports[`Home matches a snapshot 1`] = `
         Education
       </h2>
       <ul>
-        <li>
+        <li
+          className="detail"
+        >
           <span>
             <strong>
               Advanced Software Development in Full Stack JavaScript
@@ -129,16 +152,16 @@ exports[`Home matches a snapshot 1`] = `
             Alchemy Code Lab (Portland, 2018-2019)
           </span>
         </li>
-        <li
-          className="detail"
-        >
+        <li>
           <span>
             MERN-stack professional training in vanilla JavaScript (ES6+), DOM manipulation, RESTful APIs, Node.js apps with Express, Vue.js, PostgreSQL, React, Redux, MongoDB, Mongoose
           </span>
           <br />
         </li>
-        <li>
-          <br />
+        <br />
+        <li
+          className="detail"
+        >
           <span>
             <strong>
               Bachelor of Fine Arts
@@ -147,9 +170,7 @@ exports[`Home matches a snapshot 1`] = `
             The University of Texas at Austin (2002-2006)
           </span>
         </li>
-        <li
-          className="detail"
-        >
+        <li>
           <span>
             Studio Art major with concentrations in Video, Drafting, Painting, and Printmaking
           </span>
@@ -187,13 +208,13 @@ exports[`Home matches a snapshot 1`] = `
     className="languages"
   >
     <p>
-      JavaScript
+      JavaScript/TypeScript
     </p>
     <p>
-      HTML/CSS
+      HTML/CSS/SASS
     </p>
     <p>
-      SQL
+      SQL/Python
     </p>
     <p>
       Ruby/Rails

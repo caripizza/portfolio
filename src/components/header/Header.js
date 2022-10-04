@@ -3,31 +3,29 @@ import { NavLink } from 'react-router-dom';
 import styles from './Header.css';
 import SideBar from '../sidebar/SideBar';
 import DarkModeButton from '../DarkModeButton';
-import { toggleDarkMode, toggleTheme } from '../utils';
+import { toggleTheme } from '../utils';
 
 export default class Header extends Component {
   state = {
     width: window.innerWidth,
-    isDarkMode: true,
-    theme: 'dark',
+    isDarkMode: true, // set dark mode as default
   };
 
   componentDidMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if(prevState.isDarkMode !== this.state.isDarkMode) {
-      toggleTheme(this.setState.bind(this), this.state.isDarkMode);
-    }
-  }
-
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
   };
 
+  handleToggleDarkMode = () => {
+    toggleTheme();
+    this.setState({ isDarkMode: !this.state.isDarkMode });
+  }
+
   render() {
-    const { width, isDarkMode, theme } = this.state;
+    const { width, isDarkMode } = this.state;
     const isMobile = width <= 600;
 
     return (
@@ -36,10 +34,8 @@ export default class Header extends Component {
           {isMobile ? (
             <SideBar
               isDarkMode={isDarkMode}
-              toggleDarkMode={() => toggleDarkMode(this.setState.bind(this), isDarkMode)}
-              toggleTheme={() => toggleTheme(this.setState.bind(this), isDarkMode)}
-              pageWrapId={'page-wrap'}
-              theme={theme}
+              toggleDarkMode={() => this.handleToggleDarkMode()}
+              pageWrapId='page-wrap'
             />
           ) : null}
           <h1 id="cari-palazzolo">
@@ -65,7 +61,7 @@ export default class Header extends Component {
               </li>
               <li>
                 <DarkModeButton
-                  toggleDarkMode={() => toggleDarkMode(this.setState.bind(this), isDarkMode)}
+                  toggleDarkMode={this.handleToggleDarkMode}
                   isDarkMode={isDarkMode}
                 />
               </li>

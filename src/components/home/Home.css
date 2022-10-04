@@ -14,7 +14,7 @@
       display: block;
       width: 0;
       height: 2px;
-      background: cyan;
+      background: var(--cyan-500);
       transition: width 1.3s;
     }
     &:hover::after {
@@ -55,7 +55,6 @@
 
   ul {
     list-style: square;
-    /*color: cyan;*/
   }
 
   .spreadVertically {
@@ -64,10 +63,6 @@
     min-height: 75%;
     justify-content: space-evenly;
   }
-
-  /*li span {
-    color: black;
-  }*/
 
   .education ul {
     list-style: none;
@@ -99,13 +94,13 @@
   .skills {
     width: 100vw;
     padding: 1em;
-    border-top: 2px solid red;
+    border-top: 2px solid var(--red-500);
   }
 
   .education {
     width: 100vw;
     padding: 1em;
-    border-top: 2px solid gold;
+    border-top: 2px solid var(--gold-500);
   }
 
   .languages {
@@ -114,7 +109,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     min-height: 6vh;
-    border: 2px solid cyan;
+    border: 2px solid var(--cyan-500);
   }
 
   .languages p {

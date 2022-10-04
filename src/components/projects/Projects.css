@@ -144,9 +144,9 @@
         background-image: repeating-linear-gradient(
           to left,
           transparent,
-          cyan,
-          red,
-          gold
+          var(--cyan-500),
+          var(--red-500),
+          var(--gold-500)
         );
         transition: width 0.4s;
       }

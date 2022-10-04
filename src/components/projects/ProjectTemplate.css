@@ -24,7 +24,7 @@
 
   p {
     width: 70vw;
-    background: gold;
+    background: var(--gold-500);
     padding: 1em;
     animation: slide-in-left 1s linear forwards;
     transition: background-color 1s ease;
