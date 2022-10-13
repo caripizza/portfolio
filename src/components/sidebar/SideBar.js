@@ -22,8 +22,8 @@ const styles = {
   bmCross: {
     background: 'var(--text-color)',
     zoom: '1.5',
-    width: '1px',
-    height: '16px'
+    width: '1.5px',
+    height: '16px',
   },
   bmMenuWrap: {
     position: 'fixed',
