@@ -11,7 +11,6 @@ const Qbot = () => {
   return (
     <ProjectTemplate
       name={projectsList[0].name}
-      projectSiteUrl="https://qbot.alchemycodelab.io"
       projectGitHub={projectsList[0].githubLink}
       projectDescription={projectsList[0].description}
     >

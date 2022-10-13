@@ -16,13 +16,6 @@ exports[`Homebrewdog matches a snapshot 1`] = `
     to Heroku.
     </article>
     <a
-      href="https://homebrewdog.herokuapp.com"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      https://homebrewdog.herokuapp.com
-    </a>
-    <a
       href="https://github.com/team-thermometer"
       rel="noopener noreferrer"
       target="_blank"

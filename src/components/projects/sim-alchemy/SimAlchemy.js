@@ -9,7 +9,6 @@ const SimAlchemy = () => {
   return (
     <ProjectTemplate
       name={projectsList[2].name}
-      projectSiteUrl="https://sim-alchemy.herokuapp.com"
       projectGitHub={projectsList[2].githubLink}
       projectStyles={styles.SimAlchemy}
       projectDescription={projectsList[2].description}

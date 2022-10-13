@@ -12,7 +12,6 @@ const Homebrewdog = () => {
   return (
     <ProjectTemplate
       name={projectsList[3].name}
-      projectSiteUrl="https://homebrewdog.herokuapp.com"
       projectGitHub={projectsList[3].githubLink}
       projectStyles={styles.Homebrewdog}
       projectDescription={projectsList[3].description}
