@@ -55,7 +55,7 @@ export default function Home() {
       </section>
       <section className={`${styles.half} ${styles.fadeIn}`}>
         <article className={styles.skills}>
-          <h2 className={styles.highlight}>Experience</h2>
+          <h2 className={styles.highlightLine}>Experience</h2>
           <ul className={styles.spreadVertically}>
             <li>
               <span>
@@ -103,7 +103,7 @@ export default function Home() {
           </ul>
         </article>
         <article className={styles.education}>
-          <h2 className={styles.highlight}>Education</h2>
+          <h2 className={styles.highlightLine}>Education</h2>
           <ul>
             <li className={styles.detail}>
               <span>
