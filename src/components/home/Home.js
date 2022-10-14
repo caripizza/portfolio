@@ -29,23 +29,31 @@ export default function Home() {
         <Article
           className={`${styles.highlight} ${styles.pWelcome1} ${styles.fadeIn} ${styles.minFont}`}
         >
-          Welcome! I&apos;m Cari, a full stack developer with a career rooted in visual art, graphic design, and music.
+          Welcome! I&apos;m Cari, a full stack engineer with a focus on UI/UX and Front End Development.
         </Article>
         <Article
           className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
         >
-          I started dabbling in freelance website design and digital marketing while performing and teaching music.
-          I later made my way up to the Pacific Northwest, working in technical support and QA testing, where I fell in love
-          with the software development cycle and decided to take the plunge into coding.
+          I went to school for visual art, and performed and taught music for a decade after.
+          I did everything from designing and screen printing my own band merchandise, to writing the songs and recording, to teaching music to kids.
+          I&apos;m comfortable creating, coming up with new ideas, and collaborating with a team.
         </Article>
         <Article
           className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
         >
-          In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript.&nbsp;
+          I began my career in tech {new Date().getFullYear() - 2014} years ago, working in technical support and later QA testing. In 2019, I
+          completed a 6 month advanced JavaScript training bootcamp focused mainly on the MERN stack.
+          Since then, I&apos;ve worked in a variety of codebases and have learned most of all how much I&apos;m driven
+          to work with Product, Design, and Development teams to not only articulate design decisions and
+          document product behavior, but also maintain and ship reusable software built to propel iteration.
+        </Article>
+        <Article
+          className={`${styles.highlight} ${styles.welcomeParagraphs} ${styles.fadeIn} ${styles.minFont}`}
+        >
           <a href="https://github.com/caripizza/portfolio" target="__blank" rel="noopener noreferrer">
             I made this site
           </a>
-          &nbsp;with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify.
+          &nbsp;with React, Webpack, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify.
           I&apos;m a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
         </Article>
         <Article

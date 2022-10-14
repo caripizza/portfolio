@@ -1,5 +1,4 @@
 .ProjectTemplate {
-
   animation: fadein 1s;
   -moz-animation: fadein 1s; /* Firefox */
   -webkit-animation: fadein 1s; /* Safari and Chrome */
@@ -42,7 +41,6 @@
 
   img[alt="github"] {
     width: 2em;
-    margin-top: 1rem;
     &:hover {
       animation: shake 0.65s ease-in-out;
     }
