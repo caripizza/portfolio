@@ -42,17 +42,23 @@ exports[`Home matches a snapshot 1`] = `
     <p
       className="highlight pWelcome1 fadeIn minFont"
     >
-      Welcome! I'm Cari, a full stack developer with a career rooted in visual art, graphic design, and music.
+      Welcome! I'm Cari, a full stack engineer with a focus on UI/UX and Front End Development.
     </p>
     <p
       className="highlight welcomeParagraphs fadeIn minFont"
     >
-      I started dabbling in freelance website design and digital marketing while performing and teaching music. I later made my way up to the Pacific Northwest, working in technical support and QA testing, where I fell in love with the software development cycle and decided to take the plunge into coding.
+      I went to school for visual art, and performed and taught music for a decade after. I did everything from designing and screen printing my own band merchandise, to writing the songs and recording, to teaching music to kids. I'm comfortable creating, coming up with new ideas, and collaborating with a team.
     </p>
     <p
       className="highlight welcomeParagraphs fadeIn minFont"
     >
-      In early 2019, I completed a 6 month intensive training program in Full Stack JavaScript. 
+      I began my career in tech 
+      8
+       years ago, working in technical support and later QA testing. In 2019, I completed a 6 month advanced JavaScript training bootcamp focused mainly on the MERN stack. Since then, I've worked in a variety of codebases and have learned most of all how much I'm driven to work with Product, Design, and Development teams to not only articulate design decisions and document product behavior, but also maintain and ship reusable software built to propel iteration.
+    </p>
+    <p
+      className="highlight welcomeParagraphs fadeIn minFont"
+    >
       <a
         href="https://github.com/caripizza/portfolio"
         rel="noopener noreferrer"
@@ -60,7 +66,7 @@ exports[`Home matches a snapshot 1`] = `
       >
         I made this site
       </a>
-       with React, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
+       with React, Webpack, PostCSS, and Jest, and set-up CI/CD pipelines using Travis CI and Netlify. I'm a self taught multi-instrumentalist and audio engineer, fierce problem solver and collaborative team player, and I love learning new technologies.
     </p>
     <p
       className="highlight welcomeParagraphs fadeIn minFont"
@@ -83,7 +89,7 @@ exports[`Home matches a snapshot 1`] = `
       className="skills"
     >
       <h2
-        className="highlight"
+        className="highlightLine"
       >
         Experience
       </h2>
@@ -136,7 +142,7 @@ exports[`Home matches a snapshot 1`] = `
       className="education"
     >
       <h2
-        className="highlight"
+        className="highlightLine"
       >
         Education
       </h2>
