@@ -13,7 +13,7 @@ exports[`Header matches a snapshot 1`] = `
         className="active"
         href="/"
         onClick={[Function]}
-        style={Object {}}
+        style={{}}
       >
         CARI PALAZZOLO
       </a>
@@ -25,7 +25,7 @@ exports[`Header matches a snapshot 1`] = `
           className="active"
           href="/"
           onClick={[Function]}
-          style={Object {}}
+          style={{}}
         >
           Home
         </a>
@@ -54,7 +54,7 @@ exports[`Header matches a snapshot 1`] = `
           data-style="toggle-dark-mode"
           onClick={[Function]}
           style={
-            Object {
+            {
               "border": "none",
               "borderBottomLeftRadius": "50%",
               "borderTopRightRadius": "50%",
