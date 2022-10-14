@@ -1,4 +1,7 @@
 .ReduxBlog {
+  img[alt="github"] {
+    margin-top: 1em;
+  }
 
   @media screen and (min-width: 600px) {
     img:not([alt="github"]) {

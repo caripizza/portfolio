@@ -5,16 +5,17 @@ import searchPosts from '../../../../assets/redux-blog/search-posts.jpg';
 import longestPosts from '../../../../assets/redux-blog/longest-posts.png';
 import ProjectTemplate from '../ProjectTemplate';
 import ImageWrapper from '../../ImageWrapper';
-import { projectsList } from '../projectsData';
+import { getProject } from '../projectsData';
 
 const ReduxBlog = () => {
+  const project = getProject('React + Redux Blog');
   return (
     <ProjectTemplate
-      name={projectsList[1].name}
+      name={project.name}
       projectSiteUrl="https://react-redux-blog.netlify.com"
-      projectGitHub={projectsList[1].githubLink}
+      projectGitHub={project.githubLink}
       projectStyles={styles.ReduxBlog}
-      projectDescription={projectsList[1].description}
+      projectDescription={project.description}
     >
       <p>Featuring a search component allowing the user to filter through lorem ipsum blog posts:</p>
       <ImageWrapper 

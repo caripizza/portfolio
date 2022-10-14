@@ -21,6 +21,7 @@ const Projects = () => {
         spanClassName={styles.noWrap}
         projectLink={project.projectLink}
         githubLink={project.githubLink}
+        deployedLink={project.deployedLink}
       />
     );
   });
@@ -30,7 +31,8 @@ const Projects = () => {
       <section className={styles.left} id="project-page">
         <h1>Projects</h1>
         <p className={styles.description}>
-            I love the full stack and I thrive in both front-end and back-end development. I’m driven to create responsive, accessible interfaces and improve user experiences through my thoughtful, detailed approach.
+          I love the full stack, and I thrive in front-end development.
+          I’m driven to create responsive, accessible interfaces through my thoughtful detailed approach.
         </p>
 
         <div className={styles.imgs}>
@@ -76,7 +78,11 @@ const Projects = () => {
       </section>
 
       <section className={styles.right}>
-        {listOfProjects}
+        <div id="right-container" className={styles.rightContainer}>
+          <span id="top" hidden=""></span>
+          {listOfProjects}
+          <a href="#top">top</a>
+        </div>
       </section>
     </main>
   );

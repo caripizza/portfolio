@@ -1,4 +1,7 @@
 .MemeGenerator {
+  img[alt="github"] {
+    margin-top: 1rem;
+  }
 
   @media screen and (min-width: 600px) {
     img:not([alt="github"]) {
