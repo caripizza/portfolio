@@ -8,7 +8,16 @@ import Pokedex from '../components/projects/pokedex/Pokedex';
 import AsyncRM from '../components/projects/async-rm/AsyncRM';
 import Qbot from '../components/projects/q-bot/Qbot';
 import TCPchatRoom from '../components/projects/chatroom/TCPchatRoom';
-import { projectsList } from '../components/projects/projectsData';
+import { getProject } from '../components/projects/projectsData';
+
+const homeBrewLink = getProject('Homebrewdog').projectLink;
+const fontMemeLink = getProject('Font & Meme Generator').projectLink;
+const simAlchemyLink = getProject('SimAlchemy').projectLink;
+const reactReduxLink = getProject('React + Redux Blog').projectLink;
+const pokedexLink = getProject('Pokedex').projectLink;
+const asyncRickMortyLink = getProject('Async Rick & Morty').projectLink;
+const qbotLink = getProject('Q bot').projectLink;
+const tcpChatLink = getProject('TCP Chat Room').projectLink;
 
 export const ROUTES = {
   HOME: {
@@ -22,43 +31,43 @@ export const ROUTES = {
     linkTo: () => '/projects'
   },
   PROJECTS_HOMEBREWDOG: {
-    path: projectsList[3].projectLink,
+    path: homeBrewLink,
     Component: Homebrewdog,
-    linkTo: () => projectsList[3].projectLink
+    linkTo: () => homeBrewLink
   },
   PROJECTS_MEME_GENERATOR: {
-    path: projectsList[6].projectLink,
+    path: fontMemeLink,
     Component: MemeGenerator,
-    linkTo: () => projectsList[6].projectLink
+    linkTo: () => fontMemeLink
   },
   PROJECTS_SIM_ALCHEMY: {
-    path: projectsList[2].projectLink,
+    path: simAlchemyLink,
     Component: SimAlchemy,
-    linkTo: () => projectsList[2].projectLink
+    linkTo: () => simAlchemyLink
   },
   PROJECTS_REDUX_BLOG: {
-    path: projectsList[1].projectLink,
+    path: reactReduxLink,
     Component: ReduxBlog,
-    linkTo: () => projectsList[1].projectLink
+    linkTo: () => reactReduxLink
   },
   PROJECTS_POKEDEX: {
-    path: projectsList[7].projectLink,
+    path: pokedexLink,
     Component: Pokedex,
-    linkTo: () => projectsList[7].projectLink
+    linkTo: () => pokedexLink
   },
   PROJECTS_ASYNC_RM: {
-    path: projectsList[5].projectLink,
+    path: asyncRickMortyLink,
     Component: AsyncRM,
-    linkTo: () => projectsList[5].projectLink
+    linkTo: () => asyncRickMortyLink
   },
   PROJECTS_Q_BOT: {
-    path: projectsList[0].projectLink,
+    path: qbotLink,
     Component: Qbot,
-    linkTo: () => projectsList[0].projectLink
+    linkTo: () => qbotLink
   },
   PROJECTS_TCP_CHAT_ROOM: {
-    path: projectsList[4].projectLink,
+    path: tcpChatLink,
     Component: TCPchatRoom,
-    linkTo: () => projectsList[4].projectLink
+    linkTo: () => tcpChatLink
   }
 };

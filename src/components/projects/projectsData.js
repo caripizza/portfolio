@@ -1,5 +1,19 @@
 const projectsList = [
   {
+    name:'@caripizza/ui',
+    description:'A design system and open-source component library made with React, Typescript, and Tailwind CSS.',
+    projectLink:'/projects/caripizza-ui',
+    githubLink:'https://github.com/caripizza/ui',
+    deployedLink:'https://main--63376424914401d9d4d73e3b.chromatic.com/',
+  },
+  {
+    name: 'Search Top Headlines',
+    description: 'Mobile-responsive Vue 2 SPA with typeahead input search that calls News API for top headlines, with @caripizza/ui styles',
+    projectLink: '/projects/search-the-web',
+    githubLink: 'https://github.com/caripizza/search-the-web',
+    deployedLink: 'https://caripizza.github.io/search-the-web/'
+  },
+  {
     name: 'Q bot',
     description: `Slack bot and web app for Alchemy Code Lab, made with Slack's 
     Events & Conversations API's, Google Cloud Firestore, Firebase
@@ -61,7 +75,33 @@ const projectsList = [
     CSS.`,
     projectLink: '/projects/pokedex',
     githubLink: 'https://github.com/caripizza/return-of-pokedex'
-  }
+  },
+  {
+    name: 'ChartJS',
+    description: 'A few charts rendered with Chart.js and Vanilla JavaScript',
+    projectLink: '/projects/chartjs',
+    githubLink: 'https://github.com/caripizza/chartjs',
+    deployedLink: 'https://caripizza.github.io/chartjs'
+  },
+  {
+    name: 'Loan Origination System',
+    description: 'Single page React app with form validation and submission to Firestore, displaying collection results, with hosting on Firebase/GCP',
+    projectLink: '/projects/firebase-notes',
+    githubLink: 'https://github.com/caripizza/firebase-notes',
+    deployedLink: 'https://fir-notes-371b7.firebaseapp.com/'
+  },
+  {
+    name: 'Synths',
+    description: 'Responsive SPA made with Vue 2, displays a clickable list of vintage synthesizers',
+    projectLink: '/projects/list-of-synths',
+    githubLink: 'https://github.com/caripizza/list-of-vue',
+    deployedLink: 'https://caripizza.github.io/list-of-vue/'
+  },
 ];
 
-export { projectsList };
+const getProject = (projectName) => {
+  if(!projectName) return;
+  return projectsList.find((project) => project.name === projectName);
+};
+
+export { projectsList, getProject };
