@@ -9,6 +9,11 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => setLoading(false), 400);
     document.title = 'Cari\'s Portfolio: Home';
+    document.head.insertAdjacentHTML(
+      'beforeEnd',
+      `<link rel="preload" href="https://d1el19mzc628gm.cloudfront.net/caripizza_tr.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="https://d1el19mzc628gm.cloudfront.net/logo-spin.gif" as="image" type="image/gif" />`
+    );
   }, []);
 
   return (
