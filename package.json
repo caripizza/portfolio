@@ -44,6 +44,7 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "ansi-regex": ">=4.1.1",
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
@@ -58,7 +59,7 @@
     "clean-webpack-plugin": "^1.0.1",
     "copy-webpack-plugin": "^5.1.2",
     "css-loader": "^2.1.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.5.1",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-react": "^7.22.0",
     "file-loader": "^3.0.1",
