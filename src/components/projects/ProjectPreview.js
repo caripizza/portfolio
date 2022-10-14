@@ -7,7 +7,8 @@ export default function ProjectPreview({
   description,
   spanClassName,
   projectLink,
-  githubLink
+  githubLink,
+  deployedLink
 }) {
   return (
     <article>
@@ -18,7 +19,15 @@ export default function ProjectPreview({
       </span>
       <br />
       <span className={spanClassName}>
-        <Link to={projectLink}>View project</Link> -
+        {!deployedLink ? <Link to={projectLink}>View project</Link> : (
+          <a
+            href={deployedLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        )} -
         <a
           href={githubLink}
           target="_blank"
@@ -36,5 +45,6 @@ ProjectPreview.propTypes = {
   description: PropTypes.string.isRequired,
   spanClassName: PropTypes.string,
   projectLink: PropTypes.string.isRequired,
-  githubLink: PropTypes.string.isRequired
+  githubLink: PropTypes.string.isRequired,
+  deployedLink: PropTypes.string,
 };
