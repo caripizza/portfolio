@@ -1,5 +1,6 @@
 .Projects {
   display: flex;
+  align-items: flex-start;
   animation: fadein 1s;
   -moz-animation: fadein 1s; /* Firefox */
   -webkit-animation: fadein 1s; /* Safari and Chrome */
@@ -194,9 +195,18 @@
 
   /* fix huge font sizes on iphone 5 */
   @media screen and (max-width: 568px) and (orientation: landscape) {
-    .description, span {
-      font-size: 0.7em;
+    .description,
+    span {
+      font-size: 0.725em;
       line-height: initial;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .rightContainer {
+      max-height: 1310px;
+      overflow: auto;
+      border: 2px solid var(--gold-500);
     }
   }
 }

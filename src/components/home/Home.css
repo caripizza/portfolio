@@ -203,7 +203,7 @@
   /* fix huge font sizes on iphone 5/6/7 */
   @media screen and (max-width: 668px) and (orientation: landscape) {
     .minFont {
-      font-size: 0.7em;
+      font-size: 0.725em;
       line-height: initial;
     }
   }
