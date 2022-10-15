@@ -1,13 +1,14 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const InlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  devtool: 'eval-source-map',
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
-    filename: '[name].[hash].js',
+    filename: '[name].[chunkhash].js',
     publicPath: '/'
   },
   devServer: {
@@ -25,10 +26,9 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new CopyWebpackPlugin([{
-      from: 'public'
-    }]),
-    new InlineSourcePlugin(),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'public' }]
+    }),
   ],
   optimization: {
     splitChunks: {
