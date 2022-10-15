@@ -3,9 +3,11 @@ const CleanPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const prodFlag = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+
 module.exports = {
-  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  devtool: 'eval-source-map',
+  mode: prodFlag,
+  devtool: prodFlag ? 'source-map' : 'eval-source-map',
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
     filename: '[name].[chunkhash].js',
